@@ -1,0 +1,31 @@
+{
+  "_help": "One entry per document. To add a year: put the PDF in the project folder, add its extraction as raw/<year>.json (and raw/mid<year>.json for a Mid-Year Review), add an entry below, then run: python site/tools/build_data.py. pdf is relative to the project folder. page_offset is PDF page minus printed page. title and presenter override what the extraction says. prior_year_ytd names the year-to-date budget-vs-outturn fields this budget gives for the previous year.",
+  "budgets": {
+    "2025": {
+      "pdf": "2025-Budget-Statement-and-Economic-Policy.pdf",
+      "page_offset": 12,
+      "date_label": "11 March 2025",
+      "presenter": "Dr Cassiel Ato Forson, Minister for Finance"
+    },
+    "2026": {
+      "pdf": "2026-Budget-Statement-and-Economic-Policy.pdf",
+      "page_offset": 16,
+      "date_label": "13 November 2025",
+      "title": "Resetting for Growth, Jobs and Economic Transformation",
+      "presenter": "Dr Cassiel Ato Forson, Minister for Finance",
+      "prior_year_ytd": { "target": "q1_q3_target_ghs_m", "outturn": "q1_q3_outturn_ghs_m", "period": "January–September 2025" }
+    },
+    "2027": {
+      "pdf": "2027-Budget-Statement-and-Economic-Policy_.pdf",
+      "page_offset": 9,
+      "date_label": "12 November 2026",
+      "title": "The New Economy, New Ghana: Jobs and Prosperity",
+      "presenter": "Minister for Finance (name not in document text)",
+      "prior_year_ytd": { "target": "prog_jan_oct_ghs_m", "outturn": "prov_outturn_jan_oct_ghs_m", "period": "January–October 2026" }
+    }
+  },
+  "midyear": {
+    "2025": { "pdf": "2025-Mid-Year-Fiscal-Policy-Review.pdf", "page_offset": 3 },
+    "2026": { "pdf": "2026-Mid-Year-Fiscal-Policy-Review.pdf.pdf", "page_offset": 9 }
+  }
+}

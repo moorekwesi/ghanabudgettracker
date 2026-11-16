@@ -1,0 +1,692 @@
+{
+ "macro": [
+  {
+   "indicator": "Real GDP growth",
+   "unit": "%",
+   "target": 4.8,
+   "target_label": "at least 4.8%",
+   "target_page": 108,
+   "outturn": 6.2,
+   "outturn_label": "6.2% (first half of 2026)",
+   "outturn_page": 55,
+   "outturn_source_year": 2027,
+   "basis": "provisional, H1 2026 (GSS); IMF projects 5.7% for full-year 2026 (p.24)",
+   "status": "met",
+   "comment": "Growth comfortably beat the 4.8% floor in the first half, and the full-year projection of 5.7% is also above target."
+  },
+  {
+   "indicator": "Non-oil real GDP growth",
+   "unit": "%",
+   "target": 4.9,
+   "target_label": "at least 4.9%",
+   "target_page": 108,
+   "outturn": 5.9,
+   "outturn_label": "5.9% (first half of 2026)",
+   "outturn_page": 55,
+   "outturn_source_year": 2027,
+   "basis": "provisional, H1 2026 (GSS)",
+   "status": "met",
+   "comment": "Non-oil growth of 5.9% in the first half beat the 4.9% target."
+  },
+  {
+   "indicator": "End-period inflation",
+   "unit": "%",
+   "target": 8.0,
+   "target_label": "8.0% at end-2026 (BoG band 8±2%)",
+   "target_page": 108,
+   "outturn": 5.5,
+   "outturn_label": "5.5% (October 2026, year-on-year)",
+   "outturn_page": 59,
+   "outturn_source_year": 2027,
+   "basis": "latest month reported (October 2026); December outturn not yet available",
+   "status": "partial",
+   "comment": "Inflation ran below the 6-10% band (it fell to 3.2% in March), so the target was undershot rather than hit; the budget calls 5.5% 'within the end-year target band' although it is under the band floor."
+  },
+  {
+   "indicator": "Primary balance, commitment basis",
+   "unit": "% of GDP",
+   "target": 1.5,
+   "target_label": "surplus of 1.5% of GDP",
+   "target_page": 108,
+   "outturn": 1.6,
+   "outturn_label": "1.6% of GDP (projected end-2026; 1.4% Jan-Oct)",
+   "outturn_page": 192,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); provisional Jan-Oct outturn 1.4% (p.61)",
+   "status": "met",
+   "comment": "The budget projects a full-year primary surplus of 1.6% of GDP (GH¢26.2bn) after 1.4% by October, meeting the 1.5% fiscal-rule target on current projections."
+  },
+  {
+   "indicator": "Overall fiscal balance, commitment basis",
+   "unit": "% of GDP",
+   "target": -2.2,
+   "target_label": "deficit of 2.2% of GDP",
+   "target_page": 113,
+   "outturn": -2.0,
+   "outturn_label": "-2.0% of GDP (projected end-2026)",
+   "outturn_page": 191,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); provisional Jan-Oct -1.0% per text (p.61), -1.3% in Appendix 2A",
+   "status": "met",
+   "comment": "The projected deficit of 2.0% of GDP is smaller than the 2.2% target; the budget's Jan-Oct comparison uses a mid-year programme of -3.0%."
+  },
+  {
+   "indicator": "Overall fiscal balance, cash basis",
+   "unit": "% of GDP",
+   "target": -4.0,
+   "target_label": "deficit of 4.0% of GDP",
+   "target_page": 113,
+   "outturn": -3.8,
+   "outturn_label": "-3.8% of GDP (projected end-2026)",
+   "outturn_page": 191,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); provisional Jan-Oct -2.3% vs programme -4.5% (p.66)",
+   "status": "met",
+   "comment": "The projected cash deficit of 3.8% of GDP is slightly better than the 4.0% target."
+  },
+  {
+   "indicator": "Primary balance, cash basis",
+   "unit": "% of GDP",
+   "target": -0.4,
+   "target_label": "deficit of 0.4% of GDP",
+   "target_page": 113,
+   "outturn": -0.2,
+   "outturn_label": "-0.2% of GDP (projected end-2026)",
+   "outturn_page": 192,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); provisional Jan-Oct surplus 0.1% (p.61)",
+   "status": "met",
+   "comment": "The cash primary balance is projected at -0.2% of GDP, better than the -0.4% target."
+  },
+  {
+   "indicator": "Total revenue and grants",
+   "unit": "GH¢ million",
+   "target": 268090.9,
+   "target_label": "GH¢268.1bn (16.8% of GDP)",
+   "target_page": 113,
+   "outturn": 273955.6,
+   "outturn_label": "GH¢274.0bn (17.2% of GDP, projected end-2026)",
+   "outturn_page": 191,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); provisional Jan-Oct GH¢219.3bn, 3.5% above programme (p.62)",
+   "status": "met",
+   "comment": "Revenue is projected to exceed the budget by about 2%, after running 3.5% ahead of target to October."
+  },
+  {
+   "indicator": "Domestic revenue",
+   "unit": "% of GDP",
+   "target": 16.6,
+   "target_label": "16.6% of GDP",
+   "target_page": 112,
+   "outturn": 17.0,
+   "outturn_label": "17.0% of GDP (projected end-2026)",
+   "outturn_page": 192,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A memo item)",
+   "status": "met",
+   "comment": "Domestic revenue is projected at 17.0% of GDP (GH¢271.5bn) against a 16.6% target."
+  },
+  {
+   "indicator": "Tax revenue",
+   "unit": "GH¢ million",
+   "target": 223927.8,
+   "target_label": "GH¢223.9bn (14.0% of GDP)",
+   "target_page": 176,
+   "outturn": 225721.0,
+   "outturn_label": "GH¢225.7bn (projected end-2026)",
+   "outturn_page": 191,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); Jan-Oct tax revenue GH¢174.4bn was 1.2% below programme",
+   "status": "met",
+   "comment": "Total tax revenue is projected marginally above budget, although non-oil tax and especially VAT ran below target to October (p.62, p.68)."
+  },
+  {
+   "indicator": "Grants",
+   "unit": "GH¢ million",
+   "target": 3066.0,
+   "target_label": "GH¢3,066m (0.2% of GDP)",
+   "target_page": 114,
+   "outturn": 2412.0,
+   "outturn_label": "GH¢2,412m (projected end-2026)",
+   "outturn_page": 191,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); Jan-Oct GH¢1.0bn vs GH¢2.1bn programme (p.63)",
+   "status": "missed",
+   "comment": "Grant inflows are projected about 21% below budget and were roughly half of target to October."
+  },
+  {
+   "indicator": "Total expenditure (commitment)",
+   "unit": "GH¢ million",
+   "target": 302455.7,
+   "target_label": "GH¢302.5bn ceiling (18.9% of GDP)",
+   "target_page": 174,
+   "outturn": 305459.3,
+   "outturn_label": "GH¢305.5bn (19.1% of GDP, projected end-2026)",
+   "outturn_page": 191,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); Jan-Oct GH¢235.1bn was 9.3% below programme (p.63)",
+   "status": "missed",
+   "comment": "Spending was under programme to October, but the end-year projection exceeds the 2026 expenditure ceiling by about GH¢3.0bn (1%), driven by transfers to earmarked funds."
+  },
+  {
+   "indicator": "Capital expenditure",
+   "unit": "GH¢ million",
+   "target": 57529.0,
+   "target_label": "GH¢57.5bn (3.6% of GDP)",
+   "target_page": 174,
+   "outturn": 50914.7,
+   "outturn_label": "GH¢50.9bn (projected end-2026)",
+   "outturn_page": 191,
+   "outturn_source_year": 2027,
+   "basis": "projected end-year (Appendix 2A); Jan-Oct GH¢41.4bn vs GH¢45.3bn programme (p.64)",
+   "status": "missed",
+   "comment": "Capex is projected about 11% below the original budget; the mid-year revision had already cut the allocation to GH¢52.5bn, and foreign-financed capex lagged."
+  },
+  {
+   "indicator": "Arrears clearance",
+   "unit": "GH¢ million",
+   "target": 29827.3,
+   "target_label": "GH¢29.8bn (incl. GH¢4.8bn IPP legacy arrears)",
+   "target_page": 174,
+   "outturn": 20789.0,
+   "outturn_label": "GH¢20.8bn (Jan-Oct 2026)",
+   "outturn_page": 65,
+   "outturn_source_year": 2027,
+   "basis": "provisional Jan-Oct vs Jan-Oct programme GH¢24.3bn; the end-year 'projection' in Appendix 2A simply restates the budget figure",
+   "status": "partial",
+   "comment": "About 70% of the annual amount was cleared by October, 14% behind the period programme; the budget says no new arrears were accumulated (p.55)."
+  },
+  {
+   "indicator": "Gross international reserves",
+   "unit": "months of import cover",
+   "target": 3.0,
+   "target_label": "not less than 3 months",
+   "target_page": 108,
+   "outturn": 4.5,
+   "outturn_label": "4.5 months (US$12.1-12.7bn, end-Sept 2026)",
+   "outturn_page": 55,
+   "outturn_source_year": 2027,
+   "basis": "end-September 2026",
+   "status": "met",
+   "comment": "Reserves covered 4.5 months of imports, well above the 3-month floor (the budget gives both US$12.7bn (p.55) and US$12.1bn (p.82) for the same date)."
+  },
+  {
+   "indicator": "Banking-sector NPL ratio",
+   "unit": "%",
+   "target": 10.0,
+   "target_label": "10% by end-2026 (BoG target)",
+   "target_page": 55,
+   "outturn": 14.0,
+   "outturn_label": "14.0% (September 2026)",
+   "outturn_page": 80,
+   "outturn_source_year": 2027,
+   "basis": "September 2026",
+   "status": "missed",
+   "comment": "Bad loans fell from 20.4% to 14.0% but remain well above the 10% end-2026 target, and the budget only expects further improvement in 2027 (p.89)."
+  },
+  {
+   "indicator": "Total petroleum receipts",
+   "unit": "US$ million",
+   "target": 985.5,
+   "target_label": "US$985.5m",
+   "target_page": 117,
+   "outturn": 1361.4,
+   "outturn_label": "US$1,361.4m (Jan-Oct 2026)",
+   "outturn_page": 71,
+   "outturn_source_year": 2027,
+   "basis": "provisional Jan-Oct 2026 (already exceeds full-year target)",
+   "status": "met",
+   "comment": "Higher oil prices pushed receipts 38% above the full-year projection within ten months."
+  },
+  {
+   "indicator": "Public debt",
+   "unit": "% of GDP",
+   "target": null,
+   "target_label": "No 2026 debt target set (fiscal rule: below 45% of GDP by 2035)",
+   "target_page": 32,
+   "outturn": 47.5,
+   "outturn_label": "47.5% of GDP (end-October 2026)",
+   "outturn_page": 25,
+   "outturn_source_year": 2027,
+   "basis": "end-October 2026",
+   "status": "unclear",
+   "comment": "There is no 2026 debt-ratio target to judge against; debt was 47.5% of GDP, below the ECOWAS 70% ceiling but above the 45% long-term anchor."
+  },
+  {
+   "indicator": "Exchange rate (cedi vs US$)",
+   "unit": "% depreciation",
+   "target": null,
+   "target_label": "No 2026 budget target",
+   "target_page": null,
+   "outturn": 10.1,
+   "outturn_label": "10.1% depreciation (year to end-October 2026)",
+   "outturn_page": 60,
+   "outturn_source_year": 2027,
+   "basis": "year-to-date, end-October 2026",
+   "status": "unclear",
+   "comment": "The 2026 budget set no exchange-rate target; the 10.1% depreciation narrowly missed the ECOWAS ±10% convergence criterion (p.25)."
+  }
+ ],
+ "commitments": [
+  {
+   "id": "2026-01",
+   "status": "met",
+   "outcome": "Real GDP grew 6.2% in the first half of 2026 against the 4.8% target; the IMF projects 5.7% for the full year (p.24).",
+   "outcome_page": 55,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-02",
+   "status": "met",
+   "outcome": "Non-oil GDP grew 5.9% in the first half of 2026 against the 4.9% target.",
+   "outcome_page": 55,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-03",
+   "status": "partial",
+   "outcome": "Inflation was 5.5% in October 2026 after falling to 3.2% in March; this is below the 6-10% band, so the 8% target was undershot rather than hit.",
+   "outcome_page": 59,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-04",
+   "status": "met",
+   "outcome": "The primary surplus (commitment) was 1.4% of GDP for Jan-Oct, described as on course for 1.5% (p.61); Appendix 2A projects 1.6% of GDP (GH¢26.2bn) for the full year.",
+   "outcome_page": 192,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-05",
+   "status": "met",
+   "outcome": "The projected end-2026 overall deficit is 2.0% of GDP (commitment) and 3.8% (cash), both inside the 2.2% / 4.0% targets; Jan-Oct deficits were 1.0% and 2.3% (p.61).",
+   "outcome_page": 191,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-06",
+   "status": "met",
+   "outcome": "Gross international reserves stood at 4.5 months of import cover at end-September 2026.",
+   "outcome_page": 55,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-07",
+   "status": "met",
+   "outcome": "Revenue and grants are projected at GH¢274.0bn (17.2% of GDP) for 2026, above the GH¢268.1bn target; Jan-Oct receipts of GH¢219.3bn were 3.5% above programme (p.62).",
+   "outcome_page": 191,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-08",
+   "status": "partial",
+   "outcome": "Non-oil tax revenue was GH¢167.2bn in Jan-Oct, below the GH¢170.0bn programme, with VAT short because of non-compliance (p.68); no full-year non-oil tax figure is given.",
+   "outcome_page": 62,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-09",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report a 2026 non-oil revenue-to-GDP figure to compare with the 15.7% target.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-10",
+   "status": "met",
+   "outcome": "The VAT Act, 2025 (Act 1151) took effect at the start of 2026 with a reduced effective VAT rate and a GH¢750,000 registration threshold; the COVID-19 levy is not mentioned separately.",
+   "outcome_page": 68,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-11",
+   "status": "partial",
+   "outcome": "The Customs Act, 2026 (Act 1179) and Excise Act, 2026 (Act 1180) have been enacted, but the Income Tax Bill is still with the Attorney-General for drafting and is expected to be enacted in early 2027 (p.68, p.91).",
+   "outcome_page": 67,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-12",
+   "status": "missed",
+   "outcome": "Spending was 9.3% below programme to October (p.63), but Appendix 2A projects 2026 expenditure of GH¢305.5bn (19.1% of GDP), above the GH¢302.5bn ceiling.",
+   "outcome_page": 191,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-13",
+   "status": "partial",
+   "outcome": "GH¢20.8bn of arrears was cleared by October against a GH¢24.3bn period programme, and the budget states no new arrears were allowed (p.55); the full-year figure in Appendix 2A merely restates the budget.",
+   "outcome_page": 65,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-14",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report 2026 payments to IPPs under the renegotiated agreements.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-15",
+   "status": "unclear",
+   "outcome": "No award of ECG distribution concessions is reported; the budget now says private-sector participation in distribution will be fully implemented by end-2027.",
+   "outcome_page": 41,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-16",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report on restoring the World Bank-backed standby letters of credit.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-17",
+   "status": "partial",
+   "outcome": "Not yet started: the plant has been enlarged to 1,450MW at Kafodzidzi-Abrobeano and construction is scheduled to begin in December 2026, with the first 600MW due by December 2028.",
+   "outcome_page": 40,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-18",
+   "status": "met",
+   "outcome": "The rural electrification initiative is being implemented in Central, Oti, Savannah and Volta, with 601 communities in 47 districts earmarked for completion by year-end.",
+   "outcome_page": 139,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-19",
+   "status": "unclear",
+   "outcome": "Only the conclusion of negotiations on Voltaian Basin exploration rights with GNPC, Explorco and Chrome Energy is reported; no drilling start is mentioned.",
+   "outcome_page": 140,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-20",
+   "status": "met",
+   "outcome": "AKSA's Anwomaso plant (205MW, 175MW net) is complete and running, and CENIT's 100MW plant is synchronised to the grid with commissioning being finalised; AKSA is to expand to 350MW in 2027.",
+   "outcome_page": 138,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-21",
+   "status": "partial",
+   "outcome": "GH¢14.3bn was spent on the Big Push by October 2026 against the GH¢30bn allocation; no count of completed projects is given and the mid-2027 completion milestone is not yet due.",
+   "outcome_page": 64,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-22",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report on the 10km-per-constituency road programme.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-23",
+   "status": "partial",
+   "outcome": "Routine maintenance covered 17,143km (2,996km trunk, 9,250km feeder, 4,897km urban) plus minor rehabilitation of 494km, short of the 25,000km target; the reporting period is not stated.",
+   "outcome_page": 148,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-24",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report on the 1,000km Agricultural Enclave Roads programme.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-25",
+   "status": "partial",
+   "outcome": "Two locomotives and 20 wagons were delivered to start freight on Tema-Mpakadan, with signalling upgrades planned for 2027; full commissioning is not reported and the Accra-Kumasi Eastern Line is not mentioned.",
+   "outcome_page": 150,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-26",
+   "status": "partial",
+   "outcome": "Construction of Farmer Service Centres began in 10 districts and 1,840 machines are being procured, against 50 districts and over 4,000 machines.",
+   "outcome_page": 128,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-27",
+   "status": "missed",
+   "outcome": "300mt of maize seed, 300mt of rice seed and 36,506mt of inorganic fertiliser were distributed, far below the 4,388mt, 31,000mt and 272,000mt planned.",
+   "outcome_page": 127,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-28",
+   "status": "unclear",
+   "outcome": "No 2026 launch or planting under an Oil Palm Policy is reported; the 2027 budget re-announces 100,000ha of new oil palm as a future New Economy intervention.",
+   "outcome_page": 38,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-29",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report on the seven agro-processing plants.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-30",
+   "status": "partial",
+   "outcome": "A transaction adviser was engaged, land secured and feasibility studies are ongoing; no garment factory has yet been established.",
+   "outcome_page": 135,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-31",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report how many MSMEs were helped into AfCFTA markets in 2026.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-32",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report on ending double-track SHS.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-33",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report on Category B/C school upgrades or E-Block completions.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-34",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report on the 200 JHS, 200 primary, 200 KG, teachers' bungalow and toilet programme.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-35",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report delivery of mono-desks, buses or pick-ups.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-36",
+   "status": "unclear",
+   "outcome": "The 2027 budget allocates GH¢292m for free sanitary pads (p.177) but does not report 2026 coverage of all SHSs.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-37",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not mention the Bunso University of Engineering and Agricultural Sciences.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-38",
+   "status": "partial",
+   "outcome": "Work has begun on 160-bed regional hospitals in Oti, Western North and Savannah; the Bole and Shama district hospitals are not mentioned.",
+   "outcome_page": 159,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-39",
+   "status": "unclear",
+   "outcome": "The budget refers only to 'the completion of some Agenda 111 hospitals' without a number, so the 10-hospital target cannot be assessed.",
+   "outcome_page": 159,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-40",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report upgrades of seven hospitals for maternal and child health.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-41",
+   "status": "unclear",
+   "outcome": "MahamaCares-funded services are reported, but no NCD financing policy is mentioned.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-42",
+   "status": "missed",
+   "outcome": "The Tamale, Yendi and Damongo water projects are still at the preparatory stage and will start in 2027; commissioning of the Damongo, Bawku and Yendi systems is not reported.",
+   "outcome_page": 143,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-43",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report household or public toilet construction numbers.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-44",
+   "status": "missed",
+   "outcome": "Saglemi completion has been rescheduled to 2027 (700 units by March, 806 by December, of 1,506 units); expansion of the Rent-to-Own scheme is not reported (only the separate Rental Assistance Scheme, 917 beneficiaries).",
+   "outcome_page": 142,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-45",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report new cell sites built in 2026.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-46",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report Girls-in-ICT training numbers.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-47",
+   "status": "partial",
+   "outcome": "The LEAP household ceiling was raised from 350,000 to 400,000 and all 350,000 existing households were reassessed, but actual enrolment of 400,000 households is not stated.",
+   "outcome_page": 160,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-48",
+   "status": "unclear",
+   "outcome": "19,760 persons with disabilities benefited from the Disability Common Fund (p.160), but the rise in the DACF share from 3% to 5% is not reported.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-49",
+   "status": "partial",
+   "outcome": "Acquisition of four helicopters and a Falcon 6X advanced, with one H175 delivered (p.167); the two Offshore Patrol Vessels are now to be acquired in 2027.",
+   "outcome_page": 168,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-50",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report fire tenders procured in 2026 (it allocates GH¢150m for a Phase 2 retooling in 2027).",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-51",
+   "status": "missed",
+   "outcome": "2,300 acres (about 930ha) of degraded land were reclaimed by September 2026, with another 370 acres (150ha) under way, against a 10,000ha target.",
+   "outcome_page": 132,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-52",
+   "status": "missed",
+   "outcome": "No new stadium is reported completed; the 2027 budget allocates GH¢600m to begin construction of 10 regional stadia in 2027.",
+   "outcome_page": 178,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-53",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not mention the Independent Fiscal Council being constituted.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-54",
+   "status": "met",
+   "outcome": "The Value for Money Office was established after passage of the Value for Money Office Act, 2026 (Act 1172).",
+   "outcome_page": 120,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-55",
+   "status": "met",
+   "outcome": "NIB, ADB and Consolidated Bank Ghana have been fully recapitalised to meet Bank of Ghana capital requirements; a performance-monitoring framework follows in 2027.",
+   "outcome_page": 120,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-56",
+   "status": "missed",
+   "outcome": "GDP and CPI rebasing were only about 50% and 53% complete at end-September 2026 and are now due in 2027; Tourism Satellite Account surveys were completed, but 'Ghana in Numbers' is not mentioned.",
+   "outcome_page": 121,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-57",
+   "status": "unclear",
+   "outcome": "The 2027 budget does not report whether benchmark domestic bond issuance resumed in 2026.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-58",
+   "status": "missed",
+   "outcome": "The banking NPL ratio fell to 14.0% in September 2026 from 20.4%, still above the 10% end-2026 target.",
+   "outcome_page": 80,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-59",
+   "status": "unclear",
+   "outcome": "The 2027 budget gives no total of jobs created in 2026 to compare with the 800,000 target.",
+   "outcome_page": null,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2026-60",
+   "status": "partial",
+   "outcome": "The Registrar of Companies registered 121,960 new entities against 180,000 (p.164), and EOCO recovered GH¢73.9m against about GH¢250m in 2026; both are short of target.",
+   "outcome_page": 165,
+   "outcome_year": 2027
+  }
+ ]
+}

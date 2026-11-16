@@ -1,0 +1,685 @@
+{
+ "macro": [
+  {
+   "indicator": "Real GDP growth",
+   "unit": "%",
+   "target": 4.0,
+   "target_label": "≥4.0",
+   "target_page": 63,
+   "outturn": 6.0,
+   "outturn_label": "6.0 (full year, provisional)",
+   "outturn_page": 188,
+   "outturn_source_year": 2027,
+   "basis": "final-year provisional estimate (2027 Budget Appendix 1C)",
+   "status": "met",
+   "comment": "Growth of 6.0% beat the 'at least 4.0%' target; the 2026 Budget had reported 6.3% for H1 2025 (p.27)."
+  },
+  {
+   "indicator": "Non-oil real GDP growth",
+   "unit": "%",
+   "target": 4.8,
+   "target_label": "≥4.8",
+   "target_page": 63,
+   "outturn": 7.6,
+   "outturn_label": "7.6 (full year, provisional)",
+   "outturn_page": 188,
+   "outturn_source_year": 2027,
+   "basis": "final-year provisional estimate (2027 Budget Appendix 1C)",
+   "status": "met",
+   "comment": "Non-oil growth of 7.6% comfortably beat the 'at least 4.8%' target."
+  },
+  {
+   "indicator": "End-period inflation",
+   "unit": "%",
+   "target": 11.9,
+   "target_label": "11.9",
+   "target_page": 63,
+   "outturn": 5.4,
+   "outturn_label": "5.4 (end-2025)",
+   "outturn_page": 29,
+   "outturn_source_year": 2027,
+   "basis": "final (end-December 2025)",
+   "status": "met",
+   "comment": "Inflation fell from 23.8% at end-2024 to 5.4% at end-2025, well below the 11.9% target."
+  },
+  {
+   "indicator": "Primary balance, commitment basis",
+   "unit": "% of GDP",
+   "target": 1.5,
+   "target_label": "+1.5 (surplus)",
+   "target_page": 63,
+   "outturn": 2.5,
+   "outturn_label": "+2.5 (end-2025)",
+   "outturn_page": 29,
+   "outturn_source_year": 2027,
+   "basis": "final end-2025 figure; the 2027 Budget does not state the basis (the 2026 Budget projected 1.8% on a commitment basis, p.171)",
+   "status": "met",
+   "comment": "A primary surplus of 2.5% of GDP beat the 1.5% target, although the 2027 Budget does not say whether this is on a commitment or cash basis."
+  },
+  {
+   "indicator": "Primary balance, cash basis",
+   "unit": "% of GDP",
+   "target": 0.5,
+   "target_label": "+0.5 (surplus)",
+   "target_page": 71,
+   "outturn": 0.8,
+   "outturn_label": "+0.8 (projected end-year)",
+   "outturn_page": 171,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2A)",
+   "status": "met",
+   "comment": "The projected cash primary surplus of 0.8% of GDP beat the 0.5% target; the 2027 Budget gives no final cash-basis figure."
+  },
+  {
+   "indicator": "Overall fiscal balance, commitment basis",
+   "unit": "% of GDP",
+   "target": -3.1,
+   "target_label": "-3.1 (deficit)",
+   "target_page": 71,
+   "outturn": -1.8,
+   "outturn_label": "-1.8 (projected end-year)",
+   "outturn_page": 171,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2A)",
+   "status": "met",
+   "comment": "The projected deficit of 1.8% of GDP was smaller than the original 3.1% target (and the mid-year revised target of 2.8%)."
+  },
+  {
+   "indicator": "Overall fiscal balance, cash basis",
+   "unit": "% of GDP",
+   "target": -4.1,
+   "target_label": "-4.1 (deficit)",
+   "target_page": 71,
+   "outturn": -2.8,
+   "outturn_label": "-2.8 (projected end-year)",
+   "outturn_page": 171,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2A)",
+   "status": "met",
+   "comment": "The projected cash deficit of 2.8% of GDP was smaller than the original 4.1% target (revised mid-year to 3.8%)."
+  },
+  {
+   "indicator": "Total revenue and grants",
+   "unit": "GH¢ million",
+   "target": 224933.6,
+   "target_label": "GH¢224.9bn (16.1% of GDP)",
+   "target_page": 69,
+   "outturn": 226488.2,
+   "outturn_label": "GH¢226.5bn (16.0% of GDP, projected end-year)",
+   "outturn_page": 170,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2A); Jan–Sep outturn was 4.7% below programme",
+   "status": "met",
+   "comment": "Projected revenue of GH¢226.5bn beat the original GH¢224.9bn target in cash terms, but was 16.0% of GDP against 16.1% targeted and below the mid-year revised GH¢229.9bn."
+  },
+  {
+   "indicator": "Non-oil tax revenue",
+   "unit": "GH¢ million",
+   "target": 181600.0,
+   "target_label": "GH¢181.6bn",
+   "target_page": 69,
+   "outturn": 181909.9,
+   "outturn_label": "GH¢181.9bn (projected end-year)",
+   "outturn_page": 172,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2B); Jan–Sep outturn was 4.1% below programme",
+   "status": "met",
+   "comment": "Projected non-oil tax revenue of GH¢181.9bn edged past the GH¢181.6bn target after a 4.1% shortfall in the first nine months."
+  },
+  {
+   "indicator": "Oil and gas revenue",
+   "unit": "GH¢ million",
+   "target": 16514.3,
+   "target_label": "GH¢16.5bn",
+   "target_page": 146,
+   "outturn": 10047.1,
+   "outturn_label": "GH¢10.0bn (projected end-year)",
+   "outturn_page": 171,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2A)",
+   "status": "missed",
+   "comment": "Oil revenue was projected at GH¢10.0bn, about 39% below target, owing to lower oil prices and output and a stronger cedi."
+  },
+  {
+   "indicator": "Total expenditure, commitment basis",
+   "unit": "% of GDP",
+   "target": 19.2,
+   "target_label": "≤19.2",
+   "target_page": 78,
+   "outturn": 17.8,
+   "outturn_label": "17.8 (projected end-year)",
+   "outturn_page": 170,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2A)",
+   "status": "met",
+   "comment": "Projected spending of 17.8% of GDP (GH¢251.7bn) stayed within the 19.2% ceiling, largely because capital spending was under-executed."
+  },
+  {
+   "indicator": "Primary expenditure, commitment basis",
+   "unit": "% of GDP",
+   "target": 14.6,
+   "target_label": "≤14.6",
+   "target_page": 70,
+   "outturn": 14.2,
+   "outturn_label": "14.2 (2025 estimate)",
+   "outturn_page": 112,
+   "outturn_source_year": 2026,
+   "basis": "end-year estimate stated in the 2026 Budget text",
+   "status": "met",
+   "comment": "Primary (non-interest) spending of 14.2% of GDP stayed within the 14.6% ceiling."
+  },
+  {
+   "indicator": "Capital expenditure",
+   "unit": "GH¢ million",
+   "target": 32991.6,
+   "target_label": "GH¢33.0bn",
+   "target_page": 145,
+   "outturn": 23860.6,
+   "outturn_label": "GH¢23.9bn (projected end-year)",
+   "outturn_page": 170,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2A)",
+   "status": "missed",
+   "comment": "Projected capital spending of GH¢23.9bn fell about 28% short of the GH¢33.0bn budgeted; Jan–Sep capex was 59% below target."
+  },
+  {
+   "indicator": "Arrears clearance",
+   "unit": "GH¢ million",
+   "target": 13067.6,
+   "target_label": "GH¢13.1bn",
+   "target_page": 145,
+   "outturn": 14467.9,
+   "outturn_label": "GH¢14.5bn (projected end-year)",
+   "outturn_page": 170,
+   "outturn_source_year": 2026,
+   "basis": "projected end-year (2026 Budget Appendix 2A); GH¢11.5bn cleared by September (p.38)",
+   "status": "met",
+   "comment": "Projected clearance of GH¢14.5bn exceeded the GH¢13.1bn target, with no new payables reported."
+  },
+  {
+   "indicator": "Gross international reserves",
+   "unit": "months of import cover",
+   "target": 3.0,
+   "target_label": "≥3.0",
+   "target_page": 63,
+   "outturn": 5.7,
+   "outturn_label": "5.7 (end-2025)",
+   "outturn_page": 29,
+   "outturn_source_year": 2027,
+   "basis": "final (end-2025)",
+   "status": "met",
+   "comment": "Reserves reached 5.7 months of import cover, well above the three-month floor."
+  },
+  {
+   "indicator": "Public debt",
+   "unit": "% of GDP",
+   "target": null,
+   "target_label": "No 2025 numeric target (2025 DSA: 'high risk of debt distress')",
+   "target_page": 74,
+   "outturn": 44.7,
+   "outturn_label": "44.7 (end-2025)",
+   "outturn_page": 29,
+   "outturn_source_year": 2027,
+   "basis": "final (end-2025)",
+   "status": "unclear",
+   "comment": "No 2025 debt target was set, so delivery cannot be judged; debt fell from 61.8% to 44.7% of GDP and the 2026 Budget says the DSA moved Ghana to moderate risk (p.33)."
+  },
+  {
+   "indicator": "Exchange rate (cedi per US$)",
+   "unit": "GH¢ per US$",
+   "target": null,
+   "target_label": "No numeric target (stated objective: 'stabilising the exchange rate')",
+   "target_page": 76,
+   "outturn": 10.92,
+   "outturn_label": "10.92 (10 Nov 2025; 34.6% appreciation)",
+   "outturn_page": 57,
+   "outturn_source_year": 2026,
+   "basis": "interbank rate, 10 November 2025",
+   "status": "unclear",
+   "comment": "The 2025 Budget set no numeric exchange-rate target; the cedi appreciated 34.6% against the dollar in 2025, reaching GH¢10.92/US$ by 10 November."
+  },
+  {
+   "indicator": "Monetary policy rate",
+   "unit": "%",
+   "target": null,
+   "target_label": "No target set in the 2025 Budget",
+   "target_page": null,
+   "outturn": 21.5,
+   "outturn_label": "21.5 (September 2025)",
+   "outturn_page": 54,
+   "outturn_source_year": 2026,
+   "basis": "Bank of Ghana policy rate, September 2025",
+   "status": "unclear",
+   "comment": "The budget set no policy-rate target; the Bank of Ghana cut the rate from 28% to 21.5% during 2025."
+  }
+ ],
+ "commitments": [
+  {
+   "id": "2025-01",
+   "status": "met",
+   "outcome": "Real GDP grew 6.0% in 2025 (provisional), above the 4.0% target.",
+   "outcome_page": 188,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-02",
+   "status": "met",
+   "outcome": "Non-oil real GDP grew 7.6% in 2025 (provisional), above the 4.8% target.",
+   "outcome_page": 188,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-03",
+   "status": "met",
+   "outcome": "Inflation fell to 5.4% by end-2025, below the 11.9% target.",
+   "outcome_page": 29,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-04",
+   "status": "met",
+   "outcome": "The primary balance reached a surplus of 2.5% of GDP at end-2025, above the 1.5% target; the basis is not stated (the 2026 Budget projected 1.8% on a commitment basis).",
+   "outcome_page": 29,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-05",
+   "status": "met",
+   "outcome": "Gross international reserves stood at 5.7 months of import cover at end-2025, above the three-month floor.",
+   "outcome_page": 29,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-06",
+   "status": "met",
+   "outcome": "The commitment-basis deficit was projected at 1.8% of GDP (GH¢25.3bn), better than the original 3.1% target and the revised 2.8%; this is a projection, as the 2027 Budget gives no final figure.",
+   "outcome_page": 171,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-07",
+   "status": "met",
+   "outcome": "The cash deficit was projected at 2.8% of GDP (GH¢39.7bn), better than the original 4.1% target (revised to 3.8%); the Jan–Sep outturn was 2.3% of GDP.",
+   "outcome_page": 171,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-08",
+   "status": "met",
+   "outcome": "Total revenue and grants were projected at GH¢226.5bn (16.0% of GDP): above the original GH¢224.9bn in cash terms, but slightly below 16.1% of GDP and below the revised GH¢229.9bn. Jan–Sep revenue was 4.7% below programme.",
+   "outcome_page": 170,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-09",
+   "status": "met",
+   "outcome": "Non-oil tax revenue was projected at GH¢181.9bn for the year, just above the GH¢181.6bn target, after running 4.1% below programme to September.",
+   "outcome_page": 172,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-10",
+   "status": "met",
+   "outcome": "Total expenditure was projected at GH¢251.7bn (17.8% of GDP), within the GH¢268.8bn ceiling, and primary spending was 14.2% of GDP (p.112) against the 14.6% cap; the underspend came mainly from capital spending.",
+   "outcome_page": 170,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-11",
+   "status": "met",
+   "outcome": "Arrears clearance was projected at GH¢14.5bn for 2025, above the GH¢13.1bn target; GH¢11.5bn had been cleared by September (p.38).",
+   "outcome_page": 170,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-12",
+   "status": "met",
+   "outcome": "The special audit of end-2024 arrears was carried out: of GH¢68.8bn submitted, GH¢47.8bn was validated and GH¢10.4bn rejected, with GH¢8.6bn still under review.",
+   "outcome_page": 41,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-13",
+   "status": "partial",
+   "outcome": "The 2026 Budget lists 'full roll-out' of GHANEPS–GIFMIS integration as a 2026 reform. An appendix (p.293) says the systems have been integrated, with training given in 23 ministries and still under way elsewhere.",
+   "outcome_page": 126,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-14",
+   "status": "partial",
+   "outcome": "The Public Procurement (Amendment) Act, 2025 (Act 1139) introduced mandatory commitment authorisation, but the Value for Money Office was only established under a separate 2026 Act (Act 1172, 2027 Budget p.120).",
+   "outcome_page": 71,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-15",
+   "status": "partial",
+   "outcome": "The Finance Ministry publishes a quarterly list of institutions complying with commitment-control reporting (p.32), but says it 'will commence' the Compliance League Table. Enforcing sanctions under PFM Act ss.96–98 is listed as a 2026 reform (p.126).",
+   "outcome_page": 33,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-16",
+   "status": "unclear",
+   "outcome": "Neither the 2026 nor the 2027 Budget mentions GhanaCARES, YouStart or One District One Factory, so their elimination is not confirmed.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-17",
+   "status": "met",
+   "outcome": "Delivered through the PFM (Amendment) Act, 2025 (Act 1136) rather than the Fiscal Responsibility Act. It sets a 1.5%-of-GDP primary-surplus rule and a debt rule (below 45% of GDP by 2035), and a law creating an Independent Fiscal Council was passed (p.163).",
+   "outcome_page": 32,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-18",
+   "status": "partial",
+   "outcome": "The June 2025 deadline was missed: only six bilateral agreements had been signed by the 2026 Budget (2026 Budget p.48), and by late 2026 agreements had been signed with 16 of 24 countries.",
+   "outcome_page": 77,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-19",
+   "status": "partial",
+   "outcome": "Agreements in principle were reached in 2025 (2026 Budget p.48), and by late 2026 four commercial restructuring agreements, including the Saderea notes, had been executed; some commercial debt is still to be restructured.",
+   "outcome_page": 78,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-20",
+   "status": "met",
+   "outcome": "The only loan listed as signed in 2025 is a US$360m World Bank development policy financing; no non-concessional loans are listed.",
+   "outcome_page": 295,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-21",
+   "status": "met",
+   "outcome": "The Ghana Sinking Fund is reported as 'now fully operational', with separate cedi and dollar accounts.",
+   "outcome_page": 131,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-22",
+   "status": "missed",
+   "outcome": "The bond market was not reopened in 2025: the 2026 Budget says benchmark bond issuance will resume in 2026, and 2025 borrowing was almost all Treasury bills (GH¢229.6bn of GH¢234.0bn issued, p.48).",
+   "outcome_page": 118,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-23",
+   "status": "partial",
+   "outcome": "The Fourth Review was completed (US$367m disbursed). For the Fifth Review only staff-level agreement had been reached, with Board approval for US$385m still pending.",
+   "outcome_page": 71,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-24",
+   "status": "partial",
+   "outcome": "Parliament passed the Electronic Transfer Levy (Repeal) Bill, 2025. Neither the 2026 nor the 2027 Budget reports on the betting tax, emissions levy, VAT on motor insurance or the gold withholding tax.",
+   "outcome_page": 68,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-25",
+   "status": "unclear",
+   "outcome": "Neither budget confirms that the mining Growth and Sustainability Levy rate rose to 3%; the 2026 Budget only notes that GSL collections fell short to September (p.35).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-26",
+   "status": "unclear",
+   "outcome": "Neither budget reports road tolls being reintroduced in 2025; the 2026 Budget only describes toll plazas planned for the new Accra–Kumasi expressway (p.141).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-27",
+   "status": "met",
+   "outcome": "The VAT reform was enacted as the Value Added Tax Act, 2025 (Act 1151) and took effect at the start of 2026, cutting the effective VAT rate. Abolishing the COVID-19 levy was part of the package (2026 Budget p.122).",
+   "outcome_page": 68,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-28",
+   "status": "unclear",
+   "outcome": "Neither budget reports the tax-refund rate; appendix tables show only refund amounts in GH¢.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-29",
+   "status": "unclear",
+   "outcome": "Neither budget reports a reviewed MTRS being published in 2025; the 2027 Budget says the current MTRS runs to end-2027 and a new one will be finalised by July 2027 (p.95).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-30",
+   "status": "unclear",
+   "outcome": "Neither budget reports a Q4-2025 major tariff adjustment or the WACOG level.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-31",
+   "status": "partial",
+   "outcome": "Power purchase agreements with all nine IPPs were renegotiated, saving over US$250m, but N-Gas supply volumes are not reported.",
+   "outcome_page": 42,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-32",
+   "status": "missed",
+   "outcome": "Only 117 communities were connected (target 400), and electricity access reached 89%, short of the 90% target.",
+   "outcome_page": 89,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-33",
+   "status": "unclear",
+   "outcome": "Neither budget mentions commissioning of the remaining Ameri units in Kumasi.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-34",
+   "status": "missed",
+   "outcome": "LEAP was not expanded in 2025: the 2026 Budget says the 400,000-household target is expected by March 2026. The 2027 Budget reports that the household ceiling was raised to 400,000 (p.160).",
+   "outcome_page": 40,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-35",
+   "status": "met",
+   "outcome": "The 2027 Budget reports the school-feeding grant rose from GH¢1.50 to GH¢2.00 per child (the effective date is not stated).",
+   "outcome_page": 160,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-36",
+   "status": "partial",
+   "outcome": "6.6 million packs of sanitary pads went to girls in public basic schools; secondary schools were deferred to 2026, and the number of girls reached is not stated.",
+   "outcome_page": 94,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-37",
+   "status": "unclear",
+   "outcome": "Neither budget reports 2025 textbook deliveries; the 2026 Budget announces a new free-textbook programme for 2026 (pp.148, 158).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-38",
+   "status": "met",
+   "outcome": "The No Academic Fee policy benefited 120,222 first-year tertiary students, with 23,704 applications pending validation.",
+   "outcome_page": 95,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-39",
+   "status": "unclear",
+   "outcome": "Neither budget reports progress on the 100 Teacher Dabre units; the 2026 Budget announces 400 new teachers' bungalows for 2026 (p.148).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-40",
+   "status": "met",
+   "outcome": "The 2026 Budget says construction of the six regional TVET Centres of Excellence 'will continue', implying it has started; no progress figures are given.",
+   "outcome_page": 94,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-41",
+   "status": "unclear",
+   "outcome": "Neither budget reports the share of DACF going directly to Assemblies in 2025. The 2026 Budget repeats the 80% rule for 2026 (p.159), and the projected 2025 DACF transfer was GH¢5.1bn against a revised GH¢7.7bn (p.173).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-42",
+   "status": "unclear",
+   "outcome": "Neither budget says how the Road Fund was used in 2025; the 2026 Budget reports 21,000km of roads maintained (p.90) without linking this to the Road Fund.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-43",
+   "status": "missed",
+   "outcome": "Feed Ghana distributed 2,000mt of maize seed and 1,000mt of rice seed, about 3,000mt against the 16,200mt target; soybean and sorghum seed distribution is not reported.",
+   "outcome_page": 80,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-44",
+   "status": "unclear",
+   "outcome": "Neither budget reports 2025 day-old-chick or Kuroiler distribution; the 2027 Budget reports poultry figures for 2026 only (p.129).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-45",
+   "status": "missed",
+   "outcome": "No Farmer Service Centres were reported established in 2025: the 2026 Budget funded their start in 2026 (p.157), and by late 2026 construction had begun on only 10.",
+   "outcome_page": 128,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-46",
+   "status": "unclear",
+   "outcome": "Neither budget reports aquaculture production for 2025.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-47",
+   "status": "unclear",
+   "outcome": "Neither budget reports on the automated premix fuel outlets.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-48",
+   "status": "missed",
+   "outcome": "The Anomabo college will start academic activities in 2026/27, not 2025/26. The 2027 Budget says infrastructure works are due by end-2026 and a bill to operationalise it is pending (p.130).",
+   "outcome_page": 83,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-49",
+   "status": "partial",
+   "outcome": "Reclamation of 1,000ha of mined-out land began in 2025 (target 500ha); the 12,000ha of plantations and 4,000ha of enrichment planting are not reported.",
+   "outcome_page": 145,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-50",
+   "status": "unclear",
+   "outcome": "Neither budget reports trainee numbers under One Million Coders; the 2026 Budget only allocates funds for 2026 (p.159).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-51",
+   "status": "unclear",
+   "outcome": "The 2026 Budget says the Rural Telephony project connected 1,200 communities (p.92) but does not report completed or reactivated sites against the 539 and 1,385 targets.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-52",
+   "status": "missed",
+   "outcome": "The Boankra Integrated Logistics Terminal was still 85% complete in the 2027 Budget, the same level reported in the 2025 Budget; the Kumasi runway extension is not reported.",
+   "outcome_page": 149,
+   "outcome_year": 2027
+  },
+  {
+   "id": "2025-53",
+   "status": "missed",
+   "outcome": "Passenger service did not start in 2025: civil works on the Tema–Mpakadan line are complete but commissioning moved to 2026, and the 2027 Budget reports only freight operations being set up (p.150).",
+   "outcome_page": 90,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-54",
+   "status": "unclear",
+   "outcome": "Neither budget reports 2025 YEA, NAP or Adwumawura figures; the 2027 Budget reports 73,537 youth engaged by YEA, which appears to be 2026 data (p.155).",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-55",
+   "status": "partial",
+   "outcome": "In 2025 the Registry recorded 432,925 births (62.4% of the 693,852 target) and 37,123 deaths (47% of the 78,909 target).",
+   "outcome_page": 77,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-56",
+   "status": "partial",
+   "outcome": "GPSNP2 paid start-up grants to 13,194 productive-inclusion beneficiaries (target 60,000) and wages to 65,020 LIPW participants (target 95,000).",
+   "outcome_page": 76,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-57",
+   "status": "unclear",
+   "outcome": "Neither budget reports on the Dawa Water Treatment Plant; the Dawa projects it mentions are solar plants.",
+   "outcome_page": null,
+   "outcome_year": null
+  },
+  {
+   "id": "2025-58",
+   "status": "met",
+   "outcome": "NIB was recapitalised with GH¢1.9bn in May 2025 (p.51) and is reported to have achieved full compliance with capital requirements; whether the March 2025 interim milestone was met is not stated.",
+   "outcome_page": 55,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-59",
+   "status": "missed",
+   "outcome": "The CPI was not rebased in 2025: the 2026 Budget says GSS will complete it in 2026, and the 2027 Budget reports CPI rebasing only 53% complete at end-September 2026 (p.121).",
+   "outcome_page": 110,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-60",
+   "status": "met",
+   "outcome": "Parliament passed the Ghana Gold Board Bill, 2025, and the 24-Hour Economy and Accelerated Export Development Programme (24H+) was launched and is in full implementation (p.143).",
+   "outcome_page": 68,
+   "outcome_year": 2026
+  },
+  {
+   "id": "2025-61",
+   "status": "unclear",
+   "outcome": "Neither budget mentions the salary arrears of the 321 pharmacists.",
+   "outcome_page": null,
+   "outcome_year": null
+  }
+ ]
+}

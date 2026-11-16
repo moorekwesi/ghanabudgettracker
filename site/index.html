@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghana Budget Tracker</title>
+<meta name="description" content="A running tracker of Ghana's annual Budget Statements: year-on-year targets, sector allocations, regional projects, successes, shortfalls and whether each year's promises were delivered.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css?v=20261116a">
+<script>try{var t=localStorage.getItem('gbl-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="6" height="18" rx="1" fill="#86b6ef"/><rect x="9" y="3" width="6" height="18" rx="1" fill="#2a78d6"/><rect x="16" y="3" width="6" height="18" rx="1" fill="#9ec5f4"/></svg>
+      <span>Ghana Budget Tracker</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#overview">Overview</a>
+      <a href="#compare">Compare</a>
+      <a href="#yoy">Year on year</a>
+      <a href="#loop">Closing the loop</a>
+      <a href="#sectors">Sectors</a>
+      <a href="#regions">Regions</a>
+      <a href="#scorecard">Successes &amp; gaps</a>
+      <a href="#shortfalls">Shortfalls</a>
+      <a href="#sources">Sources</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">Theme</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" id="overview">
+    <div class="wrap">
+      <h1>Ghana's budgets, tracked year after year</h1>
+      <p class="lede" id="heroLede">What Ghana's government planned each year, what the following budget says actually happened, and where the promises fell short. Now covering the <span id="coverage"></span> budgets, with more added as they are presented. Every figure links back to the page of the Budget Statement it came from.</p>
+      <div class="strips" id="strips"></div>
+      <p class="strips-note" id="stripsNote" hidden></p>
+    </div>
+  </section>
+
+  <section class="block" id="compare">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Compare budgets across years</h2>
+        <p>Pick as many budget years as you like, choose what to compare, then tick the items you want. Change is measured from the earliest to the latest year you pick. Show amounts in cedis, or as a share of GDP to take out the effect of a growing economy.</p>
+      </div>
+      <div class="panel cmp">
+        <div class="cmp-controls">
+          <div class="cmp-years">
+            <span class="cmp-years-label">Budget years</span>
+            <div class="chips swatched" id="cmpYears" role="group" aria-label="Budget years to compare"></div>
+            <button type="button" class="link-btn" id="cmpYearsAll">All years</button>
+          </div>
+          <div class="cmp-opts">
+            <label class="field"><span>Compare</span><select id="cmpSet">
+              <option value="fiscal">Revenue and spending lines</option>
+              <option value="groups" selected>Sector groups</option>
+              <option value="mdas">Ministries and agencies</option>
+            </select></label>
+            <label class="field"><span>Show as</span><select id="cmpMeasure">
+              <option value="ghs">GH¢ amounts</option>
+              <option value="gdp">Share of GDP</option>
+            </select></label>
+          </div>
+        </div>
+
+        <div class="cmp-pick">
+          <div class="cmp-pick-head">
+            <span class="small muted" id="cmpCount"></span>
+            <div class="controls">
+              <select id="cmpGroup" aria-label="Filter ministries by sector group" hidden></select>
+              <input type="search" id="cmpSearch" placeholder="Filter the list" aria-label="Filter the list of items">
+              <button type="button" class="link-btn" id="cmpAll">Select all</button>
+              <button type="button" class="link-btn" id="cmpNone">Clear</button>
+            </div>
+          </div>
+          <div class="chips" id="cmpChips" role="group" aria-label="Items to compare"></div>
+        </div>
+
+        <div class="cmp-summary" id="cmpSummary"></div>
+        <div class="legend" id="cmpLegend" style="margin:6px 0 10px"></div>
+        <div class="chart" id="cmpChart"></div>
+        <div class="table-wrap" style="margin-top:12px"><table class="data" id="cmpTable"></table></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="yoy">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Year on year</h2>
+        <p>Headline targets and the fiscal envelope in each budget. Bars run light to dark from the earliest budget to the latest. Hover any bar for the exact figure and page reference.</p>
+      </div>
+      <div class="panel" id="explorer">
+        <div class="panel-head">
+          <div><h3>Indicator explorer</h3><p>Pick an indicator, then the measures and years to compare. Each figure links to its page in the Budget or Mid-Year Review.</p></div>
+        </div>
+        <div class="filters">
+          <label class="field field-wide"><span>Indicator</span><select id="indSelect"></select></label>
+          <label class="field"><span>View</span>
+            <select id="indView"><option value="chart">Chart and table</option><option value="table">Table only</option></select>
+          </label>
+        </div>
+        <div class="filters">
+          <div class="field field-wide"><span>Measures</span><div class="chips" id="indMeasures" role="group" aria-label="Measures to show"></div></div>
+          <div class="field"><span>Years</span><div class="chips" id="indYears" role="group" aria-label="Years to show"></div></div>
+        </div>
+        <div class="verdicts" id="indVerdicts"></div>
+        <div class="chart" id="indChart"></div>
+        <div class="table-wrap" style="margin-top:12px"><table class="data" id="indTable"></table></div>
+        <p class="small muted" id="indNote" style="margin-top:10px"></p>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <div><h3>Fiscal envelope</h3><p>Budgeted amounts for each year, GH¢ billion.</p></div>
+          <div class="controls">
+            <div class="seg" role="group" aria-label="Fiscal view">
+              <button type="button" data-fview="chart" aria-pressed="true">Chart</button>
+              <button type="button" data-fview="table" aria-pressed="false">Table</button>
+            </div>
+          </div>
+        </div>
+        <div class="legend" id="yearLegend2" style="margin-bottom:10px"></div>
+        <div class="chart" id="fiscalChart"></div>
+        <div class="table-wrap" id="fiscalTable" hidden></div>
+      </div>
+      <div class="panel" id="taxPanel">
+        <div class="panel-head"><div><h3>Tax and revenue measures</h3><p>New, abolished and changed taxes announced in each budget.</p></div></div>
+        <div class="yearcols" id="taxCols"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="loop">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Closing the loop</h2>
+        <p>Each budget sets targets for its year. The next budget reports what happened. Here the two are put together: each year's targets against the outturn reported in the budgets that follow.</p>
+      </div>
+      <div class="loop-diagram" id="loopDiagram" aria-hidden="true"></div>
+      <div class="panel">
+        <div class="panel-head">
+          <div><h3>Targets against outturns</h3><p>Status is judged against the target as originally set. Outturns are often provisional; the basis is shown.</p></div>
+          <label class="field"><span>Year</span>
+            <select id="loopYear"></select>
+          </label>
+        </div>
+        <div class="loop-tally" id="loopTally"></div>
+        <div class="loop-bar" id="loopBar"></div>
+        <div class="table-wrap"><table class="data" id="loopTable"></table></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <div><h3>Commitments followed up</h3><p>Specific promises from one budget, matched to what the next budget reports.</p></div>
+          <div class="filters" style="margin:0">
+            <label class="field"><span>Promises from</span><select id="commitYear"></select></label>
+            <label class="field"><span>Area</span><select id="commitArea"></select></label>
+            <label class="field"><span>Status</span><select id="commitStatus">
+              <option value="all">All statuses</option>
+              <option value="met">Delivered</option>
+              <option value="partial">Partly delivered</option>
+              <option value="missed">Not delivered</option>
+              <option value="unclear">Not reported</option>
+            </select></label>
+          </div>
+        </div>
+        <div class="loop-tally" id="commitTally"></div>
+        <ul class="commit-list" id="commitList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="sectors">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Sector by sector</h2>
+        <p>Allocations to ministries, departments and agencies in each budget, and what each sector reported achieving, planned, and left undone.</p>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <div><h3>Allocations by sector group</h3><p>GH¢ billion, total allocation including all funding sources.</p></div>
+        </div>
+        <div class="legend" id="yearLegend3" style="margin-bottom:10px"></div>
+        <div class="chart" id="sectorGroupChart"></div>
+        <p class="small muted" style="margin-top:10px" id="multiNote"></p>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div><h3>Flagship programmes</h3><p>The main initiatives each budget announced or funded.</p></div></div>
+        <div class="yearcols" id="initCols"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <div><h3>Ministry allocations, <span id="mdaRange"></span></h3><p>Click a column heading to sort. Change is <span id="mdaChange"></span>.</p></div>
+          <div class="controls">
+            <select id="mdaGroup" aria-label="Filter by sector group"></select>
+            <input type="search" id="mdaSearch" placeholder="Find a ministry or agency" aria-label="Find a ministry or agency">
+          </div>
+        </div>
+        <div class="table-wrap"><table class="data" id="mdaTable"></table></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div><h3>Sector performance and plans</h3><p>Pick a sector and what to show. Each column is one document, in the order they were published.</p></div></div>
+        <div class="filters">
+          <label class="field"><span>Sector</span><select id="sectorSelect"></select></label>
+          <label class="field"><span>Show</span><select id="sectorShow">
+            <option value="all">Everything</option>
+            <option value="achievements">Achievements reported</option>
+            <option value="gaps">Not achieved or delayed</option>
+            <option value="plans">Plans for the year</option>
+          </select></label>
+        </div>
+        <div class="doccols" id="sectorCols"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="regions">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Regional development</h2>
+        <p>Projects and allocations each budget names for a specific region. Tiles are placed roughly where each of the 16 regions sits; shading shows how many items the budgets name for it.</p>
+      </div>
+      <div class="panel">
+        <div class="region-layout">
+          <div>
+            <div class="filters">
+              <label class="field"><span>Region</span><select id="regionSelect"></select></label>
+              <label class="field"><span>Document</span><select id="regionDoc"></select></label>
+            </div>
+            <div class="tilemap" id="tilemap" role="group" aria-label="Regions of Ghana"></div>
+            <div class="ramp" id="ramp"></div>
+            <p class="small muted" style="margin-top:12px">Counts reflect how often a budget names a region, not money spent. Most capital spending is not broken down by region in the Budget Statements.</p>
+          </div>
+          <div>
+            <h3 id="regionTitle">Select a region</h3>
+            <p class="muted small" id="regionSub"></p>
+            <ul class="region-items" id="regionItems"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel rc-panel" style="margin-top:20px">
+        <div class="panel-head"><div><h3>Compare regions</h3><p>Pick the regions and budget years to show in the two charts below. Both sort by the latest year picked.</p></div></div>
+        <div class="rc-row">
+          <span class="rc-label">Regions</span>
+          <div class="chips" id="rcRegions" role="group" aria-label="Regions to compare"></div>
+        </div>
+        <div class="rc-links"><span class="small muted" id="rcCount"></span><button type="button" class="link-btn" id="rcAll">All regions</button><button type="button" class="link-btn" id="rcNone">Clear</button></div>
+        <div class="rc-row">
+          <span class="rc-label">Budget years</span>
+          <div class="chips swatched rc-years" id="rcYears" role="group" aria-label="Budget years to show"></div>
+        </div>
+      </div>
+      <div class="grid-2" style="margin-top:20px">
+        <div class="panel" style="margin-top:0">
+          <div class="panel-head"><div><h3>Share of district assembly ceilings</h3><p>Each region's share of the total spending ceiling set for its district assemblies (Appendix 6), %.</p></div></div>
+          <div class="legend" id="yearLegend5" style="margin-bottom:10px"></div>
+          <div class="chart" id="shareChart"></div>
+          <p class="small muted" style="margin-top:10px" id="shareNote"></p>
+        </div>
+        <div class="panel" style="margin-top:0">
+          <div class="panel-head"><div><h3>Projects named, by region</h3><p>Number of region-specific projects and allocations in each budget.</p></div></div>
+          <div class="legend" id="yearLegend4" style="margin-bottom:10px"></div>
+          <div class="chart" id="regionChart"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="scorecard">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Successes and what was not achieved</h2>
+        <p>What each budget says the government delivered in the previous year, set against the gaps it acknowledges.</p>
+      </div>
+      <div class="filters">
+        <label class="field"><span>Year reviewed</span><select id="scoreYear"></select></label>
+        <label class="field"><span>Area</span><select id="scoreArea"></select></label>
+      </div>
+      <div class="two-col-list">
+        <div class="panel">
+          <div class="col-head"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="var(--good)"/><path d="M6 10.5l2.6 2.6L14.5 7" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg><h3>Reported successes</h3></div>
+          <ul class="itemlist" id="successList"></ul>
+        </div>
+        <div class="panel">
+          <div class="col-head"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="var(--bad)"/><path d="M7 7l6 6M13 7l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg><h3>Not achieved or delayed</h3></div>
+          <ul class="itemlist" id="gapList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="shortfalls">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Shortfalls</h2>
+        <p>Where actual revenue and spending departed from what was budgeted, and the risks each budget flags for the year ahead.</p>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <div><h3>Budget against outturn</h3><p>How far each fiscal line landed from its budgeted figure, as reported in the following year's budget.</p></div>
+          <div class="filters" style="margin:0">
+            <label class="field"><span>Year</span><select id="devYear"></select></label>
+            <label class="field"><span>Period</span><select id="devBasis"></select></label>
+          </div>
+        </div>
+        <p class="small muted" id="devNote" style="margin-top:-6px"></p>
+        <div class="chart" id="devChart"></div>
+        <div class="table-wrap" style="margin-top:14px"><table class="data" id="devTable"></table></div>
+      </div>
+      <div class="grid-2" style="margin-top:20px">
+        <div class="panel" style="margin-top:0">
+          <h3 style="margin-bottom:10px">Debt position</h3>
+          <div id="debtBox"></div>
+        </div>
+        <div class="panel" style="margin-top:0">
+          <h3 style="margin-bottom:10px">Risks flagged</h3>
+          <div id="riskBox"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="sources">
+  <div class="wrap">
+    <h3>Sources and method</h3>
+    <div id="sourceBox"></div>
+  </div>
+</footer>
+
+<div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+<script src="data/budget-data.js?v=20261116a"></script>
+<script src="assets/app.js?v=20261116a"></script>
+</body>
+</html>

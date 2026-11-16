@@ -1,0 +1,2312 @@
+{
+ "year": 2025,
+ "title": "Mid-Year Fiscal Policy Review of the 2025 Budget Statement and Economic Policy of the Government of Ghana (theme: Resetting the Economy for the Ghana We Want)",
+ "presented_by": "Dr. Cassiel Ato Forson (MP), Minister for Finance",
+ "date_presented": "2025-07-24",
+ "source_note": "2025-Mid-Year-Fiscal-Policy-Review.pdf (95 pages). Page numbers are PDF pages; printed page numbers are PDF page minus 3.",
+ "headline_summary": "Government kept all 2025 macroeconomic targets and the GH¢293.1bn appropriation unchanged (real GDP growth of at least 4.0%, end-year inflation 11.9%, primary surplus 1.5% of GDP, reserves of at least 3 months of imports), pointing to a strong first half: Q1 growth of 5.3%, inflation down from 23.8% to 13.7%, the cedi up 42.6% against the US dollar, reserves at 4.8 months of imports and public debt down from 61.8% to 43.8% of GDP. The fiscal framework was nonetheless revised to absorb the GH¢1-per-litre Energy Sector Shortfall and Debt Repayment Levy: revenue and grants rise to GH¢229.9bn (16.4% of GDP), interest costs fall by GH¢4.3bn on lower T-bill rates, and energy-sector payments rise by GH¢2.9bn. As a result the overall deficit targets improve from 3.1% to 2.8% of GDP (commitment) and from 4.1% to 3.8% (cash), while H1 revenue was 3.2% below target and the Minister flagged customs shortfalls, marine gas oil smuggling and a GH¢1.3bn wage overrun as risks.",
+ "macro_revisions": [
+  {
+   "indicator": "Real GDP growth (%)",
+   "original_target": 4.0,
+   "revised_target": 4.0,
+   "unit": "% (at least)",
+   "page": 64,
+   "note": "Maintained; Appendix 1A 2025 projection also 4.0 (p82)."
+  },
+  {
+   "indicator": "Non-oil real GDP growth (%)",
+   "original_target": 4.8,
+   "revised_target": 4.8,
+   "unit": "% (at least)",
+   "page": 64,
+   "note": "Maintained; Appendix 1A 2025 projection also 4.8 (p82)."
+  },
+  {
+   "indicator": "End-period inflation (%)",
+   "original_target": 11.9,
+   "revised_target": 11.9,
+   "unit": "%",
+   "page": 64
+  },
+  {
+   "indicator": "Primary balance, commitment (% of GDP)",
+   "original_target": 1.5,
+   "revised_target": 1.5,
+   "unit": "% of GDP",
+   "page": 65,
+   "note": "GH¢20,319.8m in both budget and revised (Table 2)."
+  },
+  {
+   "indicator": "Overall fiscal balance, commitment (% of GDP)",
+   "original_target": -3.1,
+   "revised_target": -2.8,
+   "unit": "% of GDP",
+   "page": 65,
+   "note": "GH¢-43,843.7m to GH¢-39,546.3m."
+  },
+  {
+   "indicator": "Overall fiscal balance, cash (% of GDP)",
+   "original_target": -4.1,
+   "revised_target": -3.8,
+   "unit": "% of GDP",
+   "page": 65,
+   "note": "GH¢-56,911.3m to GH¢-52,613.9m."
+  },
+  {
+   "indicator": "Primary balance, cash (% of GDP)",
+   "original_target": 0.5,
+   "revised_target": 0.5,
+   "unit": "% of GDP",
+   "page": 65
+  },
+  {
+   "indicator": "Gross international reserves (months of import cover)",
+   "original_target": 3.0,
+   "revised_target": 3.0,
+   "unit": "months of imports (not less than)",
+   "page": 64
+  },
+  {
+   "indicator": "Total revenue & grants (% of GDP)",
+   "original_target": 16.2,
+   "revised_target": 16.4,
+   "unit": "% of GDP",
+   "page": 64,
+   "note": "Review restates the original as 16.2% (GH¢227.1bn); 2025.json baseline has 16.1% (GH¢224.9bn) from the budget statement."
+  },
+  {
+   "indicator": "Total expenditure (% of GDP)",
+   "original_target": 19.4,
+   "revised_target": 19.2,
+   "unit": "% of GDP (commitment, excl. arrears clearance)",
+   "page": 92,
+   "note": "Appendix 3C memorandum. Table 2 (p65) shows 20.3% to 20.2% on a basis that includes arrears clearance (GH¢283,992m to GH¢282,564m). 2025.json baseline: 19.2%."
+  },
+  {
+   "indicator": "Interest payments (% of GDP)",
+   "original_target": 4.6,
+   "revised_target": 4.3,
+   "unit": "% of GDP",
+   "page": 92
+  },
+  {
+   "indicator": "Domestic revenue (% of GDP)",
+   "original_target": 16.0,
+   "revised_target": 16.2,
+   "unit": "% of GDP",
+   "page": 90
+  },
+  {
+   "indicator": "Public debt (% of GDP)",
+   "original_target": null,
+   "revised_target": null,
+   "unit": "% of GDP",
+   "page": null,
+   "note": "No end-2025 debt target stated; end-June 2025 actual 43.8% (p32). PFM Act amendment sets a debt rule of 45% of GDP by 2034 (p31)."
+  },
+  {
+   "indicator": "Nominal GDP (GH¢ million)",
+   "original_target": 1400006.1,
+   "revised_target": 1400006.1,
+   "unit": "GH¢ million",
+   "page": 65
+  },
+  {
+   "indicator": "Benchmark crude oil price (US$/barrel)",
+   "original_target": null,
+   "revised_target": null,
+   "unit": "US$/barrel",
+   "page": null,
+   "note": "Not restated or revised in the review (2025.json baseline: 74.7)."
+  },
+  {
+   "indicator": "Crude oil output (million barrels)",
+   "original_target": null,
+   "revised_target": null,
+   "unit": "million barrels",
+   "page": null,
+   "note": "Not restated or revised; only Jan-May 2025 actual production (15.32m barrels) given on p54. 2025.json baseline: 46.35."
+  },
+  {
+   "indicator": "Benchmark oil revenue (GH¢ million)",
+   "original_target": 13368.3,
+   "revised_target": 13368.3,
+   "unit": "GH¢ million",
+   "page": 90
+  },
+  {
+   "indicator": "Oil & gas real GDP growth (%)",
+   "original_target": null,
+   "revised_target": -10.5,
+   "unit": "%",
+   "page": 82,
+   "note": "Appendix 1A 2025 projection; original not restated in the review."
+  }
+ ],
+ "h1_outturn": [
+  {
+   "indicator": "Real GDP growth (%)",
+   "period": "Q1 2025",
+   "target_or_programme": null,
+   "outturn": 5.3,
+   "unit": "% y/y",
+   "comment": "Up from 4.9% in Q1 2024; highest Q1 growth since 2020. Annual target of at least 4.0% maintained.",
+   "page": 16
+  },
+  {
+   "indicator": "Non-oil real GDP growth (%)",
+   "period": "Q1 2025",
+   "target_or_programme": null,
+   "outturn": 6.8,
+   "unit": "% y/y",
+   "comment": "Up from 4.3% in Q1 2024; highest since 2018.",
+   "page": 16
+  },
+  {
+   "indicator": "Agriculture growth (%)",
+   "period": "Q1 2025",
+   "target_or_programme": null,
+   "outturn": 6.6,
+   "unit": "% y/y",
+   "comment": "Contributed 26.4% of Q1 growth; fishing grew 16.4%.",
+   "page": 16
+  },
+  {
+   "indicator": "Services growth (%)",
+   "period": "Q1 2025",
+   "target_or_programme": null,
+   "outturn": 5.9,
+   "unit": "% y/y",
+   "comment": "Services 46.8% of the economy; ICT grew 13.1%.",
+   "page": 16
+  },
+  {
+   "indicator": "Industry growth (%)",
+   "period": "Q1 2025",
+   "target_or_programme": null,
+   "outturn": 3.4,
+   "unit": "% y/y",
+   "comment": "Manufacturing grew 6.6%.",
+   "page": 16
+  },
+  {
+   "indicator": "End-period inflation (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 13.7,
+   "unit": "% y/y",
+   "comment": "Down from 23.8% in Dec 2024; lowest since Dec 2021; end-2025 target 11.9%.",
+   "page": 18
+  },
+  {
+   "indicator": "Food inflation (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 16.3,
+   "unit": "% y/y",
+   "comment": "Down from 27.8% in Dec 2024.",
+   "page": 18
+  },
+  {
+   "indicator": "Non-food inflation (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 11.4,
+   "unit": "% y/y",
+   "comment": "Down from 20.3% in Dec 2024.",
+   "page": 18
+  },
+  {
+   "indicator": "Producer price inflation (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 5.9,
+   "unit": "% y/y",
+   "comment": "Down from 26.1% in Dec 2024.",
+   "page": 18
+  },
+  {
+   "indicator": "Policy rate (%)",
+   "period": "end-June 2025",
+   "target_or_programme": null,
+   "outturn": null,
+   "unit": "%",
+   "comment": "Monetary policy rate not stated in the review.",
+   "page": null
+  },
+  {
+   "indicator": "91-day T-bill rate (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 14.73,
+   "unit": "%",
+   "comment": "Down from 27.73% in Dec 2024 (p18 rounds to 14.7% from 27.7%).",
+   "page": 13
+  },
+  {
+   "indicator": "182-day T-bill rate (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 15.34,
+   "unit": "%",
+   "comment": "Down from 28.43% in Dec 2024.",
+   "page": 13
+  },
+  {
+   "indicator": "364-day T-bill rate (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 15.76,
+   "unit": "%",
+   "comment": "Down from 29.95% in Dec 2024.",
+   "page": 13
+  },
+  {
+   "indicator": "Average lending rate (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 27.0,
+   "unit": "%",
+   "comment": "Down from 30.3% in Dec 2024.",
+   "page": 18
+  },
+  {
+   "indicator": "Ghana Reference Rate (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 24.0,
+   "unit": "%",
+   "comment": "Down from 29.3% in Dec 2024.",
+   "page": 18
+  },
+  {
+   "indicator": "Exchange rate change vs US$ (%)",
+   "period": "end-June 2025 (year-to-date)",
+   "target_or_programme": null,
+   "outturn": 42.6,
+   "unit": "% (+ = appreciation)",
+   "comment": "Versus 18.6% depreciation in H1 2024; cedi also +30.3% vs GBP and +25.6% vs EUR. About GH¢10.4/US$ on 23 July 2025.",
+   "page": 24
+  },
+  {
+   "indicator": "Gross international reserves (months of import cover)",
+   "period": "end-June 2025",
+   "target_or_programme": 3.0,
+   "outturn": 4.8,
+   "unit": "months of imports",
+   "comment": "US$11.12bn, up from US$8.98bn (4.0 months) at end-Dec 2024; target is the end-year floor.",
+   "page": 26
+  },
+  {
+   "indicator": "Gross international reserves (US$ million)",
+   "period": "end-June 2025",
+   "target_or_programme": null,
+   "outturn": 11120.0,
+   "unit": "US$ million",
+   "comment": "Up US$2.14bn in six months.",
+   "page": 26
+  },
+  {
+   "indicator": "Trade balance (US$ million)",
+   "period": "end-June 2025",
+   "target_or_programme": null,
+   "outturn": 5570.0,
+   "unit": "US$ million",
+   "comment": "Surplus, up from US$1.37bn in June 2024.",
+   "page": 26
+  },
+  {
+   "indicator": "Current account balance (US$ million)",
+   "period": "end-June 2025",
+   "target_or_programme": null,
+   "outturn": 3440.0,
+   "unit": "US$ million",
+   "comment": "Surplus, up from US$283.11m in June 2024.",
+   "page": 26
+  },
+  {
+   "indicator": "Public debt (% of GDP)",
+   "period": "end-June 2025",
+   "target_or_programme": null,
+   "outturn": 43.8,
+   "unit": "% of GDP",
+   "comment": "Down from 61.8% at end-2024.",
+   "page": 32
+  },
+  {
+   "indicator": "Public debt stock (GH¢ million)",
+   "period": "end-June 2025",
+   "target_or_programme": null,
+   "outturn": 613001.0,
+   "unit": "GH¢ million",
+   "comment": "Down from GH¢726,680m at end-2024 (-GH¢113.7bn); external GH¢300,278m, domestic GH¢312,723m (Appendix 4A).",
+   "page": 93
+  },
+  {
+   "indicator": "Public debt stock (US$ million)",
+   "period": "end-June 2025",
+   "target_or_programme": null,
+   "outturn": 59427.0,
+   "unit": "US$ million",
+   "comment": "External US$29,110m; domestic US$30,317m.",
+   "page": 93
+  },
+  {
+   "indicator": "External debt share of total debt (%)",
+   "period": "end-June 2025",
+   "target_or_programme": null,
+   "outturn": 49.0,
+   "unit": "% of total",
+   "comment": "Down from 57.4% at end-2024.",
+   "page": 32
+  },
+  {
+   "indicator": "Primary balance, commitment (% of GDP)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 0.4,
+   "outturn": 1.1,
+   "unit": "% of GDP",
+   "comment": "GH¢15,083.4m vs programme GH¢5,039.3m.",
+   "page": 20
+  },
+  {
+   "indicator": "Overall fiscal balance, commitment (% of GDP)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": -1.8,
+   "outturn": -0.7,
+   "unit": "% of GDP",
+   "comment": "GH¢-10,254.9m vs programme GH¢-25,465.4m (Appendix 2A p85).",
+   "page": 20
+  },
+  {
+   "indicator": "Overall fiscal balance, cash (% of GDP)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": -2.4,
+   "outturn": -1.1,
+   "unit": "% of GDP",
+   "comment": "GH¢-15,119.5m incl. discrepancy vs programme GH¢-32,961.7m.",
+   "page": 20
+  },
+  {
+   "indicator": "Primary balance, cash (% of GDP)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": -0.2,
+   "outturn": 0.7,
+   "unit": "% of GDP",
+   "comment": "GH¢10,303.5m vs programme GH¢-2,457.1m.",
+   "page": 20
+  },
+  {
+   "indicator": "Total revenue & grants (% of GDP)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 7.3,
+   "outturn": 7.1,
+   "unit": "% of GDP",
+   "comment": "GH¢99,339.3m vs GH¢102,577.4m programme; 3.2% below target but 30.5% nominal growth y/y.",
+   "page": 85
+  },
+  {
+   "indicator": "Total expenditure (% of GDP)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 9.1,
+   "outturn": 7.8,
+   "unit": "% of GDP",
+   "comment": "GH¢109,594.2m vs GH¢128,042.8m programme (text: 14.3% below).",
+   "page": 85
+  },
+  {
+   "indicator": "Non-oil tax revenue, net (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 82167.1,
+   "outturn": 82953.9,
+   "unit": "GH¢ million",
+   "comment": "Exceeded target by about GH¢786.9m.",
+   "page": 87
+  },
+  {
+   "indicator": "Oil and gas receipts (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 6201.5,
+   "outturn": 3541.2,
+   "unit": "GH¢ million",
+   "comment": "Shortfall of about GH¢2.7bn: delayed oil corporate income tax receipts and cedi appreciation.",
+   "page": 86
+  },
+  {
+   "indicator": "Non-oil non-tax revenue (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 9500.0,
+   "outturn": 8000.0,
+   "unit": "GH¢ million",
+   "comment": "15.6% below target: lower dividends/interest & profits and fees & charges (text figures, GH¢bn rounded).",
+   "page": 21
+  },
+  {
+   "indicator": "Import duties (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 12548.0,
+   "outturn": 10956.8,
+   "unit": "GH¢ million",
+   "comment": "Shortfall of GH¢1.6bn (12.7%): leakages at Tema Port and smuggling.",
+   "page": 85
+  },
+  {
+   "indicator": "Corporate income tax (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 19391.3,
+   "outturn": 19946.6,
+   "unit": "GH¢ million",
+   "comment": "Exceeded target by GH¢555.3m (2.9%).",
+   "page": 85
+  },
+  {
+   "indicator": "Grants (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 1068.6,
+   "outturn": 729.9,
+   "unit": "GH¢ million",
+   "comment": "Underperformed by GH¢339m.",
+   "page": 85
+  },
+  {
+   "indicator": "Interest payments (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 30504.7,
+   "outturn": 25422.9,
+   "unit": "GH¢ million",
+   "comment": "16.7% below target; domestic interest GH¢21.6bn vs GH¢26.5bn (saving of GH¢4.9bn).",
+   "page": 85
+  },
+  {
+   "indicator": "Primary expenditure (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 97538.1,
+   "outturn": 84171.3,
+   "unit": "GH¢ million",
+   "comment": "6.0% of GDP vs 7.0% target.",
+   "page": 88
+  },
+  {
+   "indicator": "Wages & salaries (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 34098.6,
+   "outturn": 35432.9,
+   "unit": "GH¢ million",
+   "comment": "Exceeded budget by GH¢1.3bn (late-2024 recruitments, ad hoc service-condition reviews).",
+   "page": 88
+  },
+  {
+   "indicator": "Capital expenditure (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 18058.5,
+   "outturn": 7105.1,
+   "unit": "GH¢ million",
+   "comment": "Domestically financed GH¢3,951.7m vs GH¢8,641.9m; foreign financed GH¢3,153.4m vs GH¢9,416.6m.",
+   "page": 85
+  },
+  {
+   "indicator": "Arrears clearance (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 7496.3,
+   "outturn": 4779.9,
+   "unit": "GH¢ million",
+   "comment": "No build-up of new payables in the period.",
+   "page": 85
+  },
+  {
+   "indicator": "Net domestic financing (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 18865.6,
+   "outturn": 13076.8,
+   "unit": "GH¢ million",
+   "comment": "81.7% of deficit financed domestically.",
+   "page": 86
+  },
+  {
+   "indicator": "Project loan disbursements (GH¢ million)",
+   "period": "Jan–Jun 2025",
+   "target_or_programme": 8348.0,
+   "outturn": 2423.4,
+   "unit": "GH¢ million",
+   "comment": "Slower execution while the project loan portfolio is repurposed.",
+   "page": 86
+  },
+  {
+   "indicator": "NIB capital adequacy ratio (%)",
+   "period": "May 2025",
+   "target_or_programme": null,
+   "outturn": 23.0,
+   "unit": "%",
+   "comment": "From -53.13% at end-2024 after recapitalisation (GH¢450m cash, ~GH¢1.5bn bonds, GH¢500m Nestle Ghana shares).",
+   "page": 27
+  },
+  {
+   "indicator": "Credit to private sector growth (%)",
+   "period": "June 2025",
+   "target_or_programme": null,
+   "outturn": 31.3,
+   "unit": "%",
+   "comment": "",
+   "page": 26
+  },
+  {
+   "indicator": "GSE Composite Index change (%)",
+   "period": "H1 2025",
+   "target_or_programme": null,
+   "outturn": 27.8,
+   "unit": "%",
+   "comment": "GSE Financial Stock Index +41.8%; market capitalisation GH¢137.3bn.",
+   "page": 39
+  },
+  {
+   "indicator": "Crude oil output (million barrels)",
+   "period": "Jan–May 2025",
+   "target_or_programme": null,
+   "outturn": 15.32,
+   "unit": "million barrels",
+   "comment": "Jubilee, TEN and SGN fields; average 101,499.72 barrels/day.",
+   "page": 54
+  }
+ ],
+ "fiscal_revised": [
+  {
+   "item": "Total revenue & grants",
+   "original_budget_ghs_m": 227080.4,
+   "revised_budget_ghs_m": 229949.7,
+   "revised_pct_gdp": 16.4,
+   "h1_programme_ghs_m": 102577.4,
+   "h1_outturn_ghs_m": 99339.3,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 224933.6
+  },
+  {
+   "item": "Domestic revenue",
+   "original_budget_ghs_m": 224405.8,
+   "revised_budget_ghs_m": 227275.1,
+   "revised_pct_gdp": 16.2,
+   "h1_programme_ghs_m": 101508.8,
+   "h1_outturn_ghs_m": 98609.4,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 222259.0
+  },
+  {
+   "item": "Tax revenue",
+   "original_budget_ghs_m": 189964.6,
+   "revised_budget_ghs_m": 189964.6,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 85297.4,
+   "h1_outturn_ghs_m": 84348.5,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 189964.6,
+   "note": "Gross of tax refunds (refunds: budget -7,567.4; H1 prog -3,423.6; H1 outturn -5,074.4). Net tax revenue 13.6% of GDP in budget and revised (p91)."
+  },
+  {
+   "item": "Non-oil tax revenue (net)",
+   "original_budget_ghs_m": 181617.0,
+   "revised_budget_ghs_m": 181617.0,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 82167.1,
+   "h1_outturn_ghs_m": 82953.9,
+   "page": 91,
+   "h1_page": 87,
+   "baseline_2025json_ghs_m": null,
+   "note": "Non-oil tax revenue net of refunds, 13.4% of non-oil GDP (budget and revised)."
+  },
+  {
+   "item": "Non-tax revenue",
+   "original_budget_ghs_m": 26548.0,
+   "revised_budget_ghs_m": 26548.0,
+   "revised_pct_gdp": 1.9,
+   "h1_programme_ghs_m": 12584.0,
+   "h1_outturn_ghs_m": 10177.4,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 24401.2,
+   "note": "Includes oil-related non-tax items (CAPI dividends, surface rentals). Review's budget figure is GH¢2,146.8m above 2025.json baseline."
+  },
+  {
+   "item": "Oil revenue",
+   "original_budget_ghs_m": 16514.3,
+   "revised_budget_ghs_m": 16514.3,
+   "revised_pct_gdp": 1.2,
+   "h1_programme_ghs_m": 6201.5,
+   "h1_outturn_ghs_m": 3541.2,
+   "page": 90,
+   "h1_page": 86,
+   "baseline_2025json_ghs_m": 16514.3,
+   "note": "Total oil receipts."
+  },
+  {
+   "item": "Other revenue (ESLA proceeds)",
+   "original_budget_ghs_m": 6699.7,
+   "revised_budget_ghs_m": 9569.0,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 3030.6,
+   "h1_outturn_ghs_m": 3287.3,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": null,
+   "note": "Upward revision from the extra GH¢1/litre ESSDRL (Energy Debt Recovery Levy line 3,132.4 to 8,616.1; Price Stabilisation, Delta Fund and Pollution levies folded in, p91)."
+  },
+  {
+   "item": "Grants",
+   "original_budget_ghs_m": 2674.6,
+   "revised_budget_ghs_m": 2674.6,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 1068.6,
+   "h1_outturn_ghs_m": 729.9,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 2674.6,
+   "note": "All project grants. App 3B (p91) prints grants as 0.5% of GDP, inconsistent with 2,674.6/1,400,006 (0.2% as on p87); left null."
+  },
+  {
+   "item": "Total expenditure",
+   "original_budget_ghs_m": 270924.1,
+   "revised_budget_ghs_m": 269496.1,
+   "revised_pct_gdp": 19.2,
+   "h1_programme_ghs_m": 128042.8,
+   "h1_outturn_ghs_m": 109594.2,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 268777.3,
+   "note": "Commitment basis, excl. arrears clearance. Table 2 (p65) shows 283,992 to 282,564 (20.3% to 20.2%), a basis that includes arrears clearance."
+  },
+  {
+   "item": "Primary expenditure",
+   "original_budget_ghs_m": 206760.7,
+   "revised_budget_ghs_m": 209629.9,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 97538.1,
+   "h1_outturn_ghs_m": 84171.3,
+   "page": 92,
+   "h1_page": 88,
+   "baseline_2025json_ghs_m": null,
+   "note": "Revised up for energy sector payments."
+  },
+  {
+   "item": "Compensation",
+   "original_budget_ghs_m": 76203.2,
+   "revised_budget_ghs_m": 76203.2,
+   "revised_pct_gdp": 5.4,
+   "h1_programme_ghs_m": 38320.1,
+   "h1_outturn_ghs_m": 38842.5,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 76640.1,
+   "note": "Wages & salaries: 68,197.3 (budget/revised); H1 34,098.6 prog vs 35,432.9 outturn."
+  },
+  {
+   "item": "Goods & services",
+   "original_budget_ghs_m": 6671.1,
+   "revised_budget_ghs_m": 6671.1,
+   "revised_pct_gdp": 0.5,
+   "h1_programme_ghs_m": 3158.5,
+   "h1_outturn_ghs_m": 1942.5,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 6971.1
+  },
+  {
+   "item": "Interest payments",
+   "original_budget_ghs_m": 64163.5,
+   "revised_budget_ghs_m": 59866.1,
+   "revised_pct_gdp": 4.3,
+   "h1_programme_ghs_m": 30504.7,
+   "h1_outturn_ghs_m": 25422.9,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 64163.5,
+   "note": "Domestic 56,247.5 to 51,154.9 (H1 26,532.2 prog / 21,629.8 out); external 7,916.0 to 8,711.2 (H1 3,972.4 / 3,793.1)."
+  },
+  {
+   "item": "Grants to other govt units",
+   "original_budget_ghs_m": 54566.6,
+   "revised_budget_ghs_m": 54566.6,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 24921.9,
+   "h1_outturn_ghs_m": 24866.4,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 54467.5,
+   "note": "Statutory/earmarked funds: NHIF 9,765.0; GETFund 8,571.9; DACF 7,683.6; Road Fund 2,814.9; IGF retention 13,572.8 (p92)."
+  },
+  {
+   "item": "Subsidies",
+   "original_budget_ghs_m": 342.0,
+   "revised_budget_ghs_m": 342.0,
+   "revised_pct_gdp": 0.0,
+   "h1_programme_ghs_m": 149.8,
+   "h1_outturn_ghs_m": 0.0,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 342.0,
+   "note": "Petroleum product subsidies."
+  },
+  {
+   "item": "Social benefits",
+   "original_budget_ghs_m": 3237.0,
+   "revised_budget_ghs_m": 3237.0,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 1618.5,
+   "h1_outturn_ghs_m": 1464.5,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 3237.0
+  },
+  {
+   "item": "Other expenditure",
+   "original_budget_ghs_m": 33079.2,
+   "revised_budget_ghs_m": 35948.5,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 11310.9,
+   "h1_outturn_ghs_m": 9950.4,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 30044.6,
+   "note": "ESLA transfers 952.8; energy sector payment shortfalls 27,128.7 to 29,998.0 (H1 6,376.9 prog / 9,106.2 out); Finsec 450.0; Ghana GoldBod 4,547.7 (H1 prog 4,547.7, outturn 0) (p88, p92)."
+  },
+  {
+   "item": "Capital expenditure",
+   "original_budget_ghs_m": 32661.6,
+   "revised_budget_ghs_m": 32661.6,
+   "revised_pct_gdp": 2.3,
+   "h1_programme_ghs_m": 18058.5,
+   "h1_outturn_ghs_m": 7105.1,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": 32991.6,
+   "note": "Domestic 21,006.1 (o/w MDA normal capex 7,246.4; Big Push 13,759.7) + foreign 11,655.5. H1 Big Push 5,143.7 prog vs 3,905.7 out (p88)."
+  },
+  {
+   "item": "Arrears clearance",
+   "original_budget_ghs_m": -13067.6,
+   "revised_budget_ghs_m": -13067.6,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": -7496.3,
+   "h1_outturn_ghs_m": -4779.9,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": -13067.6
+  },
+  {
+   "item": "Overall balance (commitment)",
+   "original_budget_ghs_m": -43843.7,
+   "revised_budget_ghs_m": -39546.3,
+   "revised_pct_gdp": -2.8,
+   "h1_programme_ghs_m": -25465.4,
+   "h1_outturn_ghs_m": -10254.9,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": -43843.7,
+   "note": "H1 memorandum (p86) gives -10,339.6 including discrepancy."
+  },
+  {
+   "item": "Primary balance (commitment)",
+   "original_budget_ghs_m": 20319.8,
+   "revised_budget_ghs_m": 20319.8,
+   "revised_pct_gdp": 1.5,
+   "h1_programme_ghs_m": 5039.3,
+   "h1_outturn_ghs_m": 15083.4,
+   "page": 90,
+   "h1_page": 86,
+   "baseline_2025json_ghs_m": 20319.8
+  },
+  {
+   "item": "Overall balance (cash)",
+   "original_budget_ghs_m": -56911.3,
+   "revised_budget_ghs_m": -52613.9,
+   "revised_pct_gdp": -3.8,
+   "h1_programme_ghs_m": -32961.7,
+   "h1_outturn_ghs_m": -15119.5,
+   "page": 89,
+   "h1_page": 85,
+   "baseline_2025json_ghs_m": -56911.3,
+   "note": "H1 outturn includes discrepancy of -84.7 (before discrepancy: -15,034.8)."
+  },
+  {
+   "item": "Primary balance (cash)",
+   "original_budget_ghs_m": 7252.2,
+   "revised_budget_ghs_m": 7252.2,
+   "revised_pct_gdp": 0.5,
+   "h1_programme_ghs_m": -2457.1,
+   "h1_outturn_ghs_m": 10303.5,
+   "page": 90,
+   "h1_page": 86,
+   "baseline_2025json_ghs_m": 7252.2
+  },
+  {
+   "item": "Net domestic financing",
+   "original_budget_ghs_m": 36986.6,
+   "revised_budget_ghs_m": 34117.3,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 18865.6,
+   "h1_outturn_ghs_m": 13076.8,
+   "page": 90,
+   "h1_page": 86,
+   "baseline_2025json_ghs_m": 36986.6
+  },
+  {
+   "item": "Net foreign financing",
+   "original_budget_ghs_m": 21408.6,
+   "revised_budget_ghs_m": 19980.5,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 14626.8,
+   "h1_outturn_ghs_m": 2762.4,
+   "page": 90,
+   "h1_page": 86,
+   "baseline_2025json_ghs_m": 21408.6,
+   "note": "Amortisation due revised from -9,126.3 to -10,554.4; H1 amortisation -4,166.1 (p86) but App 2C shows 7,036.4 (p88)."
+  },
+  {
+   "item": "Total appropriation",
+   "original_budget_ghs_m": 293118.0,
+   "revised_budget_ghs_m": 293118.0,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": 140037.4,
+   "h1_outturn_ghs_m": 121410.5,
+   "page": 92,
+   "h1_page": 88,
+   "baseline_2025json_ghs_m": 290971.2,
+   "note": "Appropriation unchanged; 2025.json baseline (budget statement p71) was 290,971.2."
+  },
+  {
+   "item": "Nominal GDP",
+   "original_budget_ghs_m": 1400006.1,
+   "revised_budget_ghs_m": 1400006.1,
+   "revised_pct_gdp": null,
+   "h1_programme_ghs_m": null,
+   "h1_outturn_ghs_m": null,
+   "page": 90,
+   "h1_page": 86,
+   "baseline_2025json_ghs_m": 1400006.1,
+   "note": "Unchanged; non-oil nominal GDP 1,350,563.8."
+  }
+ ],
+ "allocation_changes": [
+  {
+   "mda_or_programme": "Interest payments (total)",
+   "original_ghs_m": 64163.5,
+   "revised_ghs_m": 59866.1,
+   "reason": "Revised down by GH¢4.3bn: lower T-bill rates and prudent debt management (domestic), partly offset by higher external interest.",
+   "page": 64
+  },
+  {
+   "mda_or_programme": "Domestic interest",
+   "original_ghs_m": 56247.5,
+   "revised_ghs_m": 51154.9,
+   "reason": "Down GH¢5.1bn on gains from the reduction in treasury bill rates.",
+   "page": 64
+  },
+  {
+   "mda_or_programme": "External interest",
+   "original_ghs_m": 7916.0,
+   "revised_ghs_m": 8711.2,
+   "reason": "Up GH¢795m to provide for debt service on post-cut-off-date disbursements by bilateral creditors since 2023.",
+   "page": 65
+  },
+  {
+   "mda_or_programme": "Energy sector payment shortfalls (IPPs/fuel for power)",
+   "original_ghs_m": 27128.7,
+   "revised_ghs_m": 29998.0,
+   "reason": "Up GH¢2.9bn to provide for fuel purchases for power generation, funded by the additional ESSDRL revenue.",
+   "page": 65
+  },
+  {
+   "mda_or_programme": "Other expenditure (total)",
+   "original_ghs_m": 33079.2,
+   "revised_ghs_m": 35948.5,
+   "reason": "Reflects the energy sector payment increase.",
+   "page": 92
+  },
+  {
+   "mda_or_programme": "Primary expenditure (total)",
+   "original_ghs_m": 206760.7,
+   "revised_ghs_m": 209629.9,
+   "reason": "Increased allocation to support energy sector payments.",
+   "page": 64
+  },
+  {
+   "mda_or_programme": "Total expenditure (commitment)",
+   "original_ghs_m": 270924.1,
+   "revised_ghs_m": 269496.1,
+   "reason": "Net effect: interest savings exceed the energy sector increase.",
+   "page": 64
+  },
+  {
+   "mda_or_programme": "Big Push Programme",
+   "original_ghs_m": 13759.7,
+   "revised_ghs_m": 13759.7,
+   "reason": "Amount unchanged (text: GH¢13.8bn) but the President dedicated all Big Push allocations over the next two years to road infrastructure; commitment authorisations issued for 32 road projects.",
+   "page": 70
+  },
+  {
+   "mda_or_programme": "Total appropriation",
+   "original_ghs_m": 293118.0,
+   "revised_ghs_m": 293118.0,
+   "reason": "Minister states H1 developments do not warrant a revision to the macro targets or the appropriations for 2025.",
+   "page": 64
+  }
+ ],
+ "new_measures": [
+  {
+   "measure": "Additional GH¢1 per litre Energy Sector Shortfall and Debt Repayment Levy on petroleum products (ESLA Act amended 3 June 2025; cited as Act 1141 on p64), to pay energy sector shortfalls and legacy debt",
+   "type": "tax",
+   "amount_ghs_m": 2869.3,
+   "page": 44,
+   "note": "Amount = revenue revision 229,949.7 - 227,080.4 (Table 2 'Diff' 2,869, p65; text 'GH¢2.9 billion', p64)."
+  },
+  {
+   "measure": "Energy Sector Levies Act, 2025 (Act 1135) consolidates four petroleum levies (Energy Debt Recovery, Delta Fund, Sanitation & Pollution, Price Stabilisation & Recovery) into the ESSDRL",
+   "type": "tax",
+   "amount_ghs_m": null,
+   "page": 44
+  },
+  {
+   "measure": "Withdraw tax exemptions on marine gas oil (MGO) to curb smuggling (losses estimated at nearly half a billion cedis)",
+   "type": "tax",
+   "amount_ghs_m": null,
+   "page": 66
+  },
+  {
+   "measure": "Customs revenue protection: AI tools for valuation/classification, Advanced Cargo Information system, anti-smuggling surveillance, review of GRA Customs set-up incl. staff mobility",
+   "type": "admin",
+   "amount_ghs_m": null,
+   "page": 66
+  },
+  {
+   "measure": "Wage-bill controls: regular payroll audits, realignment of staff from overstaffed/defunct MDAs, establishment of an Independent Emoluments Commission, Executive directive requiring Finance Minister approval for payroll commitments",
+   "type": "admin",
+   "amount_ghs_m": null,
+   "page": 67
+  },
+  {
+   "measure": "Presidential directive: from 24 July 2025 no government contract may be denominated in foreign currency",
+   "type": "policy",
+   "amount_ghs_m": null,
+   "page": 67
+  },
+  {
+   "measure": "Approval sought (PFM Act s.33) for multi-year commitments on 13 abandoned road projects added to the Big Push",
+   "type": "expenditure",
+   "amount_ghs_m": null,
+   "page": 71
+  },
+  {
+   "measure": "Road Maintenance Trust Fund Bill to replace the Ghana Road Fund and refocus it on maintenance",
+   "type": "policy",
+   "amount_ghs_m": null,
+   "page": 71
+  },
+  {
+   "measure": "Rehabilitate 10km of roads a year in each of 166 constituencies (about 5,000km over 3 years)",
+   "type": "expenditure",
+   "amount_ghs_m": null,
+   "page": 72
+  },
+  {
+   "measure": "Uncapping of GETFund, NHIF and Road Fund (amendment of Act 947); NHIA uncapping unlocks an additional GH¢4bn",
+   "type": "policy",
+   "amount_ghs_m": 4000.0,
+   "page": 72,
+   "note": "Amount refers only to the NHIA."
+  },
+  {
+   "measure": "LEAP indexation: grants raised from GH¢256 to GH¢320 (1-member), GH¢304 to GH¢380 (2), GH¢352 to GH¢440 (3), GH¢424 to GH¢530 (4+)",
+   "type": "expenditure",
+   "amount_ghs_m": null,
+   "page": 75
+  },
+  {
+   "measure": "Nursing and teacher trainee allowances to be paid monthly from end-July 2025",
+   "type": "expenditure",
+   "amount_ghs_m": null,
+   "page": 75
+  },
+  {
+   "measure": "Cedi and US$ Sinking Fund accounts set up; cash buffers to be built from August 2025 for 2026-2028 debt humps",
+   "type": "policy",
+   "amount_ghs_m": null,
+   "page": 37
+  },
+  {
+   "measure": "Selection of bookrunners from August 2025 to reopen the domestic bond market; T-bills limited to cash management",
+   "type": "policy",
+   "amount_ghs_m": null,
+   "page": 38
+  },
+  {
+   "measure": "Forensic audit of 55 stalled bilateral-loan projects after drawdowns without matching work",
+   "type": "admin",
+   "amount_ghs_m": null,
+   "page": 36
+  },
+  {
+   "measure": "Targeted incentives for the Volta Economic Corridor to be outlined in the 2026 Budget",
+   "type": "policy",
+   "amount_ghs_m": null,
+   "page": 69
+  },
+  {
+   "measure": "Task force on illegal gold trade and smuggling inaugurated 8 July 2025",
+   "type": "admin",
+   "amount_ghs_m": null,
+   "page": 68
+  },
+  {
+   "measure": "Monthly payroll validation enforced with sanctions for validating 'ghost' names",
+   "type": "admin",
+   "amount_ghs_m": null,
+   "page": 30
+  }
+ ],
+ "commitment_progress": [
+  {
+   "id": "2025-01",
+   "status_at_midyear": "on track",
+   "evidence": "Q1 2025 real GDP grew 5.3% (4.9% in Q1 2024); the at-least-4.0% target is maintained.",
+   "page": 16
+  },
+  {
+   "id": "2025-02",
+   "status_at_midyear": "on track",
+   "evidence": "Q1 2025 non-oil GDP grew 6.8% against the at-least-4.8% target, which is maintained.",
+   "page": 16
+  },
+  {
+   "id": "2025-03",
+   "status_at_midyear": "on track",
+   "evidence": "Inflation fell from 23.8% (Dec 2024) to 13.7% in June 2025; Government expects to reach 11.9% ahead of schedule.",
+   "page": 18
+  },
+  {
+   "id": "2025-04",
+   "status_at_midyear": "on track",
+   "evidence": "H1 commitment primary surplus was 1.1% of GDP vs a 0.4% target; full-year 1.5% target unchanged.",
+   "page": 20
+  },
+  {
+   "id": "2025-05",
+   "status_at_midyear": "on track",
+   "evidence": "Reserves were US$11.12bn, 4.8 months of imports at end-June 2025, above the 3-month floor.",
+   "page": 26
+  },
+  {
+   "id": "2025-06",
+   "status_at_midyear": "on track",
+   "evidence": "H1 commitment deficit 0.7% of GDP vs 1.8% target; full-year target improved from 3.1% to 2.8% of GDP.",
+   "page": 65
+  },
+  {
+   "id": "2025-07",
+   "status_at_midyear": "on track",
+   "evidence": "H1 cash deficit 1.1% of GDP vs 2.4% target; full-year target improved from 4.1% to 3.8% of GDP.",
+   "page": 65
+  },
+  {
+   "id": "2025-08",
+   "status_at_midyear": "delayed",
+   "evidence": "H1 revenue & grants of GH¢99.3bn were 3.2% below the GH¢102.6bn programme, though the full-year target was raised to GH¢229.9bn.",
+   "page": 21
+  },
+  {
+   "id": "2025-09",
+   "status_at_midyear": "on track",
+   "evidence": "H1 net non-oil tax revenue of GH¢82,953.9m beat the GH¢82,167.1m programme by about GH¢786.9m; full-year GH¢181.6bn unchanged.",
+   "page": 20
+  },
+  {
+   "id": "2025-10",
+   "status_at_midyear": "on track",
+   "evidence": "H1 spending was GH¢109.7bn vs GH¢128.0bn programmed (primary GH¢84.3bn vs GH¢97.5bn); full-year total revised to GH¢269.5bn but primary up to GH¢209.6bn.",
+   "page": 21
+  },
+  {
+   "id": "2025-11",
+   "status_at_midyear": "delayed",
+   "evidence": "Arrears clearance was GH¢4.8bn in H1 against a GH¢7.5bn target; the GH¢13.07bn full-year provision is unchanged.",
+   "page": 22
+  },
+  {
+   "id": "2025-12",
+   "status_at_midyear": "on track",
+   "evidence": "Audit of GH¢68.7bn of arrears 87% complete: GH¢28.3bn validated, GH¢3.6bn rejected, GH¢562.6m undocumented, GH¢27.3bn pending; completion expected end-August 2025.",
+   "page": 30
+  },
+  {
+   "id": "2025-13",
+   "status_at_midyear": "done",
+   "evidence": "GHANEPS has been fully integrated with GIFMIS so only budgeted, allotted projects/purchase orders get procurement approval.",
+   "page": 31
+  },
+  {
+   "id": "2025-14",
+   "status_at_midyear": "done",
+   "evidence": "Public Procurement (Amendment) Act, 2025 (Act 1139) makes the Finance Minister's commitment authorisation a prerequisite for procurement; the Independent Value-for-Money Office is not mentioned.",
+   "page": 44
+  },
+  {
+   "id": "2025-15",
+   "status_at_midyear": "not started",
+   "evidence": "A PFM Compliance Division has been set up, but publication of the compliance league table will only 'soon begin'; no sanctions reported.",
+   "page": 31
+  },
+  {
+   "id": "2025-16",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The review is silent on eliminating GhanaCARES, YouStart and 1D1F.",
+   "page": null
+  },
+  {
+   "id": "2025-17",
+   "status_at_midyear": "done",
+   "evidence": "PFM (Amendment) Act, 2025 (Act 1136, March 2025) adds a debt rule (45% of GDP by 2034), a primary-surplus rule (at least 1.5% of GDP) and an Independent Fiscal Council.",
+   "page": 31
+  },
+  {
+   "id": "2025-18",
+   "status_at_midyear": "delayed",
+   "evidence": "Parliament approved the OCC MoU terms on 24 June 2025; Ghana is ready to sign with two countries and expects four agreements by end-July 2025, past the June target.",
+   "page": 34
+  },
+  {
+   "id": "2025-19",
+   "status_at_midyear": "on track",
+   "evidence": "Non-disclosure agreements signed with some commercial lenders; no agreement on the ~US$2.7bn yet.",
+   "page": 34
+  },
+  {
+   "id": "2025-20",
+   "status_at_midyear": "on track",
+   "evidence": "No sovereign/commercial external borrowing in H1 (Eurobonds, green bonds, term loans = 0); project-loan disbursements capped at US$300m multilateral and US$250m bilateral.",
+   "page": 86
+  },
+  {
+   "id": "2025-21",
+   "status_at_midyear": "on track",
+   "evidence": "Cedi and US$ Sinking Fund accounts set up; buffer-building starts August 2025 targeting GH¢20bn/50.3bn/45.75bn domestic humps in 2026-28.",
+   "page": 37
+  },
+  {
+   "id": "2025-22",
+   "status_at_midyear": "not started",
+   "evidence": "H1 financing relied on T-bills; selection of bookrunners to reopen the domestic bond market begins in August 2025.",
+   "page": 38
+  },
+  {
+   "id": "2025-23",
+   "status_at_midyear": "on track",
+   "evidence": "IMF Board completed the 4th review on 7 July 2025 (US$367m disbursed, US$2.3bn total); the 5th review is scheduled for September 2025.",
+   "page": 31
+  },
+  {
+   "id": "2025-24",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The narrative is silent on the abolitions; Appendix 2B still shows E-Levy receipts of GH¢812.7m in H1 against a GH¢517.7m programme (p87).",
+   "page": null
+  },
+  {
+   "id": "2025-25",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No narrative on the GSL rate change; Appendix 2B shows Growth & Sustainability Levy H1 outturn GH¢1,085.3m vs GH¢2,026.2m programme (p87).",
+   "page": null
+  },
+  {
+   "id": "2025-26",
+   "status_at_midyear": "on track",
+   "evidence": "Cabinet approved the reintroduction of tolling on roads and bridges in June 2025, using new technology; tolls not yet collected.",
+   "page": 57
+  },
+  {
+   "id": "2025-27",
+   "status_at_midyear": "delayed",
+   "evidence": "IMF engagement done and nationwide consultation under way; a new VAT bill (abolishing the COVID-19 levy) is due October 2025 for submission with the 2026 Budget.",
+   "page": 29
+  },
+  {
+   "id": "2025-28",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The refund-ratio target is not discussed; Appendix 2A shows H1 tax refunds of GH¢5,074.4m vs a GH¢3,423.6m programme (p85).",
+   "page": null
+  },
+  {
+   "id": "2025-29",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The review is silent on the Medium-Term Revenue Strategy.",
+   "page": null
+  },
+  {
+   "id": "2025-30",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No update on a Q4 tariff adjustment or the WACOG increase.",
+   "page": null
+  },
+  {
+   "id": "2025-31",
+   "status_at_midyear": "on track",
+   "evidence": "Agreement reached with 3 IPPs (Twin City, Cenpower, Early Power) on PPAs and legacy debt; N-Gas supply not mentioned.",
+   "page": 53
+  },
+  {
+   "id": "2025-32",
+   "status_at_midyear": "on track",
+   "evidence": "63 of the 400 targeted communities connected to the grid so far; the other 337 are at various stages; 90% national access rate not reported.",
+   "page": 53
+  },
+  {
+   "id": "2025-33",
+   "status_at_midyear": "on track",
+   "evidence": "The remaining 4 Ameri units (100MW) are 75% complete and expected to be commissioned by end-September 2025.",
+   "page": 52
+  },
+  {
+   "id": "2025-34",
+   "status_at_midyear": "delayed",
+   "evidence": "GH¢476.7m paid to about 1.5m LEAP beneficiaries and grants indexed up; expansion now planned at an additional 40,000 households by September 2025 (vs 50,000 from July).",
+   "page": 75
+  },
+  {
+   "id": "2025-35",
+   "status_at_midyear": "done",
+   "evidence": "Feeding grant raised from GH¢1.50 to GH¢2.00 per child per day; GH¢895m paid; 4,231,059 pupils fed in all 16 regions.",
+   "page": 76
+  },
+  {
+   "id": "2025-36",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The review is silent on free sanitary pads.",
+   "page": null
+  },
+  {
+   "id": "2025-37",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No delivery figures; the only reference is that the uncapped GETFund will help provide curriculum-based textbooks to basic schools.",
+   "page": 59
+  },
+  {
+   "id": "2025-38",
+   "status_at_midyear": "on track",
+   "evidence": "GH¢300m of the GH¢499.8m provision paid to the Students' Loan Trust Fund, enough for first-year fees of over 100,000 students.",
+   "page": 73
+  },
+  {
+   "id": "2025-39",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The review is silent on teacher accommodation (Teacher Dabre).",
+   "page": null
+  },
+  {
+   "id": "2025-40",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The review is silent on the six regional TVET Centres of Excellence (9 TVET centres appear only in the bilateral priority-project list, p36).",
+   "page": null
+  },
+  {
+   "id": "2025-41",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The 80% direct-share rule is not discussed; GH¢2.9bn paid to the DACF in H1 (App 2C: GH¢3,400.5m vs GH¢3,494.8m programme, p88).",
+   "page": 77
+  },
+  {
+   "id": "2025-42",
+   "status_at_midyear": "on track",
+   "evidence": "Road Fund uncapped (over GH¢1bn accrued) and a Road Maintenance Trust Fund Bill to refocus it on maintenance is being laid.",
+   "page": 71
+  },
+  {
+   "id": "2025-43",
+   "status_at_midyear": "on track",
+   "evidence": "Distributed 603 MT hybrid maize seed, 962 MT certified rice seed and 26,734 MT fertiliser; soybean and sorghum not reported.",
+   "page": 46
+  },
+  {
+   "id": "2025-44",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No update on anchor-farmer day-old chicks or Kuroiler distribution.",
+   "page": null
+  },
+  {
+   "id": "2025-45",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No update on Farmers' Service Centres.",
+   "page": null
+  },
+  {
+   "id": "2025-46",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No aquaculture production figures given.",
+   "page": null
+  },
+  {
+   "id": "2025-47",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No update on premix fuel outlets.",
+   "page": null
+  },
+  {
+   "id": "2025-48",
+   "status_at_midyear": "on track",
+   "evidence": "Outstanding works on Anomabo Fisheries College continued with the aim to operationalise it by end-2025; no admissions reported.",
+   "page": 47
+  },
+  {
+   "id": "2025-49",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No forest plantation or mined-site reclamation figures given.",
+   "page": null
+  },
+  {
+   "id": "2025-50",
+   "status_at_midyear": "on track",
+   "evidence": "One Million Coders Programme launched in April trained 859 people in the pilot; to expand nationwide to meet the 100,000 target.",
+   "page": 74
+  },
+  {
+   "id": "2025-51",
+   "status_at_midyear": "on track",
+   "evidence": "81 new rural telephony sites constructed, 131 integrated and 142 activated; 1,081 sites now active.",
+   "page": 57
+  },
+  {
+   "id": "2025-52",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No update on the Kumasi airport runway or Boankra Inland Logistics Terminal.",
+   "page": null
+  },
+  {
+   "id": "2025-53",
+   "status_at_midyear": "on track",
+   "evidence": "Passenger services on the 97.7km Tema–Mpakadan standard-gauge line are expected to start in Q3 2025.",
+   "page": 58
+  },
+  {
+   "id": "2025-54",
+   "status_at_midyear": "on track",
+   "evidence": "GH¢21m paid for the National Apprenticeship Programme and GH¢34.5m for Adwumawura; YEA H1 transfer GH¢299.4m (p88); no beneficiary numbers.",
+   "page": 78
+  },
+  {
+   "id": "2025-55",
+   "status_at_midyear": "not mentioned",
+   "evidence": "No registration counts; Births and Deaths Registry published 2022 data and introduced a birth/foetal-death notification form.",
+   "page": 43
+  },
+  {
+   "id": "2025-56",
+   "status_at_midyear": "not mentioned",
+   "evidence": "GPSNP2 beneficiary numbers not reported (only a staff training course under GPSNP2).",
+   "page": 43
+  },
+  {
+   "id": "2025-57",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The review is silent on the Dawa Water Treatment Plant.",
+   "page": null
+  },
+  {
+   "id": "2025-58",
+   "status_at_midyear": "done",
+   "evidence": "NIB recapitalised (GH¢450m cash, ~GH¢1.5bn bonds, GH¢500m Nestle shares): CAR from -53.13% to +23% in May 2025, paid-up capital GH¢3.4bn, declared fully capitalised.",
+   "page": 27
+  },
+  {
+   "id": "2025-59",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The review is silent on CPI rebasing.",
+   "page": null
+  },
+  {
+   "id": "2025-60",
+   "status_at_midyear": "done",
+   "evidence": "Ghana Gold Board established by Act 1140 (operating since April 2025); 24-Hour Economy and Accelerated Export Development Programme launched in July 2025.",
+   "page": 69
+  },
+  {
+   "id": "2025-61",
+   "status_at_midyear": "not mentioned",
+   "evidence": "The review is silent on pharmacists' salary arrears.",
+   "page": null
+  }
+ ],
+ "sector_highlights": [
+  {
+   "sector": "Finance",
+   "h1_achievements": [
+    "Primary surplus 1.1% of GDP vs 0.4% target; overall commitment deficit 0.7% vs 1.8% (page 20)",
+    "Public debt cut from GH¢726.7bn (61.8% of GDP) to GH¢613bn (43.8%) by end-June (page 32)",
+    "Domestic interest GH¢4.9bn below target on falling T-bill rates (page 22)",
+    "NIB recapitalised: CAR -53.13% to +23%, paid-up capital GH¢3.4bn, GH¢6.4bn deposits preserved (page 27)",
+    "Fitch upgraded Ghana to 'B-' (stable) on 16 June 2025; S&P upgraded to 'CCC+' on 9 May 2025 (page 94)",
+    "IMF 4th review completed 7 July 2025, US$367m disbursed (US$2.3bn total) (page 31)",
+    "Payroll audit 91% complete: 53,311 separated staff found on payroll; GH¢150.4m expected recovery (page 30)",
+    "Arrears audit 87% complete: GH¢28.3bn validated, GH¢3.6bn rejected (page 30)",
+    "549 MDA/MMDA spending units migrated to GIFMIS; GHANEPS integrated with GIFMIS (page 31)",
+    "About US$700m paid to Eurobond holders (page 34); GH¢9.8bn coupons paid to DDEP bondholders, GH¢3.6bn of it capitalised (page 35)",
+    "GSE Composite Index +27.8%; market capitalisation GH¢137.3bn (page 39)"
+   ],
+   "issues_or_delays": [
+    "Total revenue & grants 3.2% below H1 target; oil receipts GH¢2.7bn short (page 20)",
+    "Customs revenue short by GH¢1.6bn (12.7%) (page 65)",
+    "Project loan disbursements GH¢2.4bn vs GH¢8.3bn target (page 22)",
+    "Only 4 bilateral OCC agreements expected by end-July vs June target (page 34)"
+   ]
+  },
+  {
+   "sector": "Agriculture",
+   "h1_achievements": [
+    "Agriculture grew 6.6% in Q1 2025; fishing 16.4% (page 16)",
+    "603 MT hybrid maize seed, 962 MT certified rice seed and 26,734 MT fertiliser distributed under Feed Ghana (page 46)",
+    "100 compact tractors and other machinery supplied to 91 individuals/AMSECs; 16 x 20-MT silos secured (page 46)",
+    "13 irrigation sites (11,000 ha) identified under Irrigation for Wealth Creation; Afram Plains 7,100 ha phase 50% complete; Tamne 70%, Vea 40% (page 46)",
+    "587,014 vaccine doses procured; 2.7m doses produced locally, 2.15m distributed (page 46)",
+    "Youth ministry cultivated 5,000 acres with 1,500 national service personnel (page 60)",
+    "Revised Fisheries Bill submitted to Parliament; WTO Fisheries Subsidies Agreement ratified (page 47)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Energy",
+   "h1_achievements": [
+    "63 of 400 communities connected under rural electrification (page 53)",
+    "Agreement with 3 IPPs on PPAs and legacy debt restructuring (page 53)",
+    "Three Ada mini-grids commissioned, serving over 20,000 people (page 53)",
+    "Solar streetlight pilot (2,485 units, 69km, Ashanti) 75% complete; 23,500 units supplied for Phase 2 (page 54)",
+    "GH¢9.1bn paid to the energy sector for stable power supply (page 78)",
+    "Afina-1X discovery declared commercially viable; Jubilee/TEN agreements extended to 2040 (page 54)",
+    "Oil output Jan–May 2025: 15.32m barrels (101,499.72 bpd) (page 54)"
+   ],
+   "issues_or_delays": [
+    "Ameri units (100MW) 75% complete; commissioning expected end-September 2025 (page 52)",
+    "Energy sector payments revised up by GH¢2.9bn for fuel for power generation (page 65)",
+    "Transaction advisor for private participation in distribution still to be procured (Q3 2025) (page 53)"
+   ]
+  },
+  {
+   "sector": "Roads & Transport",
+   "h1_achievements": [
+    "Routine maintenance on 6,185km trunk, 4,303km feeder and 1,421km urban roads (page 57)",
+    "TSIP: 191.25km Bono East feeder roads 100% complete; 670km Upper West feeder roads completed (page 57)",
+    "Commitment authorisations issued for 32 Big Push road projects (GH¢13.8bn allocation) (page 70)",
+    "Cabinet approved reintroduction of road and bridge tolls (June 2025) (page 57)",
+    "New 24-hour DVLA office opened at Adenta (page 58)"
+   ],
+   "issues_or_delays": [
+    "Tema–Mpakadan passenger rail start pushed to Q3 2025 (page 58)",
+    "Contractors on stalled bilateral projects drew down loans with no work done; forensic audit commissioned (page 36)",
+    "Bilateral loan cap of US$250m a year means at least 12 years to draw down US$3bn undisbursed loans (page 35)"
+   ]
+  },
+  {
+   "sector": "Housing",
+   "h1_achievements": [
+    "64 three-bedroom units completed at Lartebiokoshie and Labone; 426 units under way (page 56)",
+    "Surge Homes Amrahia 68% and SHC Gardens 70% complete (page 56)",
+    "Resettlement housing for Akosombo spillage victims under construction (page 56)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Water & Sanitation",
+   "h1_achievements": [
+    "Keta (72%), Wenchi (91%) and Sekondi-Takoradi (89%) water projects progressing (page 56)",
+    "1,083.4m of drains built under the National Flood Control Programme (page 55)",
+    "24,034.07m3 dredged from the Odaw channel under GARID (page 56)",
+    "Coastal protection: Ningo-Prampram 93%, Anomabu 81%, Cape Coast 77%, Aboadze II 74% (page 55)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Education",
+   "h1_achievements": [
+    "GH¢300m of GH¢499.8m No-Fee-Stress provision paid, covering 100,000+ first-year students (page 73)",
+    "School feeding raised to GH¢2 per child; GH¢895m paid; 4,231,059 pupils fed (page 76)",
+    "Capitation grants GH¢72.8m and BECE registration GH¢122.8m paid (page 78)",
+    "GETFund transfers up to date (page 72); GH¢4.6bn paid to GETFund and GH¢1bn to free secondary education (page 78)",
+    "Teacher (GH¢191.7m) and nursing (GH¢462.6m) trainee allowances paid Jan–Jun (page 78)",
+    "40-seater computer labs installed in 232 SHSs (page 57)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Health",
+   "h1_achievements": [
+    "NHIA uncapped, unlocking an additional GH¢4bn (page 72)",
+    "GH¢4.6bn paid to NHIS and GH¢1.4bn for NHIS claims (page 78)",
+    "Ghana Medical Trust Fund (MahamaCares) Bill passed 22 July 2025 (page 73)",
+    "GH¢252m paid for vaccines and essential medicines (page 78)"
+   ],
+   "issues_or_delays": [
+    "Free Primary Healthcare still at preparatory stage (page 73)"
+   ]
+  },
+  {
+   "sector": "Social Protection",
+   "h1_achievements": [
+    "GH¢476.7m paid to about 1.5m LEAP beneficiaries; grants indexed up (e.g. GH¢256 to GH¢320) (page 75)",
+    "Cabinet approved the revised ECCD Policy (page 58)",
+    "Cabinet approved the Social Protection Bill and revised Domestic Violence Policy (page 59)",
+    "NADMO supported 11,524 disaster victims (page 63)"
+   ],
+   "issues_or_delays": [
+    "LEAP expansion: additional 40,000 households now planned by September 2025 (page 75)"
+   ]
+  },
+  {
+   "sector": "Digital/ICT",
+   "h1_achievements": [
+    "One Million Coders pilot trained 859 people; GI-KACE trained 1,603 (page 74)",
+    "81 new rural telephony sites built, 142 activated; 1,081 active (page 57)",
+    "62,000 resources on the Ghana Knowledge and Skills Bank, 600,000+ users (page 57)",
+    "1,000 girls in Volta trained in coding (page 74)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Trade & Industry",
+   "h1_achievements": [
+    "GoldBod: small-scale gold exports 51.5 tonnes (~US$5bn) in H1 vs 26.4 tonnes (US$1.8bn) in H1 2024 (page 68)",
+    "24-Hour Economy and Accelerated Export Development Programme launched (page 69)",
+    "32 ENABLE Youth factories operational; equipment installed in 8 of 26 others (page 49)",
+    "REP disbursed US$444,000 to 1,246 MSEs (target 500) (page 50)",
+    "GEA trained 15,249 youth, created 7,759 jobs and 5,131 businesses (page 50)",
+    "Foundry Phase I 95% complete (page 50)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Lands & Natural Resources",
+   "h1_achievements": [
+    "150 excavators seized and 481 people arrested for mining in forest reserves (page 48)",
+    "454 of 2,000 Blue Water Guards trained and deployed (page 48)",
+    "Process started for 30 new Lands Commission district offices (page 48)",
+    "32,000 oil palm farmers registered and over 1m seedlings distributed under alternative livelihoods (page 48)",
+    "1,620 mine inspections by the Minerals Commission (page 48)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Tourism",
+   "h1_achievements": [
+    "158,833 visitors to forest and wildlife ecotourism sites (page 48)",
+    "Highlife dossier submitted to UNESCO (page 50)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Employment & Youth",
+   "h1_achievements": [
+    "Labour Department placed 9,553 job seekers (page 59)",
+    "Work Abroad Programme advertised UAE openings for 4,100 Ghanaians (page 74)",
+    "Military training started for 10,000 National Service personnel; 4,131 youth in skills training (page 60)",
+    "GH¢34.5m to Adwumawura and GH¢21m to National Apprenticeship Programme (page 78)"
+   ],
+   "issues_or_delays": [
+    "Labour Bill awaiting Cabinet approval (page 59)"
+   ]
+  },
+  {
+   "sector": "Security",
+   "h1_achievements": [
+    "Forward Operating Base at Ezinlibo 82% complete (page 63)",
+    "2,615 fire service recruits passed out; 587 officer cadets graduated (page 62)",
+    "733kg of narcotics (over US$3.58m) intercepted (page 63)",
+    "Over 3,500 motorbikes distributed to the police (page 61)",
+    "OSP concluded 10 investigations (page 60)",
+    "OSP prosecutions yielded 7 convictions and GH¢306,319.64 restitution (page 61)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Local Government",
+   "h1_achievements": [
+    "GH¢2.9bn paid to the DACF (page 77)",
+    "ILGS approved to become the University of Local Governance and Development (page 42)",
+    "241 of 268 MMDCEs confirmed (page 45)"
+   ],
+   "issues_or_delays": []
+  },
+  {
+   "sector": "Other",
+   "h1_achievements": [
+    "Audit Service submitted 15 Auditor-General's reports by the 30 June deadline and completed 1,573 audits (page 41)",
+    "EPA issued 7,610 environmental permits (page 52)",
+    "E-waste: 565.25 tonnes of cables and 133.63 tonnes of batteries collected at Old Fadama (page 51)"
+   ],
+   "issues_or_delays": []
+  }
+ ],
+ "regional": [
+  {
+   "region": "Greater Accra",
+   "items": [
+    {
+     "text": "Payroll audit found 18,905 separated staff on payroll in Greater Accra",
+     "status": null,
+     "amount_ghs_m": null,
+     "page": 30
+    },
+    {
+     "text": "GARID upgrades: Alogboshie 47%, Akweteyman 50%, Nima 61%; Odaw dredging (24,034.07m3) continued; new works at Achimota, Nima-Paloma, Kaneshie",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "64 three-bedroom apartments completed at Lartebiokoshie and Labone; 426 units under way at Airport Residential, Ridge, Cantonments, Lartebiokoshie and Labone",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Surge Homes Housing Project, Amrahia 68% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Kweiman Danfa water system 75% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Coastal protection: Ningo-Prampram 93%, Dansoman Phase II 10%",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 55
+    },
+    {
+     "text": "Three mini-grids at Azizakpe, Aflive and Alorkpem (Ada) commissioned, serving 20,000+ people",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 53
+    },
+    {
+     "text": "24-hour DVLA office commissioned at Adenta Bus Terminal",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 58
+    },
+    {
+     "text": "Borteyman Police Station commissioned; UPSA Police Station inaugurated",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 62
+    },
+    {
+     "text": "7 EV charging stations established in Accra",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 54
+    },
+    {
+     "text": "Big Push: Dodowa-Afienya-Dawhenya reconstruction, Oyibi-Appolonia-Afienya upgrading, Tema-Aflao Road (Section 1)",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Abandoned roads added to Big Push: Ofankor-Nsawam dual carriageway, Adenta-Dodowa dualisation",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    },
+    {
+     "text": "Bilateral priority projects: Obetsebi Lamptey Interchange Phase 2, Dome-Kitase road, Tema Motorway Roundabout–Ashaiman–Atimpoku (p35), Central Medical Stores Tema",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 36
+    },
+    {
+     "text": "Accra Outer Ring Road feasibility study",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    }
+   ]
+  },
+  {
+   "region": "Ashanti",
+   "items": [
+    {
+     "text": "Payroll audit found 9,550 separated staff on payroll in Ashanti",
+     "status": null,
+     "amount_ghs_m": null,
+     "page": 30
+    },
+    {
+     "text": "Remaining 4 Ameri units (100MW) at Kumasi 75% complete; commissioning by end-September 2025",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 52
+    },
+    {
+     "text": "Smart solar streetlight pilot: 2,485 units over 69km, 75% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 54
+    },
+    {
+     "text": "Juaben water system 65% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Kumasi Police Hospital inaugurated",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 62
+    },
+    {
+     "text": "5,000 acres cultivated at Sekyere Kumawu enclave (and Papao, Accra) with national service personnel",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 60
+    },
+    {
+     "text": "Big Push: Kumasi Outer Ring Road (Eastern Quadrant); Suame Interchange added from abandoned projects",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Bilateral priority projects: Kumasi Roads & Drainage Extension, Komfo Anokye Teaching Hospital modernisation, Kumasi Central Market Phase 2",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 36
+    },
+    {
+     "text": "Feasibility: new-alignment Accra–Kumasi Expressway and Kumasi Outer Ring Road",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    }
+   ]
+  },
+  {
+   "region": "Eastern",
+   "items": [
+    {
+     "text": "Afram Plains Economic Enclave Irrigation Phase 1 (7,100 ha; Konadu, Atonsu, Ekyeamanfrom, Ataneata/Nkwantanang, Akwasiho) 50% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 46
+    },
+    {
+     "text": "Feasibility studies completed for 150 island and lakeside communities in Kwahu/Afram Plains for mini-grids",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 53
+    },
+    {
+     "text": "Tema–Mpakadan 97.7km railway passenger services expected Q3 2025",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 58
+    },
+    {
+     "text": "587 officer cadets graduated from Fire Service College, Akwadum",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 62
+    },
+    {
+     "text": "Big Push: Akosombo-Gyakiti-Kudikope, Adomi Bridge-Akwamufie, Asikuma-Anum Boso-Kpalime, Atimpoku-Asikuma Junction roads",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Adawso–Ekye Amanfrom bridge (Afram Plains) feasibility study",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    },
+    {
+     "text": "Bilateral priority project: University of Environment and Sustainable Development, Bunso",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 36
+    }
+   ]
+  },
+  {
+   "region": "Central",
+   "items": [
+    {
+     "text": "Coastal protection: Anomabu 81%, Cape Coast 77%, Cape Coast Phase II 8%",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 55
+    },
+    {
+     "text": "Anomabo Fisheries College works continuing; to be operational by end-2025",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 47
+    },
+    {
+     "text": "Big Push: Winneba-Mankessim dualisation, Cape Coast-Takoradi dualisation, Mankessim-Ajumako-Breman Asikuma-Agona Swedru rehabilitation",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Kasoa–Winneba road added to Big Push",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    },
+    {
+     "text": "Roadmap to revive Komenda Sugar Factory",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 49
+    }
+   ]
+  },
+  {
+   "region": "Western",
+   "items": [
+    {
+     "text": "Sekondi-Takoradi Water Supply 89% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Asankragwa water system 72% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Coastal protection: Dixcove 36%, Aboadze Phase II 74%",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 55
+    },
+    {
+     "text": "Forward Operating Base at Ezinlibo 82% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 63
+    },
+    {
+     "text": "Blue Water Guards deployed in Ellembele, Tarkwa Nsuaem, Prestea-Huni Valley, Nzema East, Ahanta West, Mpohor, Wassa Amenfi East, Jomoro, Shama",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 48
+    },
+    {
+     "text": "EPC contractor for repowering the 132MW Takoradi T3 plant to be procured by Q4 2025",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 52
+    },
+    {
+     "text": "Takoradi–Agona Junction dualisation added to Big Push",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    },
+    {
+     "text": "Bilateral priority projects: Paa Grant Interchange & Sekondi/Takoradi roads, PTC Roundabout Interchange, Effia Nkwanta Regional Hospital, Takoradi Market",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 36
+    }
+   ]
+  },
+  {
+   "region": "Western North",
+   "items": [
+    {
+     "text": "Sefwi Wiawso water system 57% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Big Push: Enchi-Elubo, Dadieso-Akontombra, Adwofua-Oseikojokrom, Enchi-Kudjouru-Pekyi, Bediako Junction-Camp 15-Sefwi Adabokrom roads",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    }
+   ]
+  },
+  {
+   "region": "Volta",
+   "items": [
+    {
+     "text": "Keta Water Supply Project 72% complete; Aveyime water 81%",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Resettlement housing for Akosombo spillage victims at Agetikpo-Ganyakope, Battor, Aveyime rice farms and Mepe",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "1,000 girls trained in coding and web design under Girls in ICT",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 74
+    },
+    {
+     "text": "Big Push: Asikuma Jct-Anyirawasi, Anyirawasi-Ho Tritrinu, Ho-Kpetoe, Kpetoe-Afiadenyigba, Afiadenyigba-Penyi, Penyi-Aflao roads",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Have–Hohoe reconstruction added to Big Push",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    }
+   ]
+  },
+  {
+   "region": "Oti",
+   "items": [
+    {
+     "text": "Big Push: new bridge on the Oti River at Dambai; Dodo Pepesu–Nkwanta road",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Hohoe–Jasikan and Nkwanta–Oti Damanko roads added to Big Push",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    },
+    {
+     "text": "Contracts awarded for 35 mini-grids and 350 solar home systems in off-grid communities in Oti, Savannah and Bono East",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 53
+    }
+   ]
+  },
+  {
+   "region": "Bono",
+   "items": [
+    {
+     "text": "Wenchi Water Supply 91% complete; Duadaso water system 50%",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Big Push: Sunyani Outer Ring Road; Wenchi–Sawla road",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Jinijini–Sampa road added to Big Push",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    }
+   ]
+  },
+  {
+   "region": "Bono East",
+   "items": [
+    {
+     "text": "191.25km feeder roads rehabilitated (100%) under TSIP",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 57
+    },
+    {
+     "text": "Big Push: Techiman–Nkonsia–Wenchi road",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Contracts awarded for 35 mini-grids and 350 solar home systems in Oti, Savannah and Bono East",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 53
+    }
+   ]
+  },
+  {
+   "region": "Ahafo",
+   "items": [
+    {
+     "text": "Goaso water system 59% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 56
+    },
+    {
+     "text": "Fire service recruits trained at Duayaw Nkwanta",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 62
+    },
+    {
+     "text": "Tepa (Mabang)–Goaso road added to Big Push",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    }
+   ]
+  },
+  {
+   "region": "Savannah",
+   "items": [
+    {
+     "text": "Contracts awarded for 35 mini-grids and 350 solar home systems in Oti, Savannah and Bono East",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 53
+    }
+   ]
+  },
+  {
+   "region": "Northern",
+   "items": [
+    {
+     "text": "Tamale–Tatale road rehabilitation (two lots) substantially complete under TSIP",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 57
+    },
+    {
+     "text": "Japan grant (US$13.4m) signed for stabilisation of power supply in Tamale and Bolgatanga",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 95
+    }
+   ]
+  },
+  {
+   "region": "North East",
+   "items": [
+    {
+     "text": "Fire service recruits trained at Wungu",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 62
+    },
+    {
+     "text": "Big Push: Gbintri–Nakpanduri road",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    }
+   ]
+  },
+  {
+   "region": "Upper East",
+   "items": [
+    {
+     "text": "Tamne irrigation 70% and Vea 40% complete (1,250 ha)",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 46
+    },
+    {
+     "text": "Big Push: Navrongo–Tumu reconstruction",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    },
+    {
+     "text": "Tumu–Chuchuliga–Navrongo (with Kanyibie and Bechelihu bridges) and Navrongo–Chuchuliga–Sandema added to Big Push",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 71
+    },
+    {
+     "text": "Bilateral priority projects: Bolgatanga Regional Hospital, Bolgatanga–Bawku–Pulimakom road",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 36
+    },
+    {
+     "text": "Military security operations in Bawku (Operation MAIDA BUURI) continue",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 63
+    }
+   ]
+  },
+  {
+   "region": "Upper West",
+   "items": [
+    {
+     "text": "670km of feeder roads rehabilitated under TSIP",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 57
+    },
+    {
+     "text": "Big Push: Wa–Han, Tumu–Hamile, Tumu–Han–Lawra roads",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 70
+    }
+   ]
+  },
+  {
+   "region": "National/Decentralisation",
+   "items": [
+    {
+     "text": "GH¢2.9bn paid to the District Assemblies Common Fund in H1",
+     "status": "completed",
+     "amount_ghs_m": 2900.0,
+     "page": 77
+    },
+    {
+     "text": "166 constituencies to get 10km of road rehabilitation a year (about 5,000km over 3 years)",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 72
+    },
+    {
+     "text": "Nationwide payroll audit across all 16 regions 91% complete",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 30
+    },
+    {
+     "text": "School feeding covers 4,231,059 pupils in all 16 regions",
+     "status": "ongoing",
+     "amount_ghs_m": 895.0,
+     "page": 76
+    },
+    {
+     "text": "Lands Commission process to open 30 new district offices; OASL app live in 70 districts",
+     "status": "ongoing",
+     "amount_ghs_m": null,
+     "page": 48
+    },
+    {
+     "text": "RTI Commission to open regional offices in Cape Coast, Ho, Koforidua, Takoradi and Tamale",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 45
+    },
+    {
+     "text": "241 of 268 MMDCEs confirmed",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 45
+    },
+    {
+     "text": "549 MDA/MMDA spending units migrated onto GIFMIS",
+     "status": "completed",
+     "amount_ghs_m": null,
+     "page": 31
+    },
+    {
+     "text": "Bilateral priority list of 24 projects submitted to OCC/IMF, aiming for completion by end-2028",
+     "status": "planned",
+     "amount_ghs_m": null,
+     "page": 35
+    }
+   ]
+  }
+ ],
+ "shortfalls_admitted": [
+  {
+   "text": "Petroleum receipts fell short of target by GH¢2.7bn (delayed oil CIT receipts, cedi appreciation)",
+   "page": 20
+  },
+  {
+   "text": "Grants underperformed by GH¢339m; total revenue & grants GH¢99.3bn, about 3.2% below target",
+   "page": 21
+  },
+  {
+   "text": "Import duties fell short of target by GH¢1.6bn; customs revenue shortfall of 12.7% attributed to leakages at Tema Port and land-border smuggling",
+   "page": 21
+  },
+  {
+   "text": "Non-oil non-tax revenue GH¢8.0bn, 15.6% below the GH¢9.5bn target",
+   "page": 21
+  },
+  {
+   "text": "Arrears clearance GH¢4.8bn against a GH¢7.5bn target",
+   "page": 22
+  },
+  {
+   "text": "Project loan disbursements GH¢2.4bn vs GH¢8.3bn target due to slower execution and portfolio repurposing",
+   "page": 22
+  },
+  {
+   "text": "Capital expenditure GH¢7,105.1m vs GH¢18,058.5m programmed for H1 (Figure 5 / Appendix 2A)",
+   "page": 85
+  },
+  {
+   "text": "Wages and salaries exceeded the budget by GH¢1.3bn in H1 (late-2024 recruitment, ad hoc service-condition reviews)",
+   "page": 66
+  },
+  {
+   "text": "MGO tax exemptions abused, with revenue losses estimated at nearly half a billion cedis",
+   "page": 66
+  },
+  {
+   "text": "Contractors on some of the 55 stalled bilateral projects drew down loans with no matching work, and some claimed costs above what Parliament approved",
+   "page": 36
+  },
+  {
+   "text": "53,311 separated staff found on the government payroll (expected recovery GH¢150.4m for 2023-24)",
+   "page": 30
+  },
+  {
+   "text": "GH¢3.6bn of audited arrears rejected and GH¢562.6m lacked supporting documents",
+   "page": 31
+  },
+  {
+   "text": "Bilateral agreements with OCC members not signed by June 2025; four expected by end-July",
+   "page": 34
+  }
+ ],
+ "risks": [
+  "Customs revenue shortfall (GH¢1.6bn, 12.7% in H1) from leakages at Tema Port and border smuggling (p65-66)",
+  "Smuggling of tax-exempt marine gas oil eroding revenue (p66)",
+  "Wage and salary pressures: H1 overrun of GH¢1.3bn and distortions to the Single Spine pay policy (p66)",
+  "Pricing and award of contracts in foreign currency undermining the cedi and fuelling inflation (p67)",
+  "Global uncertainty: trade tensions/US tariffs, Middle East conflict and oil price volatility (p15)",
+  "Debt repayment humps of GH¢20bn (2026), GH¢50.3bn (2027) and GH¢45.75bn (2028) plus Eurobond redemptions of US$1.42bn, US$1.17bn and US$1.14bn (p37-38)",
+  "Heavy reliance on short-term T-bills for financing pending bond-market reopening (p33)",
+  "US$250m annual cap on bilateral disbursements means at least 12 years to draw US$3bn of undisbursed loans for stalled projects (p35)"
+ ],
+ "data_quality_notes": [
+  "All pages are PDF page numbers; printed page = PDF page - 3. The PDF has 95 pages; the text extract has an empty 96th marker.",
+  "The review's '2025 Budget' column differs from the budget-statement figures in 2025.json: revenue & grants 227,080.4 vs 224,933.6 and total expenditure 270,924.1 vs 268,777.3 (both +2,146.8, via non-tax revenue 26,548.0 vs 24,401.2); compensation 76,203.2 vs 76,640.1; goods & services 6,671.1 vs 6,971.1; grants to other govt units 54,566.6 vs 54,467.5; other expenditure 33,079.2 (includes a GoldBod line of 4,547.7) vs 30,044.6; capex 32,661.6 vs 32,991.6; appropriation 293,118.0 vs 290,971.2. Revenue % of GDP is 16.2 here vs 16.1 in 2025.json. 'original' columns use the review's own figures; 2025.json values are in baseline_2025json_ghs_m.",
+  "Table 2 (p65) total expenditure 283,992 (20.3%) to 282,564 (20.2%) equals Appendix 3A expenditure plus arrears clearance (270,924.1 + 13,067.6). The appendix basis is used in fiscal_revised.",
+  "The section heading on p64 reads 'Revision to the 2024 Fiscal Framework'; context shows it is the 2025 framework.",
+  "The p22 text gives the H1 goods & services target as 'GH¢3.2 million'; Appendix 2A shows GH¢3,158.5m (billion).",
+  "H1 overall commitment balance: -10,254.9 (Appendix 2A, p85) vs -10,339.6 (memorandum incl. discrepancy, p86).",
+  "H1 amortisation: -4,166.1 (Appendix 2A financing, p86) vs 7,036.4 (Appendix 2C, p88).",
+  "Net domestic issuance is given as GH¢8bn (p33) and GH¢8.4bn (p37).",
+  "Appendix 3B (p91) prints grants as 0.5% of GDP, which does not match GH¢2,674.6m / GH¢1,400,006m (0.2%, as on p87); revised_pct_gdp left null.",
+  "The p32 text says debt/GDP 'reduced by 18%'; this is 18 percentage points (61.8% to 43.8%).",
+  "GIR at end-Dec 2024: US$8.98bn (p13, p26) vs US$9.0bn (Box 1, p25). The 91-day T-bill is 14.73% (p13) or rounded to 14.7% (p18).",
+  "The monetary policy rate is not stated anywhere in the review. The benchmark crude price and full-year crude output are not restated or revised; only Jan–May 2025 production (15.32m barrels) is given. OCTP non-associated gas rate is 249.91 mmscf/d on p54 but 246.91 on p55.",
+  "Pages 25 (Box 1 on cedi appreciation) and 33 (Figure 7) are image-only; figures quoted from them were read visually. Page 40 is blank.",
+  "The ESLA amendment is cited as Act 1135 amended on 3 June 2025 (p44) and as Act 1141 (p64).",
+  "Commitment status convention: 'done' = completed per the review; 'on track' = progress reported with no admitted slippage (not a forecast that the full-year target will be hit); 'delayed' = behind H1 programme or a stated deadline, or rescheduled; 'not started' = the review says the action has yet to begin; 'not mentioned' = no progress reported (a page is given where the item is referenced without metrics).",
+  "Commitments 2025-24, 2025-25 and 2025-28 are marked 'not mentioned' because the narrative is silent, although appendix tables show related revenue lines (E-Levy H1 GH¢812.7m; GSL GH¢1,085.3m vs GH¢2,026.2m programme; refunds GH¢5,074.4m vs GH¢3,423.6m).",
+  "Commitment 2025-53 refers to Tema–Adome; the review reports the Tema–Mpakadan line (97.7km).",
+  "Text says total cash of GH¢114.5bn was paid from the Consolidated Fund Jan–Jun (p78), which differs from total expenditure of GH¢109.6bn (commitment) in Appendix 2A.",
+  "Amounts converted from GH¢ units in the appendices to GH¢ million, rounded to 1 decimal."
+ ]
+}

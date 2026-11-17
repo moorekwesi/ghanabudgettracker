@@ -356,3 +356,5 @@ footer { margin-top: 72px; background: var(--forest); color: var(--on-forest-2);
 footer h3 { color: var(--on-forest); margin-bottom: 10px; }
 footer a { color: var(--on-forest); }
 footer ul { padding-left: 18px; }
+footer .credit { margin: 32px 0 0; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.14); color: var(--on-forest); font-size: .92rem; }
+footer .credit a { font-weight: 600; }

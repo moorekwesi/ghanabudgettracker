@@ -560,18 +560,43 @@
     "Western": [4, 0], "Central": [4, 1], "Greater Accra": [4, 3],
   };
   const SEQ = ["#e8f1fc", "#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"];
-  let rYear = "all", curRegion = null;
-  const docMatch = (i) => rYear === "all" || i.doc === rYear;
+  // filters: any budget years, which documents (budgets / mid-year reviews), and the status a document gives an item
+  const RSTAT = [
+    { k: "completed", label: "Completed", color: "var(--good)" },
+    { k: "ongoing", label: "Ongoing", color: "var(--warn)" },
+    { k: "planned", label: "Planned", color: "#2a78d6" },
+    { k: "none", label: "Status not stated", color: "var(--neutral)" },
+  ];
+  const statusOf = (i) => (RSTAT.some((x) => x.k === i.status) ? i.status : "none");
+  const RF = { years: new Set(D.regions.flatMap((r) => r.items.map((i) => i.year))), src: "all", status: "all" };
+  let curRegion = null;
+  const docMatch = (i) => RF.years.has(i.year) && (RF.src === "all" || i.doc[0] === RF.src) && (RF.status === "all" || statusOf(i) === RF.status);
+  const regionRaw = (name) => (D.regions.find((x) => x.region === name) || { items: [] }).items;
   function regionItems(name) {
-    const r = D.regions.find((x) => x.region === name);
-    if (!r) return [];
-    return r.items.filter(docMatch);
+    return regionRaw(name).filter(docMatch);
   }
   function initRegionFilters() {
     $("#regionSelect").innerHTML = `<option value="">Overview: measures for every region</option>` + Object.keys(TILE).sort().map((n) => `<option>${esc(n)}</option>`).join("");
-    $("#regionDoc").innerHTML = `<option value="all">All documents</option>` + DOC_ORDER.map((d) => `<option value="${d}">${esc(docOf(d).label)}</option>`).join("");
-    $("#regionSelect").addEventListener("change", (e) => { curRegion = e.target.value || null; renderTiles(); renderRegionDetail(); });
-    $("#regionDoc").addEventListener("change", (e) => { rYear = e.target.value; renderTiles(); renderRegionDetail(); });
+    $("#regionDoc").innerHTML = `<option value="all">Budgets and mid-year reviews</option><option value="B">Budgets only</option><option value="M">Mid-year reviews only</option>`;
+    $("#regionSelect").addEventListener("change", (e) => { curRegion = e.target.value || null; renderRegions(); });
+    $("#regionDoc").addEventListener("change", (e) => { RF.src = e.target.value; renderRegions(); });
+    $("#regionStatus").addEventListener("change", (e) => { RF.status = e.target.value; renderRegions(); });
+  }
+  function renderRegionFilters() {
+    const ys = [...new Set(D.regions.flatMap((r) => r.items.map((i) => i.year)))].sort();
+    $("#regionYears").innerHTML = ys.map((y) => `<button type="button" data-y="${y}" aria-pressed="${RF.years.has(y)}"><i class="sw" style="background:var(--y${y})"></i>${y}</button>`).join("");
+    $$("#regionYears button").forEach((b) => b.addEventListener("click", () => { const y = +b.dataset.y; RF.years.has(y) ? RF.years.delete(y) : RF.years.add(y); renderRegions(); }));
+    // status counts follow the region, years and documents chosen (but not the status itself)
+    const pool = (curRegion ? regionRaw(curRegion) : D.regions.flatMap((r) => r.items)).filter((i) => RF.years.has(i.year) && (RF.src === "all" || i.doc[0] === RF.src));
+    const n = (k) => pool.filter((i) => statusOf(i) === k).length;
+    $("#regionStatus").innerHTML = `<option value="all">All statuses (${pool.length})</option>` + RSTAT.map((x) => `<option value="${x.k}"${n(x.k) ? "" : " disabled"}>${x.label} (${n(x.k)})</option>`).join("");
+    if (RF.status !== "all" && !n(RF.status)) RF.status = "all";
+    $("#regionStatus").value = RF.status;
+  }
+  function renderRegions() {
+    renderRegionFilters();
+    renderTiles();
+    renderRegionDetail();
   }
   function renderTiles() {
     const counts = Object.keys(TILE).map((n) => regionItems(n).length);
@@ -581,22 +606,37 @@
       const idx = k ? Math.min(SEQ.length - 1, 1 + Math.floor((k / max) * (SEQ.length - 2))) : 0;
       return `<button type="button" class="tile ${idx >= 4 ? "dark-text" : ""}" style="grid-row:${r + 1};grid-column:${c + 1};background:${SEQ[idx]}" aria-pressed="${n === curRegion}" aria-label="${esc(n)}: ${k} items"><span class="nm">${esc(n)}</span><span class="ct">${k}</span></button>`;
     }).join("");
-    $$("#tilemap .tile").forEach((t) => t.addEventListener("click", () => { curRegion = t.querySelector(".nm").textContent; $("#regionSelect").value = curRegion; renderTiles(); renderRegionDetail(); }));
+    $$("#tilemap .tile").forEach((t) => t.addEventListener("click", () => { curRegion = t.querySelector(".nm").textContent; $("#regionSelect").value = curRegion; renderRegions(); }));
     $("#ramp").innerHTML = `<span>Fewer</span><span class="sw">${SEQ.map((c) => `<i style="background:${c}"></i>`).join("")}</span><span>More items named</span>`;
+  }
+  // one row per chosen year: how many items, split by status, so years can be compared at a glance
+  function regionCompareHTML(items) {
+    const ys = [...RF.years].sort();
+    const byY = ys.map((y) => ({ y, list: items.filter((i) => i.year === y) }));
+    const max = Math.max(1, ...byY.map((r) => r.list.length));
+    return `<div class="rcmp">` + byY.map(({ y, list }) => {
+      const parts = RSTAT.map((x) => ({ ...x, n: list.filter((i) => statusOf(i) === x.k).length })).filter((x) => x.n);
+      return `<div class="rcmp-row"><span class="rcmp-y" style="border-color:var(--y${y})">${y}</span><span class="rcmp-n">${list.length}</span>` +
+        `<span class="rcmp-bar">${parts.map((x) => `<i style="width:${(x.n / max) * 100}%;background:${x.color}" title="${x.label}: ${x.n}"></i>`).join("")}</span>` +
+        `<span class="rcmp-txt">${parts.map((x) => `${x.n} ${x.label.toLowerCase()}`).join(" · ") || "none named"}</span></div>`;
+    }).join("") + `</div><div class="rcmp-key">${RSTAT.map((x) => `<span><i style="background:${x.color}"></i>${x.label}</span>`).join("")}</div>`;
   }
   function renderRegionDetail() {
     const box = $("#regionItems");
-    if (!curRegion) {
-      const nat = D.regions.find((x) => x.region === "National/Decentralisation");
-      $("#regionTitle").textContent = "Select a region";
-      $("#regionSub").textContent = "Tap a tile on the map. Below are the decentralisation measures that apply to every region.";
-      box.innerHTML = nat ? capped(nat.items.filter(docMatch)) : "";
-      return;
-    }
-    const items = regionItems(curRegion);
-    $("#regionTitle").textContent = curRegion + " Region";
-    $("#regionSub").textContent = items.length + " item" + (items.length === 1 ? "" : "s") + (rYear === "all" ? ` across all ${DOC_ORDER.length} documents` : " in the " + docOf(rYear).label);
-    box.innerHTML = items.length ? capped(items) : `<li><span class="empty" style="grid-column:1/-1">This budget names no projects specifically for ${esc(curRegion)}.</span></li>`;
+    const nat = D.regions.find((x) => x.region === "National/Decentralisation");
+    const items = curRegion ? regionItems(curRegion) : nat ? nat.items.filter(docMatch) : [];
+    const ys = [...new Set(items.map((i) => i.year))].sort();
+    $("#regionTitle").textContent = curRegion ? curRegion + " Region" : "Select a region";
+    $("#regionSub").textContent = curRegion
+      ? `${items.length} item${items.length === 1 ? "" : "s"} in ${RF.years.size ? andJoin([...RF.years].sort()) : "no year"}${RF.src === "B" ? ", budgets only" : RF.src === "M" ? ", mid-year reviews only" : ""}`
+      : "Tap a tile on the map. Below are the decentralisation measures that apply to every region.";
+    $("#regionCompare").innerHTML = RF.years.size ? regionCompareHTML(items) : "";
+    if (!RF.years.size) { box.innerHTML = `<li><span class="empty" style="grid-column:1/-1">Pick at least one year.</span></li>`; return; }
+    if (!items.length) { box.innerHTML = `<li><span class="empty" style="grid-column:1/-1">No items${curRegion ? " for " + esc(curRegion) : ""} match these filters.</span></li>`; return; }
+    // several years: list each year under its own heading, newest first
+    box.innerHTML = ys.length > 1
+      ? ys.slice().reverse().map((y) => { const l = items.filter((i) => i.year === y); return `<li class="ry-head" style="--yc:var(--y${y})"><b>${y}</b><span>${l.length} item${l.length === 1 ? "" : "s"}</span></li>` + capped(l); }).join("")
+      : capped(items);
   }
   const capped = (arr) => arr.slice(0, 12).map(itemLi).join("") + (arr.length > 12 ? `<li style="display:block;border:0"><details class="more"><summary>Show ${arr.length - 12} more</summary><ul class="region-items">${arr.slice(12).map(itemLi).join("")}</ul></details></li>` : "");
   const itemLi = (i) => `<li><span class="yr-chip y${i.year} ${i.doc && i.doc[0] === "M" ? "mid" : ""}" title="${esc(docOf(i.doc || i.year).label)}">${i.doc && i.doc[0] === "M" ? "MY" + String(i.year).slice(2) : i.year}</span><span>${esc(i.text)}${i.status ? `<span class="tag">${esc(i.status)}</span>` : ""}${i.amount_ghs_m ? ` <span class="muted small">GH¢${fmtNum(i.amount_ghs_m)}m</span>` : ""} ${pg(i.doc || i.year, i.page)}</span></li>`;
@@ -967,8 +1007,7 @@
   $("#mdaSearch").addEventListener("input", renderMDA);
   renderSectors();
   initRegionFilters();
-  renderTiles();
-  renderRegionDetail();
+  renderRegions();
   renderRegionChart();
 
   renderScore();

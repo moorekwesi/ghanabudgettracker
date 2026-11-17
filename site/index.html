@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=20261117h">
+<link rel="stylesheet" href="assets/styles.css?v=20261117i">
 <script>try{var t=localStorage.getItem('gbl-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
@@ -240,8 +240,10 @@
           <div>
             <div class="filters">
               <label class="field"><span>Region</span><select id="regionSelect"></select></label>
-              <label class="field"><span>Document</span><select id="regionDoc"></select></label>
+              <label class="field"><span>Documents</span><select id="regionDoc"></select></label>
+              <label class="field"><span>Status</span><select id="regionStatus"></select></label>
             </div>
+            <div class="rc-row" style="margin:0 0 12px"><span class="rc-label">Years</span><div class="chips swatched rc-years" id="regionYears" role="group" aria-label="Years to include"></div></div>
             <div class="tilemap" id="tilemap" role="group" aria-label="Regions of Ghana"></div>
             <div class="ramp" id="ramp"></div>
             <p class="small muted" style="margin-top:12px">Counts reflect how often a budget names a region, not money spent. Most capital spending is not broken down by region in the Budget Statements.</p>
@@ -249,6 +251,7 @@
           <div>
             <h3 id="regionTitle">Select a region</h3>
             <p class="muted small" id="regionSub"></p>
+            <div id="regionCompare"></div>
             <ul class="region-items" id="regionItems"></ul>
           </div>
         </div>
@@ -345,7 +348,7 @@
 </footer>
 
 <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
-<script src="data/budget-data.js?v=20261117h"></script>
-<script src="assets/app.js?v=20261117h"></script>
+<script src="data/budget-data.js?v=20261117i"></script>
+<script src="assets/app.js?v=20261117i"></script>
 </body>
 </html>

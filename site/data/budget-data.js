@@ -6981,193 +6981,225 @@ window.BUDGET = {
     "name": "Big Push infrastructure programme",
     "description": "US$10bn programme for rapid infrastructure development; 2025 allocation GH¢13.85bn (ABFA GH¢8,889.9m + mineral royalties GH¢4,962.7m per Appendix 4A p166).",
     "allocation_ghs_m": 13852.6,
-    "page": 83
+    "page": 83,
+    "area": "Roads & Transport"
    },
    {
     "name": "24-Hour Economy",
     "description": "Policy enabling businesses and institutions to operate 24/7 in three 8-hour shifts; policy to be presented to Parliament; Labour Act and GIPC Act to be reviewed.",
     "allocation_ghs_m": null,
-    "page": 81
+    "page": 81,
+    "area": "Trade & Industry"
    },
    {
     "name": "Ghana Gold Board (GOLDBOD)",
     "description": "Gold purchasing/export regulator to support FX inflows and reserves; revolving fund of cedi equivalent of US$279m to purchase and export at least 3 tonnes of gold per week from small-scale miners.",
     "allocation_ghs_m": null,
-    "page": 83
+    "page": 83,
+    "area": "Lands & Natural Resources"
    },
    {
     "name": "Agriculture for Economic Transformation Agenda (AETA)",
     "description": "Feed Ghana Programme, Ghana Grains Development Project, Vegetable Development Project, Nkoko Nkitinkiti.",
     "allocation_ghs_m": 1500.0,
-    "page": 85
+    "page": 85,
+    "area": "Agriculture"
    },
    {
     "name": "Women's Development Bank",
     "description": "Seed fund for special-purpose bank offering low-interest loans to women-owned/led businesses.",
     "allocation_ghs_m": 51.3,
-    "page": 85
+    "page": 85,
+    "area": "Financial sector"
    },
    {
     "name": "National Apprenticeship Programme",
     "description": "Free technical/vocational training with start-up capital and equipment.",
     "allocation_ghs_m": 300.0,
-    "page": 85
+    "page": 85,
+    "area": "Employment & Youth"
    },
    {
     "name": "Adwumawura Programme",
     "description": "Business start-up programme to create, track and mentor at least 10,000 youth businesses.",
     "allocation_ghs_m": 100.0,
-    "page": 85
+    "page": 85,
+    "area": "Employment & Youth"
    },
    {
     "name": "One Million Coders / National Coders Programme",
     "description": "Part of US$3bn Digital Jobs Initiative; train 100,000 in 2025 towards 1 million.",
     "allocation_ghs_m": 100.0,
-    "page": 85
+    "page": 85,
+    "area": "Digital/ICT"
    },
    {
     "name": "Digital Jobs Initiative",
     "description": "US$3bn investment with private sector: One Million Coders, Regional Digital Centres, US$50m FinTech Growth Fund, Zonal ICT Parks.",
     "allocation_ghs_m": null,
-    "page": 82
+    "page": 82,
+    "area": "Digital/ICT"
    },
    {
     "name": "Rapid Industrialisation for Jobs",
     "description": "Agro-industrial zones in all regions, cassava/tomato/fruit mini-processing plants, cocoa and cashew factories, textiles and poultry revival, local beer factories in northern regions.",
     "allocation_ghs_m": null,
-    "page": 82
+    "page": 82,
+    "area": "Trade & Industry"
    },
    {
     "name": "National Employment Trust",
     "description": "Investment fund to de-risk high-growth, high-job sectors that banks avoid.",
     "allocation_ghs_m": null,
-    "page": 82
+    "page": 82,
+    "area": "Employment & Youth"
    },
    {
     "name": "No-Academic-Fee ('No-Fees-Stress') policy",
     "description": "Academic fees waived for all first-year students in public tertiary institutions.",
     "allocation_ghs_m": 499.8,
-    "page": 83
+    "page": 83,
+    "area": "Education"
    },
    {
     "name": "Free Tertiary Education for Persons with Disability",
     "description": "Funded via uncapped GETFund.",
     "allocation_ghs_m": null,
-    "page": 83
+    "page": 83,
+    "area": "Education"
    },
    {
     "name": "Free sanitary pads",
     "description": "Distribution to female students in primary and secondary schools (1.3 million girls, p117).",
     "allocation_ghs_m": 292.4,
-    "page": 83
+    "page": 83,
+    "area": "Education"
    },
    {
     "name": "Curricula-based textbooks",
     "description": "KG, primary and JHS3 textbooks for ~4.1 million learners.",
     "allocation_ghs_m": 564.6,
-    "page": 84
+    "page": 84,
+    "area": "Education"
    },
    {
     "name": "Uncapping of GETFund",
     "description": "Dedicated funding for Free SHS; government absorbs Daakye bond debt service.",
     "allocation_ghs_m": 8571.9,
-    "page": 83
+    "page": 83,
+    "area": "Education"
    },
    {
     "name": "Uncapping of NHIL / NHIS",
     "description": "GH¢9.93bn for NHIS incl. Free Primary Healthcare, MahamaCares and bridging USAID gap.",
     "allocation_ghs_m": 9930.0,
-    "page": 84
+    "page": 84,
+    "area": "Health"
    },
    {
     "name": "Free Primary Healthcare",
     "description": "Free essential services at CHPS, health centres and polyclinics; funded within NHIS.",
     "allocation_ghs_m": null,
-    "page": 124
+    "page": 124,
+    "area": "Health"
    },
    {
     "name": "Ghana Medical Care Trust (MahamaCares)",
     "description": "Fund for treating cancers, hypertension, heart disease and diabetes; funded within NHIS allocation.",
     "allocation_ghs_m": null,
-    "page": 124
+    "page": 124,
+    "area": "Health"
    },
    {
     "name": "Uncapping of Road Fund",
     "description": "GH¢2.81bn solely for road maintenance (+155.5%).",
     "allocation_ghs_m": 2814.9,
-    "page": 84
+    "page": 84,
+    "area": "Roads & Transport"
    },
    {
     "name": "School Feeding Programme",
     "description": "Allocation up 33% from GH¢1.344bn; per-meal cost GH¢1.50 -> GH¢2.00.",
     "allocation_ghs_m": 1788.0,
-    "page": 84
+    "page": 84,
+    "area": "Education"
    },
    {
     "name": "LEAP expansion",
     "description": "Households 350,000 -> 400,000 from July 2025; benefits indexed to inflation; +30.8%.",
     "allocation_ghs_m": 953.5,
-    "page": 84
+    "page": 84,
+    "area": "Social Protection"
    },
    {
     "name": "Capitation Grant",
     "description": "Up 73.2% from GH¢84m.",
     "allocation_ghs_m": 145.5,
-    "page": 84
+    "page": 84,
+    "area": "Education"
    },
    {
     "name": "District Assemblies Common Fund reform",
     "description": "GH¢7.51bn; at least 80% to go directly to District Assemblies.",
     "allocation_ghs_m": 7510.0,
-    "page": 84
+    "page": 84,
+    "area": "Local Government"
    },
    {
     "name": "Assembly Members' allowance",
     "description": "Monthly allowance for all Assembly Members.",
     "allocation_ghs_m": 100.0,
-    "page": 85
+    "page": 85,
+    "area": "Local Government"
    },
    {
     "name": "Teacher and nursing trainee allowances",
     "description": "Teacher trainee GH¢203m and nursing trainee GH¢480m (speech figures).",
     "allocation_ghs_m": 683.0,
-    "page": 84
+    "page": 84,
+    "area": "Education"
    },
    {
     "name": "Ghana Labour Export Programme",
     "description": "Formalise export of Ghanaian labour with legal pathways and worker protection.",
     "allocation_ghs_m": null,
-    "page": 83
+    "page": 83,
+    "area": "Employment & Youth"
    },
    {
     "name": "Teacher Dabre initiative",
     "description": "100 teacher accommodation units; all new basic school blocks to include teacher housing.",
     "allocation_ghs_m": null,
-    "page": 118
+    "page": 118,
+    "area": "Education"
    },
    {
     "name": "Sinking Fund operationalisation",
     "description": "Operationalise PFM Act ss.37-44 from 2025 to build debt-service buffers; 2025 transfer GH¢280.7m (p146).",
     "allocation_ghs_m": 280.7,
-    "page": 74
+    "page": 74,
+    "area": "Public debt"
    },
    {
     "name": "Spending cuts / 'shock therapy'",
     "description": "Eliminate GhanaCARES, YouStart and One District One Factory; 60 ministers (from 123/88); ministries cut from 30 to 23.",
     "allocation_ghs_m": null,
-    "page": 60
+    "page": 60,
+    "area": "Spending & fiscal balance"
    },
    {
     "name": "Fiscal Responsibility Act amendment",
     "description": "Add a debt rule and an independent fiscal council; to be enacted alongside the budget.",
     "allocation_ghs_m": null,
-    "page": 77
+    "page": 77,
+    "area": "Spending & fiscal balance"
    },
    {
     "name": "Gulf of Guinea Northern Regions Social Cohesion (SOCO) project",
     "description": "Additional GH¢315m to 6 RCCs and 48 MMDAs.",
     "allocation_ghs_m": 315.0,
-    "page": 98
+    "page": 98,
+    "area": "Local Government"
    }
   ],
   "2026": [
@@ -7175,181 +7207,211 @@ window.BUDGET = {
     "name": "Big Push Infrastructure Programme",
     "description": "Cedi equivalent of US$10bn envelope for roads/bridges; 33 road projects approved; Accra-Kumasi Expressway and Adawso-Ekye Amanfrom Bridge added; GH¢63bn of contracts awarded (~490,000 jobs). Funded GoG 15,334.4 + ABFA 7,297.3 + mineral royalties 7,368.3.",
     "allocation_ghs_m": 30000.0,
-    "page": 158
+    "page": 158,
+    "area": "Roads & Transport"
    },
    {
     "name": "Accra-Kumasi Expressway",
     "description": "198.7km six-lane Class A expressway on new alignment; 8 interchanges, 4 service areas, 2 toll plazas; ~30,000 jobs; halves travel time.",
     "allocation_ghs_m": null,
-    "page": 141
+    "page": 141,
+    "area": "Roads & Transport"
    },
    {
     "name": "24-Hour Economy and Accelerated Export Development Programme (24H+)",
     "description": "Over 50 bankable projects; financing largely off-budget via GIIF/DBG; target >1.7m jobs by 2028.",
     "allocation_ghs_m": 110.0,
-    "page": 157
+    "page": 157,
+    "area": "Trade & Industry"
    },
    {
     "name": "Rural Electricity Acceleration and Urban Intensification Initiative",
     "description": "Turnkey model to connect every unserved community; Phase I 2026 in Volta, Oti, Savannah, Central; all 16 regions by 2029.",
     "allocation_ghs_m": 2000.0,
-    "page": 157
+    "page": 157,
+    "area": "Energy"
    },
    {
     "name": "1,200MW State-Owned Thermal Power Plant",
     "description": "Construction to begin 2026 to offtake additional 150 MMscf/d gas from OCTP and GPP2.",
     "allocation_ghs_m": null,
-    "page": 134
+    "page": 134,
+    "area": "Energy"
    },
    {
     "name": "National Policy on Integrated Oil Palm Development (2026-2032)",
     "description": "100,000ha new plantations, 250,000 jobs, self-sufficiency; US$500m Oil Palm Development Finance Window (Section 7 says GH¢6.9bn window).",
     "allocation_ghs_m": 6900.0,
-    "page": 157
+    "page": 157,
+    "area": "Agriculture"
    },
    {
     "name": "Farmer Service Centres",
     "description": "Machinery for 50 agricultural districts (>4,000 units incl. 660 tractors, 50 combine harvesters).",
     "allocation_ghs_m": 690.0,
-    "page": 157
+    "page": 157,
+    "area": "Agriculture"
    },
    {
     "name": "Agricultural Enclave Roads Programme",
     "description": "1,000km of roads in food-producing enclaves over three years (World Bank-funded per heading).",
     "allocation_ghs_m": 828.0,
-    "page": 157
+    "page": 157,
+    "area": "Agriculture"
    },
    {
     "name": "National Food Buffer Stock Company",
     "description": "Purchase of food glut to protect farmers.",
     "allocation_ghs_m": 200.0,
-    "page": 157
+    "page": 157,
+    "area": "Agriculture"
    },
    {
     "name": "Aquaculture development",
     "description": "Grow24 aquaculture for youth and women cooperatives.",
     "allocation_ghs_m": 100.0,
-    "page": 157
+    "page": 157,
+    "area": "Agriculture"
    },
    {
     "name": "Ghana Secondary Learning Improvement Programme (GSLIP)",
     "description": "2026-2027 programme to end double-track SHS.",
     "allocation_ghs_m": 1100.0,
-    "page": 158
+    "page": 158,
+    "area": "Education"
    },
    {
     "name": "Basic Education Infrastructure",
     "description": "200 JHSs, 200 primary schools, 200 KGs, 400 teachers' bungalows, 400 toilets.",
     "allocation_ghs_m": 2000.0,
-    "page": 158
+    "page": 158,
+    "area": "Education"
    },
    {
     "name": "Textbooks, furniture and school vehicles",
     "description": "KG/primary/JHS textbooks, 2m mono-desks, 200 buses, 200 pick-ups.",
     "allocation_ghs_m": 3000.0,
-    "page": 158
+    "page": 158,
+    "area": "Education"
    },
    {
     "name": "Free Secondary Education",
     "description": "Free SHS financing.",
     "allocation_ghs_m": 4200.0,
-    "page": 158
+    "page": 158,
+    "area": "Education"
    },
    {
     "name": "No-Fees-Stress (first-year tertiary)",
     "description": "Academic fees for first-year tertiary students.",
     "allocation_ghs_m": 537.0,
-    "page": 158
+    "page": 158,
+    "area": "Education"
    },
    {
     "name": "Ghana Medical Trust Fund (MahamaCares)",
     "description": "Financing for NCD treatment; PPP diagnostic centres.",
     "allocation_ghs_m": 2300.0,
-    "page": 159
+    "page": 159,
+    "area": "Health"
    },
    {
     "name": "NHIS (uncapped NHIL)",
     "description": "Claims, medicines, vaccines, bridging support, Free Primary Healthcare.",
     "allocation_ghs_m": 9000.0,
-    "page": 159
+    "page": 159,
+    "area": "Health"
    },
    {
     "name": "New regional hospitals",
     "description": "Three of six regional hospitals for newly created regions.",
     "allocation_ghs_m": 600.0,
-    "page": 159
+    "page": 159,
+    "area": "Health"
    },
    {
     "name": "Agenda 111 completion",
     "description": "Complete 10 abandoned Agenda 111 hospitals.",
     "allocation_ghs_m": 100.0,
-    "page": 159
+    "page": 159,
+    "area": "Health"
    },
    {
     "name": "LEAP",
     "description": "Cash transfers to vulnerable households.",
     "allocation_ghs_m": 1100.0,
-    "page": 159
+    "page": 159,
+    "area": "Social Protection"
    },
    {
     "name": "Women's Development Bank",
     "description": "Finance for women-owned MSMEs.",
     "allocation_ghs_m": 401.0,
-    "page": 159
+    "page": 159,
+    "area": "Financial sector"
    },
    {
     "name": "Energy-sector shortfall payments",
     "description": "Payments to cover energy-sector shortfalls.",
     "allocation_ghs_m": 15200.0,
-    "page": 157
+    "page": 157,
+    "area": "Energy"
    },
    {
     "name": "Legacy IPP debt",
     "description": "Payment of legacy IPP arrears in 2026.",
     "allocation_ghs_m": 4800.0,
-    "page": 157
+    "page": 157,
+    "area": "Public debt"
    },
    {
     "name": "Ghana Armed Forces retooling",
     "description": "Air Force aircraft (2,682.0), APCs (600.0), two OPVs (non-concessional loan).",
     "allocation_ghs_m": 2682.0,
-    "page": 200
+    "page": 200,
+    "area": "Security"
    },
    {
     "name": "Value for Money Office",
     "description": "Independent statutory office certifying major contracts; target 10-15% cut in contract inflation, ~GH¢3bn annual savings within 5 years.",
     "allocation_ghs_m": null,
-    "page": 129
+    "page": 129,
+    "area": "Governance & Justice"
    },
    {
     "name": "Ghana Petroleum Funds domestic investment",
     "description": "Designate qualifying instruments so part of GPFs (US$1.46bn, ~1% annual return) can invest in domestic energy projects.",
     "allocation_ghs_m": null,
-    "page": 130
+    "page": 130,
+    "area": "Energy"
    },
    {
     "name": "GDP and CPI rebasing",
     "description": "Rebasing, regional GDP, Monthly Indicator of Economic Growth, 'Ghana in Numbers'.",
     "allocation_ghs_m": 207.0,
-    "page": 160
+    "page": 160,
+    "area": "Macroeconomy"
    },
    {
     "name": "Integrated Recycling and Compost Plant (IRECOP)",
     "description": "Waste recycling and compost plants.",
     "allocation_ghs_m": 400.0,
-    "page": 160
+    "page": 160,
+    "area": "Water & Sanitation"
    },
    {
     "name": "Recapitalisation of ADB and CBG",
     "description": "GH¢1bn recapitalisation before end-2025 (NIB already recapitalised with GH¢1.9bn).",
     "allocation_ghs_m": 1000.0,
-    "page": 161
+    "page": 161,
+    "area": "Financial sector"
    },
    {
     "name": "Garment factories",
     "description": "Three factories (Bono East, Central, Eastern) ~27,000 jobs (Section 7 says >20,000).",
     "allocation_ghs_m": 200.0,
-    "page": 197
+    "page": 197,
+    "area": "Trade & Industry"
    }
   ],
   "2027": [
@@ -7357,193 +7419,225 @@ window.BUDGET = {
     "name": "New Economy Programme",
     "description": "US$10bn over 2027-2030, 8 pillars; financed by cutting primary-surplus target by 1pp of GDP and tax reforms yielding 0.5% of GDP; 1.5% of GDP in 2027",
     "allocation_ghs_m": 29999.61,
-    "page": 34
+    "page": 34,
+    "area": "Trade & Industry"
    },
    {
     "name": "Pillar 2: Commercial Agriculture (US$3bn)",
     "description": "8 value chains: rice, sugar, poultry, maize/soya feed, aquaculture, oil palm, vegetables, cocoa processing",
     "allocation_ghs_m": null,
-    "page": 35
+    "page": 35,
+    "area": "Agriculture"
    },
    {
     "name": "Pillar 3: Energy Infrastructure (US$2bn)",
     "description": "1,450MW state thermal plant, 600MW solar + 2,000MWh storage, US$500m transmission, 2m prepaid meters, US$200m nuclear readiness",
     "allocation_ghs_m": null,
-    "page": 40
+    "page": 40,
+    "area": "Energy"
    },
    {
     "name": "Pillar 4: Critical Minerals Value Addition (US$1.5bn)",
     "description": "local refining/processing of gold, manganese, bauxite, lithium; Western Region processing enclave; Takoradi-Nyinahin railway",
     "allocation_ghs_m": null,
-    "page": 43
+    "page": 43,
+    "area": "Lands & Natural Resources"
    },
    {
     "name": "Pillar 5: Tourism, Culture & Creative Arts (US$1bn)",
     "description": "year-round Black Star Experience, convention centre, hotels, medical tourism hub",
     "allocation_ghs_m": null,
-    "page": 44
+    "page": 44,
+    "area": "Tourism"
    },
    {
     "name": "Pillar 6: Textiles & Garments (US$1bn)",
     "description": "textile enclaves, mill modernisation, buy-Ghana uniforms procurement",
     "allocation_ghs_m": null,
-    "page": 46
+    "page": 46,
+    "area": "Trade & Industry"
    },
    {
     "name": "Pillar 7: Pharmaceutical & Biomanufacturing Compact (US$1bn)",
     "description": "hubs in Eastern and Central regions; 60-80% of essential medicines locally by 2030; ~20,000 jobs",
     "allocation_ghs_m": null,
-    "page": 47
+    "page": 47,
+    "area": "Trade & Industry"
    },
    {
     "name": "Pillar 8: Technology Economy (US$300m)",
     "description": "National AI Centre and rural 2G-to-4G upgrade, 2027-2028",
     "allocation_ghs_m": null,
-    "page": 48
+    "page": 48,
+    "area": "Digital/ICT"
    },
    {
     "name": "Big Push infrastructure programme",
     "description": "roads and transport corridors; Appendix capex GH¢27,764.0m (text cites GH¢28bn p.176 and GH¢29.8bn p.183)",
     "allocation_ghs_m": 27764.0,
-    "page": 222
+    "page": 222,
+    "area": "Roads & Transport"
    },
    {
     "name": "Accra-Kumasi Expressway",
     "description": "198.7km six-lane; engineer's estimate US$2.98bn (US$1bn below initial ~US$4bn); funded by ABFA + mineral royalties",
     "allocation_ghs_m": null,
-    "page": 97
+    "page": 97,
+    "area": "Roads & Transport"
    },
    {
     "name": "Western Corridor Railway",
     "description": "Takoradi-Nsuta-Awaso-Nyinahin; petroleum revenue & mineral royalties dedicated in 2027-2028; no borrowing",
     "allocation_ghs_m": null,
-    "page": 98
+    "page": 98,
+    "area": "Roads & Transport"
    },
    {
     "name": "Ghana Market Access and Connectivity Project",
     "description": "World Bank-financed (US$500m loan signed 2026)",
     "allocation_ghs_m": 2000.0,
-    "page": 176
+    "page": 176,
+    "area": "Roads & Transport"
    },
    {
     "name": "Rural Electricity Acceleration and Urban Intensification Initiative (REIP) extension",
     "description": "six northern/western regions",
     "allocation_ghs_m": 3000.0,
-    "page": 175
+    "page": 175,
+    "area": "Energy"
    },
    {
     "name": "Energy sector payment shortfalls",
     "description": "obligations to IPPs to sustain supply",
     "allocation_ghs_m": 13016.92,
-    "page": 222
+    "page": 222,
+    "area": "Energy"
    },
    {
     "name": "Health infrastructure package",
     "description": "2 specialist hospitals, 6 regional hospitals, Korle-Bu mother & child centre, 2 district hospitals",
     "allocation_ghs_m": 6800.0,
-    "page": 177
+    "page": 177,
+    "area": "Health"
    },
    {
     "name": "Agenda 111 completion",
     "description": "complete 35 district hospitals",
     "allocation_ghs_m": 1000.0,
-    "page": 177
+    "page": 177,
+    "area": "Health"
    },
    {
     "name": "Ghana Medical Trust Fund (MahamaCares)",
     "description": "specialist care financing",
     "allocation_ghs_m": 2560.74,
-    "page": 222
+    "page": 222,
+    "area": "Health"
    },
    {
     "name": "Secondary education transformation (STARR-J)",
     "description": "eliminate double track; World Bank US$300m loan",
     "allocation_ghs_m": 1378.06,
-    "page": 220
+    "page": 220,
+    "area": "Education"
    },
    {
     "name": "No Fees Stress",
     "description": "free first-year tertiary academic fees",
     "allocation_ghs_m": 537.44,
-    "page": 220
+    "page": 220,
+    "area": "Education"
    },
    {
     "name": "10 regional stadia",
     "description": "5,000-12,000 seat multipurpose stadia",
     "allocation_ghs_m": 600.0,
-    "page": 178
+    "page": 178,
+    "area": "Employment & Youth"
    },
    {
     "name": "Farmer Service Centres Phase 2",
     "description": "agricultural machinery",
     "allocation_ghs_m": 800.0,
-    "page": 175
+    "page": 175,
+    "area": "Agriculture"
    },
    {
     "name": "Silos construction",
     "description": "food storage",
     "allocation_ghs_m": 500.0,
-    "page": 175
+    "page": 175,
+    "area": "Agriculture"
    },
    {
     "name": "High-occupancy buses",
     "description": "additional fleet",
     "allocation_ghs_m": 400.0,
-    "page": 176
+    "page": 176,
+    "area": "Roads & Transport"
    },
    {
     "name": "District Level Elections and Constitutional Referendum",
     "description": "Electoral Commission",
     "allocation_ghs_m": 900.0,
-    "page": 181
+    "page": 181,
+    "area": "Governance & Justice"
    },
    {
     "name": "Clearance of arrears",
     "description": "honour past commitments",
     "allocation_ghs_m": 13904.81,
-    "page": 222
+    "page": 222,
+    "area": "Spending & fiscal balance"
    },
    {
     "name": "24-Hour Economy Secretariat",
     "description": "private sector-led 24H+ programme (Appendix shows GH¢131m under OGM)",
     "allocation_ghs_m": 165.0,
-    "page": 183
+    "page": 183,
+    "area": "Trade & Industry"
    },
    {
     "name": "Ghana@70",
     "description": "70th independence anniversary",
     "allocation_ghs_m": 200.0,
-    "page": 217
+    "page": 217,
+    "area": "Other"
    },
    {
     "name": "Ghana Sovereign Wealth Fund",
     "description": "merger of MIIF and GIIF; equity partner for 24-Hour Economy projects",
     "allocation_ghs_m": null,
-    "page": 99
+    "page": 99,
+    "area": "Financial sector"
    },
    {
     "name": "Independent Public Emoluments Commission (IPEC)",
     "description": "replace FWSC; 2027-2028 transition in four phases incl. referendum on Article 71 office holders",
     "allocation_ghs_m": null,
-    "page": 103
+    "page": 103,
+    "area": "Spending & fiscal balance"
    },
    {
     "name": "GoldBod 3% discount on small-scale gold purchases",
     "description": "cut reserve-accumulation cost from 5% to 2%",
     "allocation_ghs_m": null,
-    "page": 101
+    "page": 101,
+    "area": "Lands & Natural Resources"
    },
    {
     "name": "Women's Development Bank",
     "description": "capitalised with GH¢400m in 2026; to be fully operationalised 2027",
     "allocation_ghs_m": 400.0,
-    "page": 120
+    "page": 120,
+    "area": "Financial sector"
    },
    {
     "name": "Two offshore patrol vessels for Ghana Navy",
     "description": "72-metre OPVs",
     "allocation_ghs_m": 405.0,
-    "page": 180
+    "page": 180,
+    "area": "Security"
    }
   ]
  },

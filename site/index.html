@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=20261117g">
+<link rel="stylesheet" href="assets/styles.css?v=20261117h">
 <script>try{var t=localStorage.getItem('gbl-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
@@ -195,8 +195,13 @@
         <p class="small muted" style="margin-top:10px" id="multiNote"></p>
       </div>
       <div class="panel">
-        <div class="panel-head"><div><h3>Flagship programmes</h3><p>The main initiatives each budget announced or funded.</p></div></div>
-        <div class="yearcols" id="initCols"></div>
+        <div class="panel-head">
+          <div><h3>Flagship programmes</h3><p>The main initiatives each budget announced or funded, by sector. Pick a sector and the budget years to compare.</p></div>
+          <div class="controls"><label class="field"><span>Sector</span><select id="initArea"></select></label></div>
+        </div>
+        <div class="rc-row" style="margin:0 0 6px"><span class="rc-label">Budget years</span><div class="chips swatched rc-years" id="initYears" role="group" aria-label="Budget years to compare"></div></div>
+        <div class="cmp-summary" id="initSummary"></div>
+        <div class="yearcols" id="initCols" style="margin-top:12px"></div>
       </div>
       <div class="panel">
         <div class="panel-head">
@@ -340,7 +345,7 @@
 </footer>
 
 <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
-<script src="data/budget-data.js?v=20261117g"></script>
-<script src="assets/app.js?v=20261117g"></script>
+<script src="data/budget-data.js?v=20261117h"></script>
+<script src="assets/app.js?v=20261117h"></script>
 </body>
 </html>

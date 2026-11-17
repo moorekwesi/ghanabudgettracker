@@ -457,11 +457,39 @@
     const ms = D.multiSectoral || {};
     $("#multiNote").innerHTML = `Not shown: the multi-sectoral vote (interest, statutory funds, pensions, the Big Push and arrears), which is larger than all ministries combined: ${YEARS.map((y) => `GH¢${fmtBn(ms[y] && ms[y].v)}bn in ${y}${ms[y] && ms[y].derived ? "*" : ""}`).join(", ")}. Its lines are in the ministry table below.${YEARS.some((y) => ms[y] && ms[y].derived) ? ` *Derived as the grand total minus all ministries; the ${andJoin(YEARS.filter((y) => ms[y] && ms[y].derived))} appendix prints no subtotal.` : ""}`;
   }
+  // flagship programmes: pick a sector (assigned in the build) and any budget years to set side by side
+  const INIT = { area: "all", years: new Set(YEARS) };
   function renderInitiatives() {
-    $("#initCols").innerHTML = YEARS.map((y) => {
-      const list = (D.initiatives[y] || []).slice().sort((a, b) => (b.allocation_ghs_m || 0) - (a.allocation_ghs_m || 0));
-      const li = (t) => `<li><b>${esc(t.name)}</b>${t.allocation_ghs_m ? ` <span class="muted small">GH¢${fmtNum(t.allocation_ghs_m, 0)}m</span>` : ""}<br><span class="small">${esc(t.description || "")}</span> ${pg(y, t.page)}</li>`;
-      return `<div class="yearcol" style="--yc:var(--y${y})"><h4>${y} Budget</h4><ul class="bullets">${list.slice(0, 6).map(li).join("")}</ul>${list.length > 6 ? `<details class="more"><summary>${list.length - 6} more</summary><ul class="bullets">${list.slice(6).map(li).join("")}</ul></details>` : ""}</div>`;
+    const sel = $("#initArea");
+    if (!sel.options.length) {
+      const all = YEARS.flatMap((y) => D.initiatives[y] || []);
+      const areas = byAreaOrder([...new Set(all.map((i) => i.area).filter(Boolean))]);
+      sel.innerHTML = `<option value="all">All sectors (${all.length})</option>` + areas.map((a) => `<option value="${esc(a)}">${esc(a)} (${all.filter((i) => i.area === a).length})</option>`).join("");
+      sel.addEventListener("change", () => { INIT.area = sel.value; renderInitiatives(); });
+    }
+    $("#initYears").innerHTML = YEARS.map((y) => `<button type="button" data-y="${y}" aria-pressed="${INIT.years.has(y)}"><i class="sw" style="background:var(--y${y})"></i>${y}</button>`).join("");
+    $$("#initYears button").forEach((b) => b.addEventListener("click", () => { const y = +b.dataset.y; INIT.years.has(y) ? INIT.years.delete(y) : INIT.years.add(y); renderInitiatives(); }));
+    const ys = YEARS.filter((y) => INIT.years.has(y));
+    const listFor = (y) => (D.initiatives[y] || []).filter((i) => INIT.area === "all" || i.area === INIT.area).sort((a, b) => (b.allocation_ghs_m || 0) - (a.allocation_ghs_m || 0));
+    if (!ys.length) {
+      $("#initSummary").innerHTML = `<div class="empty">Pick at least one budget year above.</div>`;
+      $("#initCols").innerHTML = "";
+      return;
+    }
+    // per-year totals of the allocations the budgets state, so a sector can be compared year on year
+    $("#initSummary").innerHTML = ys.map((y) => {
+      const list = listFor(y), stated = list.filter((i) => i.allocation_ghs_m);
+      const tot = stated.reduce((s, i) => s + i.allocation_ghs_m, 0);
+      return `<div style="border-left:4px solid var(--y${y});padding-left:10px"><b>${tot ? "GH¢" + fmtBn(tot) + "bn" : "–"}</b>${y}: ${list.length} programme${list.length === 1 ? "" : "s"}${stated.length < list.length ? `, ${stated.length} with a stated amount` : ""}</div>`;
+    }).join("") + `<div class="muted small" style="align-self:end">Totals add up the allocations each budget states for ${INIT.area === "all" ? "its flagship programmes" : esc(INIT.area.toLowerCase()) + " programmes"}.</div>`;
+    const cap = INIT.area === "all" ? 6 : 12;
+    $("#initCols").style.setProperty("--cols", ys.length);
+    $("#initCols").innerHTML = ys.map((y) => {
+      const list = listFor(y);
+      const li = (t) => `<li><b>${esc(t.name)}</b>${t.allocation_ghs_m ? ` <span class="muted small">GH¢${fmtNum(t.allocation_ghs_m, 0)}m</span>` : ""}${INIT.area === "all" && t.area ? ` <span class="tag">${esc(t.area)}</span>` : ""}<br><span class="small">${esc(t.description || "")}</span> ${pg(y, t.page)}</li>`;
+      return `<div class="yearcol" style="--yc:var(--y${y})"><h4>${y} Budget <span class="muted small">(${list.length})</span></h4>` +
+        (list.length ? `<ul class="bullets">${list.slice(0, cap).map(li).join("")}</ul>${list.length > cap ? `<details class="more"><summary>${list.length - cap} more</summary><ul class="bullets">${list.slice(cap).map(li).join("")}</ul></details>` : ""}`
+          : `<p class="empty">No ${esc(INIT.area.toLowerCase())} flagship programme in this budget.</p>`) + `</div>`;
     }).join("");
   }
   let mdaSort = { key: "v" + LAST, dir: -1 }, mdaAll = false;

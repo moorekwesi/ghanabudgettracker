@@ -741,6 +741,31 @@ for y, lst in commitments.items():
     for c in lst:
         c["area_detail"] = c.get("area")
         c["area"] = std_area(c.get("area"), c.get("commitment", "") + " " + str(c.get("metric", "")))
+# flagship programmes: sector from the name first (it is the most specific), then name + description;
+# INIT_AREA fixes names the keywords get wrong (matched on the start of the name, case-insensitive)
+INIT_AREA = {
+    "Big Push": "Roads & Transport", "Ghana Market Access and Connectivity": "Roads & Transport",
+    "24-Hour Economy": "Trade & Industry", "New Economy Programme": "Trade & Industry", "Garment factories": "Trade & Industry",
+    "Pillar 6: Textiles": "Trade & Industry", "Pillar 7: Pharmaceutical": "Trade & Industry",
+    "Pillar 8: Technology": "Digital/ICT",
+    "Uncapping of GETFund": "Education", "Capitation Grant": "Education",
+    "District Assemblies Common Fund": "Local Government",
+    "Ghana Labour Export": "Employment & Youth", "Adwumawura": "Employment & Youth",
+    "National Policy on Integrated Oil Palm": "Agriculture", "National Food Buffer Stock": "Agriculture", "Aquaculture": "Agriculture",
+    "Value for Money Office": "Governance & Justice", "District Level Elections": "Governance & Justice",
+    "Ghana Sovereign Wealth Fund": "Financial sector",
+    "Independent Public Emoluments Commission": "Spending & fiscal balance",
+}
+def init_area(i):
+    for start, area in INIT_AREA.items():
+        if i["name"].lower().startswith(start.lower()):
+            return area
+    a = std_area(None, i["name"])
+    return a if a != "Other" else std_area(None, i["name"] + " " + (i.get("description") or ""))
+for y, lst in initiatives.items():
+    for i in lst:
+        i["area"] = init_area(i)
+
 for book in (successes, gaps):
     for y, lst in book.items():
         for x in lst:

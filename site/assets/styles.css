@@ -235,7 +235,7 @@ table.data th[data-sort]:hover { color: var(--ink); }
 .sector-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
 .sector-tabs button { font: inherit; font-size: .86rem; border: 1px solid var(--rule); background: var(--paper-2); color: var(--ink-2); padding: 6px 11px; border-radius: 999px; cursor: pointer; }
 .sector-tabs button[aria-pressed="true"] { background: var(--forest); border-color: var(--forest); color: var(--on-forest); }
-.yearcols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.yearcols { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 16px; }
 @media (max-width: 900px) { .yearcols { grid-template-columns: 1fr; } }
 .yearcol { border-top: 4px solid var(--yc); padding-top: 12px; }
 .yearcol h4 { margin-bottom: 8px; }

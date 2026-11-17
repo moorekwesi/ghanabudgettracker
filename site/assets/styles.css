@@ -1,17 +1,17 @@
 /* Ghana Budget Tracker */
 :root {
   color-scheme: light;
-  --paper: #f5f8f5;
+  --paper: #faf6f0;
   --paper-2: #ffffff;
-  --paper-3: #e9efea;
-  --rule: #d3ddd5;
-  --ink: #12201a;
-  --ink-2: #44534b;
-  --ink-3: #6b7a72;
-  --forest: #0f3d2e;
-  --forest-2: #164d3a;
-  --on-forest: #eef5ef;
-  --on-forest-2: #b9cfc1;
+  --paper-3: #f1e9de;
+  --rule: #e2d6c6;
+  --ink: #221a14;
+  --ink-2: #4f4339;
+  --ink-3: #7a6c60;
+  --forest: #8c5833;
+  --forest-2: #9b663f;
+  --on-forest: #fff8ef;
+  --on-forest-2: #f6e7d4;
   --gold: #d99a06;
   --gold-soft: #f6e4b4;
   /* year colours (--y<year>) are set by app.js from the list of years: one blue ramp, light -> dark = earlier -> later */
@@ -24,7 +24,7 @@
   --bad-ink: #a42727;
   --neutral: #9aa59f;
   --focus: #d99a06;
-  --shadow: 0 1px 0 rgba(15, 61, 46, .06);
+  --shadow: 0 1px 0 rgba(90, 60, 30, .06);
   --radius-s: 4px;
   --radius-m: 10px;
   --max: 1180px;
@@ -34,17 +34,17 @@
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) {
     color-scheme: dark;
-    --paper: #111a16;
-    --paper-2: #17221d;
-    --paper-3: #1e2b25;
-    --rule: #2c3b34;
-    --ink: #e8efe9;
-    --ink-2: #b8c6bd;
-    --ink-3: #8c9c93;
-    --forest: #0b2a20;
-    --forest-2: #12372a;
-    --on-forest: #eef5ef;
-    --on-forest-2: #a9c2b3;
+    --paper: #17120e;
+    --paper-2: #1f1813;
+    --paper-3: #2a2119;
+    --rule: #3d3127;
+    --ink: #f1e9e1;
+    --ink-2: #c9bcb0;
+    --ink-3: #a39587;
+    --forest: #4a2f1c;
+    --forest-2: #5a3a23;
+    --on-forest: #fff8ef;
+    --on-forest-2: #ead6bf;
     --gold: #e9b13a;
     --gold-soft: #3b3115;
     --good-ink: #4cc94c;
@@ -54,17 +54,17 @@
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #111a16;
-  --paper-2: #17221d;
-  --paper-3: #1e2b25;
-  --rule: #2c3b34;
-  --ink: #e8efe9;
-  --ink-2: #b8c6bd;
-  --ink-3: #8c9c93;
-  --forest: #0b2a20;
-  --forest-2: #12372a;
-  --on-forest: #eef5ef;
-  --on-forest-2: #a9c2b3;
+  --paper: #17120e;
+  --paper-2: #1f1813;
+  --paper-3: #2a2119;
+  --rule: #3d3127;
+  --ink: #f1e9e1;
+  --ink-2: #c9bcb0;
+  --ink-3: #a39587;
+  --forest: #4a2f1c;
+  --forest-2: #5a3a23;
+  --on-forest: #fff8ef;
+  --on-forest-2: #ead6bf;
   --gold: #e9b13a;
   --gold-soft: #3b3115;
   --good-ink: #4cc94c;

@@ -117,7 +117,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- hero: the woven strips ---------- */
 .hero { background: var(--forest); color: var(--on-forest); padding: 56px 0 0; overflow: hidden; }
-.hero h1 { font-size: clamp(2.4rem, 6.4vw, 4.6rem); font-weight: 800; letter-spacing: -0.025em; }
+.hero h1 { font-family: "Libre Baskerville", Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5.2vw, 3.9rem); font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; text-wrap: balance; }
 .hero .lede { color: var(--on-forest-2); font-size: 1.12rem; margin: 18px 0 36px; }
 .strips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 8px; }
 .strips-note { color: var(--on-forest-2); font-size: .88rem; margin: 14px 0 0; }

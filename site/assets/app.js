@@ -94,7 +94,7 @@
     const W = Math.max(320, el.clientWidth || 800);
     const narrow = W < 560;
     const labelW = narrow ? 0 : Math.min(230, W * 0.3);
-    const barH = 9, gap = 2, groupPad = narrow ? 30 : 16;
+    const barH = opts.barH || 9, gap = opts.barH ? 6 : 2, groupPad = narrow ? 30 : 16;
     const ys = opts.years || YEARS;
     const groupH = ys.length * barH + (ys.length - 1) * gap;
     const rowH = groupH + groupPad;
@@ -119,13 +119,13 @@
         const cell = r.values[y];
         const by = gy + j * (barH + gap);
         if (!cell || cell.v == null) {
-          s += `<text class="lbl" x="${sx(0) + 4}" y="${by + barH - 1}" style="font-size:10px">not stated</text>`;
+          s += `<text class="lbl" x="${sx(0) + 4}" y="${by + barH / 2 + 4}" style="font-size:10px">not stated</text>`;
           return;
         }
         const x0 = sx(Math.min(0, cell.v)), x1 = sx(Math.max(0, cell.v));
         const w = Math.max(1, x1 - x0);
         s += `<path d="${barPath(x0, by, w, barH, cell.v >= 0)}" fill="var(--y${y})"/>`;
-        s += `<text class="val" x="${cell.v >= 0 ? x1 + 5 : x0 - 5}" y="${by + barH - 1}" text-anchor="${cell.v >= 0 ? "start" : "end"}" style="font-weight:${j === ys.length - 1 ? 600 : 400};fill:${j === ys.length - 1 ? "var(--ink)" : "var(--ink-3)"}">${fmt(cell.v)}</text>`;
+        s += `<text class="val" x="${cell.v >= 0 ? x1 + 5 : x0 - 5}" y="${by + barH / 2 + 4}" text-anchor="${cell.v >= 0 ? "start" : "end"}" style="font-weight:${j === ys.length - 1 ? 600 : 400};fill:${j === ys.length - 1 ? "var(--ink)" : "var(--ink-3)"}">${fmt(cell.v)}</text>`;
       });
       s += `<rect class="hit" x="0" y="${gy - (narrow ? 18 : 5)}" width="${W}" height="${rowH}"/></g>`;
     });
@@ -333,18 +333,42 @@
     }).join("");
   }
 
+  // fiscal lines fall into three groups, in the order the data lists them
+  const FISCAL_GROUP = (item) => /revenue|grants from/i.test(item) ? "Revenue" : /balance|appropriation/i.test(item) ? "Balances and totals" : "Spending";
   function renderFiscal() {
-    const rows = D.fiscal.map((f) => ({ label: f.item, values: f.values, note: f.note }));
-    const draw = () => groupedHBar($("#fiscalChart"), rows, { fmt: (v) => fmtBn(v), unit: "GH¢bn", aria: "Fiscal envelope by year, GH¢ billion" });
-    draw();
-    redraws.push(draw);
+    const sel = $("#fiscalPick");
+    if (!sel.options.length) {
+      const groups = [...new Set(D.fiscal.map((f) => FISCAL_GROUP(f.item)))];
+      sel.innerHTML = groups.map((g) => `<optgroup label="${esc(g)}">${D.fiscal.map((f, i) => (FISCAL_GROUP(f.item) === g ? `<option value="${i}">${esc(f.item)}</option>` : "")).join("")}</optgroup>`).join("") +
+        `<optgroup label="Several lines at once">${groups.map((g) => `<option value="g:${esc(g)}">All ${esc(g.toLowerCase())} lines</option>`).join("")}<option value="all">Every line</option></optgroup>`;
+      sel.value = "0";
+      sel.addEventListener("change", renderFiscal);
+      seg("fview", (v) => { $("#fiscalChart").hidden = v !== "chart"; $("#yearLegend2").hidden = v !== "chart"; $("#fiscalTable").hidden = v !== "table"; });
+      redraws.push(drawFiscal);
+    }
+    const pick = sel.value;
+    const list = pick === "all" ? D.fiscal : pick.startsWith("g:") ? D.fiscal.filter((f) => FISCAL_GROUP(f.item) === pick.slice(2)) : [D.fiscal[+pick]];
+    FISCAL_ROWS = list.map((f) => ({ label: f.item, values: f.values, note: f.note }));
+    drawFiscal();
+    // a single line gets its headline numbers above the chart
+    const one = list.length === 1 ? list[0] : null;
+    if (one) {
+      const a = one.values[FIRST] && one.values[FIRST].v, b = one.values[LAST] && one.values[LAST].v;
+      $("#fiscalSummary").innerHTML = `<div><b>GH¢${fmtBn(b)}bn</b>${esc(one.item.toLowerCase())} in the ${LAST} Budget</div>` +
+        (a != null && b != null && a !== 0 ? `<div><b>${fmtPct(((b - a) / Math.abs(a)) * 100)}</b>change since the ${FIRST} Budget (GH¢${fmtBn(a)}bn)</div>` : "") +
+        (one.values[LAST] && one.values[LAST].pct_gdp != null ? `<div><b>${one.values[LAST].pct_gdp}%</b>of GDP in ${LAST}</div>` : "") +
+        (one.note ? `<div class="muted small" style="align-self:end">${esc(one.note)}</div>` : "");
+    } else $("#fiscalSummary").innerHTML = "";
     $("#fiscalTable").innerHTML = `<table class="data"><thead><tr><th>Item (GH¢ million)</th>${YEARS.map((y) => `<th class="num">${y} Budget</th>`).join("")}<th class="num">Change ${FIRST}→${LAST}</th></tr></thead><tbody>` +
-      D.fiscal.map((f) => {
+      list.map((f) => {
         const a = f.values[FIRST] && f.values[FIRST].v, b = f.values[LAST] && f.values[LAST].v;
         const ch = a && b ? ((b - a) / Math.abs(a)) * 100 : null;
         return `<tr><td>${esc(f.item)}</td>${YEARS.map((y) => { const c = f.values[y]; return `<td class="num">${c && c.v != null ? fmtNum(c.v, 0) + (c.pct_gdp != null ? ` <span class="muted small">(${c.pct_gdp}%)</span>` : "") + "<br>" + pg(y, c.page) : "–"}</td>`; }).join("")}<td class="num">${fmtPct(ch)}</td></tr>`;
       }).join("") + `</tbody></table><p class="small muted" style="margin-top:8px">Figures in brackets are % of GDP where stated.</p>`;
-    seg("fview", (v) => { $("#fiscalChart").hidden = v !== "chart"; $("#yearLegend2").hidden = v !== "chart"; $("#fiscalTable").hidden = v !== "table"; });
+  }
+  let FISCAL_ROWS = [];
+  function drawFiscal() {
+    groupedHBar($("#fiscalChart"), FISCAL_ROWS, { fmt: (v) => fmtBn(v), unit: "GH¢bn", aria: "Fiscal envelope by year, GH¢ billion", barH: FISCAL_ROWS.length === 1 ? 26 : 0 });
   }
 
   function renderTaxes() {

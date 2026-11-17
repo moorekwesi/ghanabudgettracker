@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=20261117d">
+<link rel="stylesheet" href="assets/styles.css?v=20261117f">
 <script>try{var t=localStorage.getItem('gbl-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
@@ -119,14 +119,16 @@
       </div>
       <div class="panel">
         <div class="panel-head">
-          <div><h3>Fiscal envelope</h3><p>Budgeted amounts for each year, GH¢ billion.</p></div>
+          <div><h3>Fiscal envelope</h3><p>Budgeted amounts for each year, GH¢ billion. Pick a line, or a whole group.</p></div>
           <div class="controls">
+            <label class="field"><span>Line</span><select id="fiscalPick" aria-label="Fiscal envelope line"></select></label>
             <div class="seg" role="group" aria-label="Fiscal view">
               <button type="button" data-fview="chart" aria-pressed="true">Chart</button>
               <button type="button" data-fview="table" aria-pressed="false">Table</button>
             </div>
           </div>
         </div>
+        <div class="cmp-summary" id="fiscalSummary"></div>
         <div class="legend" id="yearLegend2" style="margin-bottom:10px"></div>
         <div class="chart" id="fiscalChart"></div>
         <div class="table-wrap" id="fiscalTable" hidden></div>
@@ -337,7 +339,7 @@
 </footer>
 
 <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
-<script src="data/budget-data.js?v=20261117d"></script>
-<script src="assets/app.js?v=20261117d"></script>
+<script src="data/budget-data.js?v=20261117f"></script>
+<script src="assets/app.js?v=20261117f"></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 50 70" role="img" aria-label="Ghana Budget Tracker logo: the Sankofa adinkra symbol inside a map of Ghana">
+  <title>Ghana Budget Tracker</title>
+  <!-- map of Ghana, simplified (x = (longitude + 3.3) x 10, y = (11.2 - latitude) x 10) -->
+  <path fill="#e9b13a" stroke="#f6d27a" stroke-width="1" stroke-linejoin="round" d="M4.7 2 L22 2 L27 1 L31.5 0.7 L33.3 2 L36.7 9 L36.6 17 L38 22 L37 25 L39 30 L39.5 38 L38.5 42 L40.5 46 L43.5 48 L45 51 L40 54 L33 56 L31 56.5 L23 60.5 L20.5 61 L15.5 63 L12 64.6 L7 62.5 L2 61 L3.5 55 L1 49.5 L3 44 L0.6 40 L3.5 32.5 L5.5 30 L6.5 22 L5.5 18 L6 12 L3.5 6 Z"/>
+  <!-- Sankofa (heart form): "go back and fetch it", learning from the past to build the future -->
+  <g fill="none" stroke="#0f3d2e" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 51 C13 45 6.5 38 7.5 31 C8.5 24.5 17 22.5 20.3 28.5 C22 32.5 18.5 36.5 14.8 34.6 C11.6 32.9 12.6 28.6 15.9 29.4 C17.6 29.9 17.6 32 16.2 32.3"/>
+    <path d="M21 51 C29 45 35.5 38 34.5 31 C33.5 24.5 25 22.5 21.7 28.5 C20 32.5 23.5 36.5 27.2 34.6 C30.4 32.9 29.4 28.6 26.1 29.4 C24.4 29.9 24.4 32 25.8 32.3"/>
+  </g>
+</svg>

@@ -117,8 +117,8 @@ p { margin: 0 0 1em; }
 
 /* ---------- hero: the woven strips ---------- */
 .hero { background: var(--forest); color: var(--on-forest); padding: 56px 0 0; overflow: hidden; }
-.hero h1 { font-size: clamp(2.4rem, 6.4vw, 4.6rem); font-weight: 800; letter-spacing: -0.025em; max-width: 15ch; }
-.hero .lede { color: var(--on-forest-2); font-size: 1.12rem; max-width: 62ch; margin: 18px 0 36px; }
+.hero h1 { font-size: clamp(2.4rem, 6.4vw, 4.6rem); font-weight: 800; letter-spacing: -0.025em; }
+.hero .lede { color: var(--on-forest-2); font-size: 1.12rem; margin: 18px 0 36px; }
 .strips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 8px; }
 .strips-note { color: var(--on-forest-2); font-size: .88rem; margin: 14px 0 0; }
 .strips-note a { color: var(--on-forest); }

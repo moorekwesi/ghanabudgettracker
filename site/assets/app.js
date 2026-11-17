@@ -198,7 +198,6 @@
       return `<article class="strip" style="--yc:var(--y${y})">
         <div class="yr">${y}</div>
         <div class="theme">${esc(m.title)}</div>
-        <div class="who">${esc(m.presented_by_short || m.presented_by)} · ${esc(m.date_label || m.date_presented)}</div>
         <dl>
           <dt>Total revenue &amp; grants</dt><dd>GH¢${fmtBn(h.revenue)}bn</dd>
           <dt>Total expenditure</dt><dd>GH¢${fmtBn(h.expenditure)}bn</dd>

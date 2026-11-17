@@ -187,6 +187,10 @@ table.data th[data-sort]:hover { color: var(--ink); }
 .loop-tally { display: flex; flex-wrap: wrap; gap: 10px 26px; margin: 4px 0 18px; }
 .loop-tally div { font-size: .9rem; color: var(--ink-2); }
 .loop-tally b { font-family: var(--font-display); font-size: 1.9rem; display: block; color: var(--ink); line-height: 1.1; }
+.loop-tally .pick { cursor: pointer; border-radius: 8px; padding: 2px 6px; margin: -2px -6px; }
+.loop-tally .pick:hover, .loop-tally .pick:focus-visible { background: var(--paper-3); outline: none; }
+.loop-tally .pick[aria-pressed="true"] { background: var(--paper-3); box-shadow: inset 0 -3px 0 var(--forest); }
+.loop-tally .dim { opacity: .45; }
 .loop-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; gap: 2px; margin-bottom: 20px; background: var(--paper); }
 .loop-bar span { display: block; height: 100%; }
 .loop-diagram { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: .88rem; color: var(--ink-2); margin-bottom: 16px; }

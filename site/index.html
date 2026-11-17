@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=20261117f">
+<link rel="stylesheet" href="assets/styles.css?v=20261117g">
 <script>try{var t=localStorage.getItem('gbl-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
@@ -150,9 +150,10 @@
       <div class="panel">
         <div class="panel-head">
           <div><h3>Targets against outturns</h3><p>Status is judged against the target as originally set. Outturns are often provisional; the basis is shown.</p></div>
-          <label class="field"><span>Year</span>
-            <select id="loopYear"></select>
-          </label>
+          <div class="filters" style="margin:0">
+            <label class="field"><span>Year</span><select id="loopYear"></select></label>
+            <label class="field"><span>Status</span><select id="loopStatus"></select></label>
+          </div>
         </div>
         <div class="loop-tally" id="loopTally"></div>
         <div class="loop-bar" id="loopBar"></div>
@@ -339,7 +340,7 @@
 </footer>
 
 <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
-<script src="data/budget-data.js?v=20261117f"></script>
-<script src="assets/app.js?v=20261117f"></script>
+<script src="data/budget-data.js?v=20261117g"></script>
+<script src="assets/app.js?v=20261117g"></script>
 </body>
 </html>

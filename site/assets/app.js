@@ -386,17 +386,37 @@
     const order = ["met", "partial", "missed", "unclear", "pending"];
     const c = {};
     list.forEach((x) => (c[x.status] = (c[x.status] || 0) + 1));
-    const tally = order.filter((k) => c[k]).map((k) => `<div><b>${c[k]}</b>${statusChip(k, labels)}</div>`).join("");
+    const tally = order.filter((k) => c[k]).map((k) => `<div data-status="${k}"><b>${c[k]}</b>${statusChip(k, labels)}</div>`).join("");
     const total = list.length || 1;
     const bar = order.filter((k) => c[k]).map((k) => `<span style="width:${(c[k] / total) * 100}%;background:${STATUS_COLOR[k]}" title="${labels[k]}: ${c[k]}"></span>`).join("");
     return { tally, bar };
   }
+  // status filter: the dropdown, or a click on a tally figure, narrows the table; the tally keeps the whole year
+  const LOOP_STATUSES = ["met", "partial", "missed", "unclear", "pending"];
+  let lStatus = "all";
   function renderLoop(year) {
-    const list = D.loop[year] || [];
-    const t = tallyHTML(list, LABEL);
-    $("#loopTally").innerHTML = t.tally + `<div><b>${list.length}</b>targets tracked</div>`;
+    const all = D.loop[year] || [];
+    const count = (s) => all.filter((r) => r.status === s).length;
+    $("#loopStatus").innerHTML = `<option value="all">All statuses (${all.length})</option>` +
+      LOOP_STATUSES.map((s) => `<option value="${s}"${count(s) ? "" : " disabled"}>${esc(LABEL[s])} (${count(s)})</option>`).join("");
+    if (lStatus !== "all" && !count(lStatus)) lStatus = "all";
+    $("#loopStatus").value = lStatus;
+    const list = lStatus === "all" ? all : all.filter((r) => r.status === lStatus);
+    const t = tallyHTML(all, LABEL);
+    $("#loopTally").innerHTML = t.tally + `<div><b>${all.length}</b>targets tracked</div>`;
     $("#loopBar").innerHTML = t.bar;
+    $$("#loopTally [data-status]").forEach((d) => {
+      d.classList.add("pick");
+      d.setAttribute("role", "button");
+      d.setAttribute("tabindex", "0");
+      d.setAttribute("aria-pressed", String(lStatus === d.dataset.status));
+      d.classList.toggle("dim", lStatus !== "all" && lStatus !== d.dataset.status);
+      const pick = () => { lStatus = lStatus === d.dataset.status ? "all" : d.dataset.status; renderLoop(year); };
+      d.addEventListener("click", pick);
+      d.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+    });
     $("#loopTable").innerHTML = `<colgroup><col style="width:17%"><col style="width:17%"><col style="width:19%"><col style="width:11%"><col></colgroup><thead><tr><th>Indicator</th><th>${year} target</th><th>Outturn</th><th>Status</th><th>What the later budgets say</th></tr></thead><tbody>` +
+      (list.length ? "" : `<tr><td colspan="5" class="empty">No targets with this status.</td></tr>`) +
       list.map((r) => `<tr><td>${esc(r.indicator)}${r.unit ? ` <span class="muted small">(${esc(r.unit)})</span>` : ""}</td>
         <td>${esc(r.target_label || (r.target != null ? fmtNum(r.target) : "No target set"))}<br>${pg(year, r.target_page)}</td>
         <td>${esc(r.outturn_label || fmtNum(r.outturn))}<br>${pg(r.outturn_source_year || +year + 1, r.outturn_page)}</td>
@@ -908,6 +928,7 @@
   renderTaxes();
   renderLoop($("#loopYear").value);
   $("#loopYear").addEventListener("change", (e) => renderLoop(e.target.value));
+  $("#loopStatus").addEventListener("change", (e) => { lStatus = e.target.value; renderLoop($("#loopYear").value); });
   renderCommitments();
   $("#commitYear").addEventListener("change", (e) => { cYear = e.target.value; cAll = false; renderCommitments(); });
   $("#commitArea").addEventListener("change", (e) => { cArea = e.target.value; cAll = false; renderCommitments(); });

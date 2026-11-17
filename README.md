@@ -2,7 +2,7 @@
 
 A running, static website that tracks Ghana's annual Budget Statements and Mid-Year Fiscal Policy Reviews: what each budget planned, what the following budget says actually happened, and where the promises fell short. Every figure links to the page of the PDF it came from.
 
-Live site: https://ghanabudgettracker.vercel.app
+Live site: https://ghanabudgettracker.com
 
 - `site/` — the website (open `site/index.html`); see [site/README.md](site/README.md) for its sections, data and how to add a new year
 - `*.pdf` — the source documents the site links to

@@ -950,12 +950,8 @@
   }
 
   // ---------- theme ----------
-  $("#themeBtn").addEventListener("click", () => {
-    const cur = document.documentElement.getAttribute("data-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    const next = cur === "dark" ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", next);
-    try { localStorage.setItem("gbl-theme", next); } catch (e) {}
-  });
+  // no theme switch: the page follows the device's light/dark setting; clear any choice saved by the old Theme button
+  try { localStorage.removeItem("gbl-theme"); } catch (e) {}
 
   // ---------- nav highlight ----------
   const links = $$(".nav a");

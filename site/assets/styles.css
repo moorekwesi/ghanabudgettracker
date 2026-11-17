@@ -106,7 +106,7 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .topbar .wrap { display: flex; align-items: center; gap: 20px; height: 56px; }
-.brand { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; white-space: nowrap; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.brand { font-family: "Libre Baskerville", Georgia, "Times New Roman", serif; font-weight: 700; font-size: 1.02rem; letter-spacing: .01em; white-space: nowrap; text-decoration: none; display: flex; align-items: center; gap: 10px; }
 .brand-mark { width: auto; height: 31px; flex: none; display: block; }
 .nav { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; flex: 1; }
 .nav::-webkit-scrollbar { display: none; }

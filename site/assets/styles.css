@@ -374,3 +374,42 @@ footer a { color: var(--on-forest); }
 footer ul { padding-left: 18px; }
 footer .credit { margin: 32px 0 0; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.14); color: var(--on-forest); font-size: .92rem; }
 footer .credit a { font-weight: 600; }
+
+/* ---------- "Ask the data" assistant ---------- */
+.chat-fab { position: fixed; right: 20px; bottom: 20px; z-index: 60; display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border: 0; border-radius: 999px; background: var(--forest); color: var(--on-forest); font: inherit; font-weight: 600; font-size: .95rem; cursor: pointer; box-shadow: 0 6px 20px rgba(60, 35, 15, .28); }
+.chat-fab svg { width: 20px; height: 20px; }
+.chat-fab:hover { background: var(--forest-2); }
+.chat.open .chat-fab { display: none; }
+.chat-panel { position: fixed; right: 20px; bottom: 20px; z-index: 61; width: min(420px, calc(100vw - 32px)); height: min(640px, calc(100vh - 40px)); display: flex; flex-direction: column; background: var(--paper-2); color: var(--ink); border: 1px solid var(--rule); border-radius: 14px; box-shadow: 0 12px 40px rgba(60, 35, 15, .3); overflow: hidden; }
+.chat-panel[hidden] { display: none; }
+.chat-head { display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px; background: var(--forest); color: var(--on-forest); }
+.chat-head > div { flex: 1; min-width: 0; }
+.chat-head b { display: block; font-family: "Libre Baskerville", Georgia, serif; font-size: 1.02rem; }
+.chat-head span { display: block; font-size: .78rem; color: var(--on-forest-2); margin-top: 3px; }
+.chat-close { background: none; border: 0; color: var(--on-forest); font-size: 1.6rem; line-height: 1; cursor: pointer; padding: 0 4px; }
+.chat-log { flex: 1; overflow-y: auto; padding: 14px 14px 4px; display: flex; flex-direction: column; gap: 10px; }
+.chat-msg { font-size: .9rem; line-height: 1.45; }
+.chat-msg p { margin: 0 0 8px; }
+.chat-msg.me { align-self: flex-end; max-width: 85%; background: var(--forest); color: var(--on-forest); padding: 8px 12px; border-radius: 12px 12px 2px 12px; }
+.chat-msg.me p { margin: 0; }
+.chat-msg.bot { align-self: stretch; }
+.chat-sugg { display: flex; flex-wrap: wrap; gap: 6px; }
+.chat-sugg button { font: inherit; font-size: .82rem; border: 1px solid var(--rule); background: var(--paper); color: var(--ink-2); padding: 5px 10px; border-radius: 999px; cursor: pointer; }
+.chat-sugg button:hover { border-color: var(--forest); color: var(--ink); }
+.chat-results { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 8px; }
+.chat-results li { border: 1px solid var(--rule); border-radius: 10px; padding: 9px 11px; background: var(--paper); }
+.chat-results b { display: block; margin: 2px 0 3px; }
+.chat-results li div b { display: inline; margin: 0; }
+.chat-kind { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-3); }
+.chat-tag { display: inline-block; font-size: .72rem; padding: 1px 6px; border-radius: 4px; background: var(--paper-3); color: var(--ink-2); }
+.chat-goto { display: inline-block; margin-top: 4px; font-size: .78rem; color: var(--ink-2); }
+.chat-link { font: inherit; font-size: .85rem; border: 1px solid var(--forest); background: none; color: var(--ink); padding: 6px 12px; border-radius: 8px; cursor: pointer; }
+.chat-muted { color: var(--ink-3); font-size: .8rem; }
+.chat-form { display: flex; gap: 8px; padding: 10px 12px; border-top: 1px solid var(--rule); background: var(--paper-2); }
+.chat-form input { flex: 1; min-width: 0; font: inherit; font-size: .92rem; padding: 9px 12px; border: 1px solid var(--rule); border-radius: 8px; background: var(--paper); color: var(--ink); }
+.chat-form input:focus { outline: 2px solid var(--forest); outline-offset: 0; }
+.chat-form button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 0 16px; background: var(--forest); color: var(--on-forest); cursor: pointer; }
+@media (max-width: 640px) {
+  .chat-fab { right: 12px; bottom: 12px; padding: 11px 14px; }
+  .chat-panel { right: 0; bottom: 0; width: 100vw; height: 82vh; border-radius: 14px 14px 0 0; }
+}

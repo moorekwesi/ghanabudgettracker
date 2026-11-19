@@ -27,6 +27,7 @@ Navigation is dropdown-led: each section has labelled selectors at the top.
 - **Regional development**: region and document selectors with a tile map of the 16 regions, plus each region's share of district assembly ceilings
 - **Successes and what was not achieved**: year and area selectors
 - **Shortfalls**: budget against outturn by year and period (half-year, year to date, full year), debt and risks
+- **Ask the data** (button at the bottom right): a search assistant over everything on the page (`assets/chat.js`). It runs in the browser with no AI and no server: it matches the question against the site's figures, targets, promises, programmes and regional items, understands years, regions and status words (missed, delivered, completed...), and quotes the matches with their PDF page links.
 
 ## Data
 
